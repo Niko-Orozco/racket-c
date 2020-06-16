@@ -1,0 +1,49 @@
+/* .Container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  background-color: blanchedalmond;
+} */
+
+.Navbar {
+  width: 100%;
+  padding-top: 30px;
+  font-size: 24px;
+  padding-bottom: 40px;
+
+  //Flex
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+
+  &__nav {
+    width: 50%;
+
+    //Flex
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &__logo {
+  }
+
+  &__link {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    outline: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &--element {
+      padding: 10px 30px;
+    }
+  }
+}

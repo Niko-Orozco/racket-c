@@ -1,0 +1,63 @@
+{
+  "name": "racket-to-c",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@etclabscore/react-monaco-editor": "^1.0.4",
+    "@material-ui/core": "^4.9.12",
+    "@material-ui/icons": "^4.9.1",
+    "@monaco-editor/react": "^3.3.0",
+    "@testing-library/jest-dom": "4.2.4",
+    "@testing-library/react": "9.5.0",
+    "@testing-library/user-event": "7.2.1",
+    "@uiw/react-monacoeditor": "^2.2.1",
+    "@zeit/next-css": "^1.0.1",
+    "ace-builds": "^1.4.11",
+    "bootstrap": "4.4.1",
+    "codemirror": "^5.53.2",
+    "monaco-editor": "^0.20.0",
+    "node-sass": "^4.13.1",
+    "normalize.css": "8.0.1",
+    "react": "16.13.1",
+    "react-ace": "^8.1.0",
+    "react-ace-editor": "0.0.3",
+    "react-bootstrap": "^1.0.1",
+    "react-codemirror-runmode": "^1.0.5",
+    "react-codemirror2": "^7.1.0",
+    "react-dom": "16.13.1",
+    "react-monaco-editor": "^0.36.0",
+    "react-responsive-carousel": "^3.2.5",
+    "react-router-dom": "5.1.2",
+    "react-scripts": "3.4.1",
+    "react-tab-pane": "0.0.6",
+    "reactjs-popup": "^1.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "0.0.14",
+    "@rescripts/utilities": "0.0.7",
+    "json-loader": "0.5.7",
+    "monaco-editor-webpack-plugin": "^1.9.0",
+    "react-app-rewired": "^2.1.5"
+  }
+}

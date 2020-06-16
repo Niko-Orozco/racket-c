@@ -1,0 +1,15 @@
+.tab__button {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 40px;
+
+  &:hover {
+    cursor: pointer;
+    color: #275aac;
+  }
+
+  &--active {
+    color: #275aac;
+    font-weight: bolder;
+  }
+}

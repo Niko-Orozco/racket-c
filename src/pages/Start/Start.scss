@@ -1,0 +1,40 @@
+.info {
+  background-color: white;
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  /* Cuando flex está en modo row para centrar horizontalmente utilizo justify-content: center y para centrar verticalmente align-items: center. Pero cuando está en modo columna esto se invierte.*/
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &__text {
+    width: 605px;
+    text-align: justify;
+    font-weight: 24;
+
+    &--title {
+      font-weight: bold;
+    }
+
+    &--description {
+      padding-top: 25px;
+      font-weight: 18;
+    }
+  }
+
+  .btn {
+    margin-top: 30px;
+    background-color: #3e5ba9;
+    color: white;
+    width: 141px;
+    height: 41px;
+    border-radius: 30px;
+    border: none;
+  }
+
+  &__image {
+    text-align: end;
+    width: 50%;
+  }
+}

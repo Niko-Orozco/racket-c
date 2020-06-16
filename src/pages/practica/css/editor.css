@@ -1,0 +1,62 @@
+.practice-container {
+  width: 100%;
+  padding: 10px 60px;
+  background-color: #ffffff;
+}
+
+.code-editor {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(82, 82, 82);
+}
+
+.editor-container {
+  padding: 10px; 
+}
+
+.tab-sizes{
+  font-size: 15px;
+}
+
+.editor-container > div {
+  float: left;
+  margin: 50px;
+  margin-bottom: 5px;
+}
+
+.information {
+  text-align: center;
+}
+
+.description {
+  text-align: justify;
+  display: block;
+}
+
+.text-area{
+  resize: none;
+  font-size: 15px;
+  margin-top: 10px;
+  background-color:rgba(255, 255, 255, 0.849);
+  color: #000000;
+  padding: 1%;
+  width: 600px;
+  height: 80px;
+}
+
+.radio-container{
+  padding: 5px;
+}
+
+.radio-container > div{
+  margin-left: 170px;
+  margin-bottom: 20px;
+}
+
+.monaco-theme{
+  border: gray 1px solid;
+}

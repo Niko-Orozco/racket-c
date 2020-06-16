@@ -1,0 +1,19 @@
+.ejemplo {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  &__editor {
+    width: 45%;
+  }
+}
+
+.compiler__button {
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}

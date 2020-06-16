@@ -1,0 +1,80 @@
+[
+    {
+        "expresiones":
+        {
+            "1": "Transformar en código el pseudocódigo que se muestra a continuación, correspondiente a\nproporcionar el precio medio de un producto, calculado a partir del precio del mismo en\ntres establecimientos distintos. Los precios para el cálculo son introducidos por el \nusuario.\n\n1.Inicio\n2.-  -Mostrar “Introduzca el precio del producto 1”: Pedir precio1 \n3.-  -Mostrar “Introduzca el precio del producto 2”: Pedir precio2 \n4.-  -Mostrar “Introduzca el precio del producto 3”: Pedir precio3 \n5.-  -media = (precio1 + precio2 + precio3) / 3\n6.-  -Mostrar “El precio medio del producto es”, media, “Euros” \n7.Fin ",
+            "2": "Transformar en código el pseudocódigo que se muestra a continuación, correspondiente\nal cálculo del volumen de un cilindro dados su altura y diámetro.\n\n1.Inicio\n2.-  -Mostrar “Introduzca el diámetro, en metros” : Pedir D \n3.-  -Mostrar “Introduzca la altura, en metros” : Pedir H \n4.-  -R = D/2 : Pi = 3,141593\n5.-  -V = Pi * (R ^ 2) * H\n6.-  -Mostrar “El volumen del cilindro es de”, V, “metros cúbicos”\n 7.Fin ",
+            "3": "Un supermercado ha puesto en oferta la venta al por mayor de cierto producto,\nofreciendo un descuento del 15% por la compra de más de 3 docenas y 10% en caso\ncontrario. Además por la compra de más de 3 docenas se obsequia una unidad del\nproducto por cada docena en exceso sobre 3. Diseñe un algoritmo que determine el\nmonto de la compra, el monto del descuento, el monto a pagar y el número de unidades\nde obsequio por la compra de cierta cantidad de docenas del producto."
+        },
+
+        "secuencia":
+        {
+            "1": "Desarrolle un algoritmo que tenga tres valores y almacene las variables\na,b y c respectivamente. Debe indicar cual es el menor.",
+            "2": "Leer un número entero positivo y averiguar si es perfecto. Un número es perfecto\ncuando es igual a la suma de sus divisores excepto el mismo.",
+            "3": "Escribe un programa que pregunte el precio, el tanto por ciento de descuento, y te\ndiga el precio con descuento. Por ejemplo, si el precio que introduce el usuario \nes 300 y el descuento 20, el programa dirá que el precio final con descuento es de 240. "
+        },
+
+        "condicionales":
+        {
+            "1": "Determinar si un alumno aprueba a reprueba un curso, sabiendo que aprobara\nsi su promedio de tres calificaciones es mayor o igual a 70; reprueba en caso\ncontrario.",
+            "2": "Construir un programa que realice descuentos en base a lo siguiente:\n\n\tSi la compra es menor a 500 no hay descuento\n\tSi es entre 500 y 1000, 10% de descuento\n\tSi es entre 1000 y 2000, 20% de descuento\n\tSi es mayor a 2000, 30% de descuento",
+            "3": "Se quiere crear un programaque resuelva la ecuación cuadrática tipo ax2 + bx + c.\nPara ello se ha estudiado el problema, que se ha planteado en pseudocódigo. Transformar\nel pseudocódigo que se muestra a continuación en código C y comprobar que el programa\nobtiene los resultados esperados para una serie de casos de prueba."
+        },
+
+        "ciclos":
+        {
+            "1": "Una ONG tiene puntos de reparto de vacunas que se pretende funcionen de la siguiente manera.\nCada día, empezar con 1000 vacunas disponibles y a través de un programa que controla las\nentregas avisar si el inventario baja de 200 unidades.",
+            "2": "Diseñe un algoritmo que lea un número de tres cifras y determine si es igual al revés del\nnúmero.\nComo el número tiene tres cifras, para que sea igual al revés, basta con que la\ncifra de las unidades sea igual a la cifra de las centenas. Por ejemplo: 353, 878, etc.",
+            "3": "Crea un programa que usando bucles nos permita pedir un número par comprendido entre 100 y\n200 y nos muestre todos los números pares comprendidos entre el número facilitado y 200.\nPor ejemplo si el número facilitado es 192 nos debería mostrar 192, 194, 196, 198 y 200."
+        },
+
+        "cadenas":
+        {
+            "1": "Escribir un programa que una frase, determinar qué caracteres se encuentran repetidos, y cuántas\nveces aparece repetido cada carácter. Utilizar un vector con los caracteres que van apareciendo y\notro correspondiente a la misma posición con el número de repeticiones. ",
+            "2": "Escribir un programa que dada una frase de tamaño máximo N, determine si es un palíndromo o no. Un\npalíndromo es una frase que, atendiendo sólo a sus letras e ignorando los espacios, acentos, signos de\npuntuación y tipo de letra (mayúscula o minúscula) expresa lo mismo leída de izquierda a derecha que\nde derecha a izquierda. “dábale arroz a la zorra el abad”. ",
+            "3": "Un psiquiatra tiene un paciente que habla invirtiendo las frases completas. (por ejemplo: si quiere\ndecir “hola caracola”, lo que realmente dice es: “alocarac aloh”). Para poder comunicarse con el\npaciente decide hacer un programa que traduzca lo que él dice al lenguaje del paciente. Implementar\ndicho programa."
+        },
+
+        "vectores":
+        {
+            "1": "Desarrolle un programa para que un usuario pueda llenar dos vectores de 18 elementos cada\nuno y almacenar el producto de estos en un tercer vector. Imprimir el tercer vector.",
+            "2": "El Instituto Leonardo Da Vinci, desea obtener las notas de todos los estudiantes del grado\n12do. Para esto, diseñe un programa que permita ingresarlas en un vector, determinar el\npromedio de las mismas y luego imprimirlas. Imprima también el promedio obtenido.",
+            "3": "Diseñar  un  programa  en  C++  que  lea  N temperaturas. El usuario debe ingresar  N\n(número total de temperaturas) y cada una de las temperaturas. El programa debe calcular\nsu media  y  encontrar  cuántas  temperaturas  son mayores o iguales a esa media"
+        },
+
+        "matrices":
+        {
+            "1": "Crear un array bidimensional de tamaño 7x7 y rellénalo de forma que los elementos de la\ndiagonal principal sean 1 y el resto 0. Muéstra el array por pantalla en forma de cuadrado.",
+            "2": "En la tienda María Shop desean crear un programa para conocer como han sido las ventas de cada\nuna de las últimas 4 semanas. Desarrolle un programa donde se ingresen en las ventas de cada día\nen una matriz 4x7 y luego determine e imprima\n\n\tEl total de ventas de cada semana.\n\tEl promedio de ventas de cada semana.\n\tCual semana fue la de mayor venta.",
+            "3": "Queremos almacenar en una matriz las notas de informática de los alumnos de secundaria de una\nescuela. Suponiendo que hay 4 grados distintos, 15 alumnos por grado, se pide:\n\n\tIngresar las notas que ha sacado cada alumno de cada grado.\n\tImprimir cuál es la nota promedio de cada grado.\n\tImprimir la mayor nota en general.\n\tImprimir todas las notas.\n\tImprimir cuántos alumnos aprobaron y cuántos reprobaron de cada grado."
+        },
+        
+        "estructuras":
+        {
+            "1": "Se requiere crear un programa con estrcturas para manejar la información de notas\nde un estudiante. Cree un struct llamada “estudiante”, calcula e imprime el promedio\nde las 5 calificaciones de un estudiante. ",
+            "2": "La información de todos los empleados de la empresa DATASYSTEM está almacenada\nen una variable de tipo struct llamada “empleado”. La información con que se\ncuenta de cada empleado es: nombre, sexo y sueldo.\nPor tanto se pide: Realizar un programa en C que lea en un array de estructuras los\ndatos de los N trabajadores de la empresa y que imprima los datos del empleado con\nmayor y menor salario. ",
+            "3": "El dueño del gimnasio “LYON GYM” desea automatizar la información de los deportistas\nque asisten a su gimnasio para realizar ejercicios. Los datos con que se cuenta de\ncada deportista es: nombre, edad, peso (kg), altura. Programa en C que permite\nregistrar un nuevo cliente del gimnasio e imprimir dichos datos. Nota: El peso se\nleerá en kg y se imprimirá su valor correspondiente en libras. "
+        },
+
+        "funciones":
+        {
+            "1": "Escribir un programa que reciba un numero del 1 al 12 desde el teclado y muestre el número de\ndías correspondiente al mes que corresponda con ese día (usar funciones).",
+            "2": "Diseñe un programa, que dada una cifra entera y mayor que cero, sea elevada a una potencia\nintroducida por el usuario, la cual. (Ejemplo: 5^2=25).  Emplee una Función llamada Potencia.",
+            "3": "Realizar una función llamada media3, que toma tres números reales como parámetros, y no devuelve\nnada. Esa función debe calcular la media de los tres números pasados como parámetros y mostrar\ncon un mensaje cuál es la media calculada."
+        },
+
+        "composicion":
+        {
+            "1": "Escribir una función que calcule el número de horas, minutos y segundos que hay en N segundos.\nEjemplo En 3601segundos equivale 1 hora 0 minutos 1 segundo.",
+            "2": "Construir un programa que permita leer 10 números enteros y determinar en cuántos de ellos\nse encuentra el dígito 1, sacar su promedio, número mayor.",
+            "3": "Un alumno desea saber cuál será su promedio general en las tres materias que cursa y cuál será\nel promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestran a\ncontinuación.\n\n\tLa calificación de materias se obtiene de la siguiente manera:  Examen 90%, Promedio de\n\tlas tareas 10%. En esta materia se pidió un total de tres tareas.\n\tLa calificación de física se obtiene de la siguiente manera: Examen: 80%. Promedio de\n\tlas tareas 10%. En esta materia se pidió un total de tres tareas.\n\tLa calificación de química se obtiene de la siguiente manera: Examen: 85%. Promedio de\n\tlas tareas 10%. En esta materia se pidió un total de tres tareas."
+        },
+
+        "procedimientos":
+        {
+            "1": "Escriba un programa que tome como entrada desde teclado dos números naturales (mayores\nque cero) \"N\" e \"i\", e imprima en pantalla el dígito que ocupa la posición i-ésima del número\nN. Si i es mayor que el número de dígitos de N, se escribirá en pantalla -1. Por ejemplo, para N\n= 25064 e i = 2, el resultado es el dígito 6, y para i = 7, el resultado es -1.",
+            "2": "Escribe un programa que acepte como entrada desde teclado un número natural mayor que cero\ny dé como salida el resultado de sumar dos a dos los dígitos que aparecen en posiciones\nsimétricas respecto al dígito central dentro del número dado como entrada. Por ejemplo :\npara el número : 2354869.\nla salida es: 2+9 = 11, 3 + 6 = 9, 5 + 8 = 13, 4\npara el número : 6582\nla salida es : 6 + 2 = 8, 5 + 8 = 13",
+            "3": "El máximo común divisor (mcd) de dos números naturales p y q es el mayor entero d que\ndivide a ambos. Un algoritmo muy conocido para calcularlo es el de Euclides. Éste utiliza\ndos variables, que contienen inicialmente a cada uno de los números, y trata de hacer que su\ncontenido sea el mismo. Para ello, irá restando la menor a la mayor hasta que ambas\ncontengan el mismo valor. En dicho momento, el valor obtenido en cualquiera de ellas es el\nmáximo común divisor de los dos números iniciales. Por ejemplo, si P = 18 y Q = 12, el\nalgoritmo hará que P y Q vayan tomando los siguientes valores:\nInicialmente P == 18 y Q == 12 (P > Q => P = P - Q)\nDespués P == 6 y Q == 12 (Q > P => Q = Q - P)\nDespués P == 6 y Q == 6 (P == Q => El mcd es 6)\nDiseña el algoritmo anterior siguiendo un enfoque recursivo:\nunsigned mcd(unsigned P, unsigned Q)."
+        }
+    }
+]

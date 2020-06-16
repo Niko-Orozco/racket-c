@@ -1,0 +1,45 @@
+.Compare {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  textarea {
+    align-self: end;
+  }
+}
+
+.Compare__text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.texts {
+  font-size: 15px;
+  background-color: rgba (255, 255, 255, 0.849);
+  color: #000000;
+  height: 110px;
+  width: 500px;
+  margin: 0px;
+}
+
+.texts2 {
+  font-size: 15px;
+  background-color: rgba (255, 255, 255, 0.849);
+  color: #000000;
+  height: 290px;
+  width: 250px;
+  margin: 0px;
+}
+
+.outline {
+  border: rgb(136, 136, 136) 1px solid;
+}
+
+.compiler__button {
+  padding-bottom: 10px;
+}

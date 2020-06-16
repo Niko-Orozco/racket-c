@@ -1,0 +1,29 @@
+
+.div-container {
+    overflow: scroll;
+    cursor: text;
+    min-height: 200px;
+    max-height: 350px;
+    border: gray 1px solid;
+}
+
+
+.code-container{
+    padding: 5px;
+}
+
+
+.code-container > div{
+    
+    float:left;
+    margin: 40px;
+    margin-bottom: 5px;
+}
+
+.code-containere{
+    padding: 50px;
+    float:left;
+    margin: 100px;
+    margin-bottom: 5px;
+}
+

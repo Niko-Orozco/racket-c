@@ -1,0 +1,61 @@
+.texts {
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: rgba (255, 255, 255, 0.849);
+  color: #000000;
+  padding: 1%;
+  height: 400px;
+}
+
+.p-align {
+  text-align: left;
+}
+
+.monaco-theme {
+  border: gray 1px solid;
+}
+
+.font-size {
+  font-size: 10%;
+}
+
+.compiler {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+
+  &--left {
+    align-items: flex-end;
+  }
+
+  &__editor {
+    text-align: left;
+    width: 100%;
+  }
+
+  &__output {
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+  }
+
+  &__input {
+    margin-top: 5px;
+    width: 100%;
+    height: 30px;
+  }
+  
+  &__button {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #275aac;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    align-items: flex-end;
+  }
+}

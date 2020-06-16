@@ -1,0 +1,574 @@
+[
+    {
+        "expresiones":
+        {
+            "1" : 
+            {
+                "codigo": ";Contruir un programa tal que nos muestre el \n;Perímetrona circunferencia\n(define (perimetro)\n\t(define radio 0)(define pi 3.141592)\n\t(printf \"Ingrese el radio: \")\n\t(set! radio (read))\n\t(printf \"El perimetro es: ~a\" (* (* 2  pi) radio))\n)\n\n(perimetro)"
+            },
+            "2" : 
+            {
+                "codigo": ";Contruir un programa tal que nos muestre el volumen de\n;un cubo\n(define (volumen)\n\t(define arista 0) (define volumen 0)\n\t(printf \"  Introduzca arista: \" )\n\t(set! arista (read))\n\t(set! volumen (expt arista 3)\n\t(printf\"  El volumen del cubo es: ~a\" volumen)\n)\n\n(volumen)"
+            },
+            "3" : 
+            {
+                "codigo": ";Determinar la hipotenusa de un triángulo rectángulo conocidas las\n;longitudes de sus dos catetos. Desarrolle el algoritmo correspondiente.\n(define (hipotenusa)\n\t(define cat1 0) (define cat2 0)\n\t(define hipo 0)\n\t(printf \"  Introduzca cateto 1: \")\n\t(set! cat1 (read))\n\t(printf \"  Introduzca cateto 2: \" )\t(set! cat2 (read))\n\t(set! hipo (sqrt (+ (expt cat1 2)  (expt cat2 2))))\n\t(printf \"  la hipotenusa es: ~a\" hipo)\n)\n\n(hipotenusa)"
+            },
+            "4" : 
+            {
+                "codigo": ";Suponiendo que el kilo de azúcar y de café están a 0'6 y 0'72\n;euros respectivamente, contruir un programa que:\n;1) Pida por teclado una cantidad en euros.\n;2) Si la mitad de la cantidad introducida se destina a comprar \n;   azúcar, una tercera parte a comprar café, y el resto no se gasta. \n;   Calcule cuántos kilos de azúcar y café (datos reales) se pueden \n;   comprar con dicha cantidad de dinero, así como la cantidad de \n;   dinero sobrante.\n(define coste_azucar 0.6)\n(define coste_cafe 0.72)\n(define (cafe)\n\t(define cantidad 0)(define kilos_azucar 0)(define kilos_cafe 0)\n\t(printf \"   Introduzca cantidad: \" )\n\t(set! cantidad (read))\n\t(set! kilos_azucar (/ (/ cantidad 2) coste_azucar))\n\t(set! kilos_cafe (/ (/ cantidad 3) coste_cafe))\n\t(set! cantidad (/ cantidad 6))\n\t(printf \"  ~a kilos de azuccar\" kilos_azucar)\n\t(printf \"  ~a kilos de cafec\" kilos_cafe)\n\t(printf \"  Quedan ~a euros\" cantidad)\n)\n\n(cafe)"
+            },
+            "5" : 
+            {
+                "codigo": ";Dada una cantidad expresada en pies, y otra en metros. Determinar \n;la suma pero convertida a pulgadas, a yardas, a metros y a millas \n;por separado. Considere las siguientes equivalencias:\n\n;1 milla = 1609 metros, 1 pulgada = 0.0254 metros, 1 yarda = 3 pies, \n;1 pie = 12 pulgadas.\n(define (metros) \n\t(define pul 0)(define yar 0)(define met 0)(define mil 0)(define pies 0)(define me 0)\n\t(printf \"Ingrese la cantidad expresada en pies: \")\n\t(set! pies (read))\n\t(printf \"Ingrese la cantidad expresada en metros: \")\n\t(set! me (read))\n\t(set! pul (+ (* pies 12) (/ me 0.0254)))\n\t(set! yar (+ (* pies 3) (* me 1.09361)))\n\t(set! met (+ (* pies 0.3045) me))\n\t(set! mil (+ (* pies 0.00019) (* me 0.00062)))\n\t(printf \"La suma en pulgadas es: ~a\" pul)\n\t(printf \"La suma en yardas es: ~a\" yar)\n\t(printf \"La suma en metros es: ~a\" met)\n\t(printf \"La suma en millas es: ~a\" mil)\n)\n\n(metros)"
+            },
+            "6" : 
+            {
+                "codigo": ";Dadas dos tanques llenos de agua cuyas capacidades están dadas en \n;litros y en yardas cúbicas. De la cantidad total de agua: el 75% se \n;dedica al consumo domestico y el 25% se dedica al riego. Diseñe un \n;programa que haga lo siguiente:\n;1)  Determine la cantidad total de agua expresada en metros cúbicos\n;   y en metros cúbicos.\n\n;2) Determine las cantidades de agua dedicada al riego y al consumo\n;   doméstico expresada en metros cúbicos y en pies cúbicos. Considere\n;   los siguientes factores de conversión:\n\n;1 pie cúbico = 0.0283 metros cúbicos, 1 metro cúbico = 1000 litros,\n;1 yarda cúbica = 27 pies cúbicos.\n(define (cubicos)\n\t(define m_c 0)(define li 0)(define y_c 0)(define p_c 0)(define r_m 0)(define r_p 0)\n\t(define c_m 0)(define c_p 0)\n\t(printf \"Ingrese la cantidad expresada en litros: \")\n\t(set! li (read))\n\t(printf \"Ingrese la cantidad expresada en Yardas cubicas: \")\n\t(set! y_c (read))\n\t(set! m_c ( li 1000))\n\t(set! p_c (/ m_c 0.0283))\n\t(set! r_m (* m_c 0.25))\n\t(set! c_m (* m_c 0.75))\n\t(set! r_p (* p_c 0.25))\n\t(set! c_p (* p_c 0.75))\n\t(printf \"La cantidad en metros cubicos es: ~a\" m_c)\n\t(printf \"La cantidad en yardas cubicos es: ~a\" p_c)\n\t(printf \"La cantidad que se usa para riego en metros cubicos es: ~a\" r_m)\n\t(printf \"La cantidad que se usa para el consumo domestico en metros cubicos es: ~a\" c_m)\n\t(printf \"La cantidad que se usa para riego en pies cubicos es: ~a\" r_p)\n\t(printf \"La cantidad que se usa para el consumo domestico en pies cubicos es: ~a\" c_p)\n)\n\n(cubicos)"
+            },
+            "1b" : 
+            {
+                "codigo": "//Contruir un programa tal que nos muestre el\n//Perímetrona circunferencia\n#include <stdio.h>\nint main(){\n\tfloat radio, pi = 3.141592;\n\tprintf(\"Ingrese el radio: \");\n\tscanf(\"%d\", &radio);\n\tprintf(\"El perimetro es: %d\", ((2 * pi)* radio));\n}"
+            },
+            "2b" : 
+            {
+                "codigo": "//Contruir un programa tal que nos muestre el volumen de\n//un cubo\n#include <math.h>\nint main(){\n\tfloat arista, volumen;\n\tprintf( \"  Introduzca arista: \" );\n\tscanf( \"%d\", &arista );\n\tvolumen = pow( arista, 3 );\n\tprintf( \"  El volumen del cubo es: %d\", volumen );\n}"
+            },
+            "3b" : 
+            {
+                "codigo": "//Determinar la hipotenusa de un triángulo rectángulo conocidas las \n//longitudes de sus dos catetos. Desarrolle el algoritmo correspondiente.\n#include <math.h>\nint main(){\n\tint cat1, cat2;\n\tfloat hipo;\n\tprintf( \"  Introduzca cateto 1: \" );\n\tscanf( \"%d\", &cat1 );\n\tprintf( \"  Introduzca cateto 2: \" );\n\tscanf( \"%d\", &cat2 );\n\thipo = sqrt(pow(cat1, 2) + pow(cat2, 2));\n\tprintf( \"  la hipotenusa es: %f\", hipo);\n}"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Suponiendo que el kilo de azúcar y de café están a 0'6 y 0'72\neuros respectivamente, contruir un programa que:\n1) Pida por teclado una cantidad en euros.\n2) Si la mitad de la cantidad introducida se destina a comprar \n\tazúcar, una tercera parte a comprar café, y el resto no se gasta. \n\tCalcule cuántos kilos de azúcar y café (datos reales) se pueden \n\tcomprar con dicha cantidad de dinero, así como la cantidad de \n\tdinero sobrante.*/\n#include <stdio.h>\n#define coste_azucar .6\n#define coste_cafe .72\nint main()\n{\n\tfloat cantidad, kilos_azucar, kilos_cafe;\n\tprintf( \"   Introduzca cantidad: \" );\n\tscanf( \"%f\", &cantidad );\n\tkilos_azucar = cantidad / 2 / coste_azucar;\n\tkilos_cafe = cantidad / 3 / coste_cafe;\n\tcantidad = cantidad / 6;\n\tprintf( \"   %.2f kilos de az%ccar\", kilos_azucar, 163 );\n\tprintf( \"  %.2f kilos de caf%c\", kilos_cafe, 130 );\n\tprintf( \"  Quedan %.2f euros\", cantidad );\n\treturn 0;\n}"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Dada una cantidad expresada en pies, y otra en metros. Determinar \nla suma pero convertida a pulgadas, a yardas, a metros y a millas \npor separado. Considere las siguientes equivalencias:\n1 milla = 1609 metros, 1 pulgada = 0.0254 metros, 1 yarda = 3 pies, \n1 pie = 12 pulgadas.*/\n#include <stdio.h>\nint main(){\n\tfloat pul, yar, met, mil, pies, me;\n\tprintf(\"Ingrese la cantidad expresada en pies: \");\n\tscanf(\"%f\", &pies);\n\tprintf(\"Ingrese la cantidad expresada en metros: \");\n\tscanf(\"%f\", &me);\n\tpul = (pies*12) + (me/0.0254);\n\tyar = (pies*3) + (me*1.09361);\n\tmet = (pies*0.3045) + me;\n\tmil = (pies*0.00019) + (me*0.00062);\n\tprintf(\"La suma en pulgadas es: %f\", &pul);\n\tprintf(\"La suma en yardas es: %f\", &yar);\n\tprintf(\"La suma en metros es: %f\", &met);\n\tprintf(\"La suma en millas es: %f\", &mil);\n}"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Dadas dos tanques llenos de agua cuyas capacidades están dadas en \nlitros y en yardas cúbicas. De la cantidad total de agua: el 75% se \ndedica al consumo domestico y el 25% se dedica al riego. Diseñe un \nprograma que haga lo siguiente:\n1)  Determine la cantidad total de agua expresada en metros cúbicos \n\ty en metros cúbicos.\n\n2) Determine las cantidades de agua dedicada al riego y al consumo \n\tdoméstico expresada en metros cúbicos y en pies cúbicos. Considere \n\tlos siguientes factores de conversión:\n\n1 pie cúbico = 0.0283 metros cúbicos, 1 metro cúbico = 1000 litros, \n1 yarda cúbica = 27 pies cúbicos.*/\n#include <stdio.h>\nint main(){\n\tfloat m_c, li, y_c, p_c, r_m, r_p, c_m, c_p;\n\tprintf(\"Ingrese la cantidad expresada en litros: \");\n\tscanf(\"%f\", &li);\n\tprintf(\"Ingrese la cantidad expresada en Yardas cubicas: \");\n\tscanf(\"%f\", &y_c);\n\tm_c = li/1000;\n\tp_c = m_c/0.0283;\n\tr_m = m_c*0.25;\n\tc_m = m_c*0.75;\n\tr_p = p_c*0.25;\n\tc_p = p_c*0.75;\n\tprintf(\"La cantidad en metros cubicos es: %f\", m_c);\n\tprintf(\"La cantidad en yardas cubicos es: %f\", p_c);\n\tprintf(\"La cantidad que se usa para riego en metros cubicos es: %f\", r_m);\n\tprintf(\"La cantidad que se usa para el consumo domestico en metros cubicos es: %f\", c_m);\n\tprintf(\"La cantidad que se usa para riego en pies cubicos es: %f\", r_p);\n\tprintf(\"La cantidad que se usa para el consumo domestico en pies cubicos es: %f\", c_p);\n}"
+            }
+        },
+
+        "secuencia":
+        {
+            "1" : 
+            {
+                "codigo": ";Cree e inicialice con cualquier dato del mismo tipo:\n;-2 variables del tipo de dato entero.\n;-1 variable de tipo de dato char.\n;Una vez inicialidos todos los datos sume los dos enteros y \n;almacenelos en una variable.\n(define (main)\n\t(define variable1 0)(define  variable2 0)\n\t(set! variable1 5)\n\t(set! variable2 8)\n\t(define caracter \"h\")\n\t(define suma (+ variable1 variable2))\n)\n\n(main)"
+            },
+            "2" : 
+            {
+                "codigo": ";Cree un programa en Racket, que secuencialmente simule una llamada \n;telefonica. A partir de mensajes muestre como seria el proceso, \n;también capture el número que el usuario quiera marcar. Nota: \n;Para imprimir mensajes y recibir datos por pantalla se usa printf \n(define (llamada)\n\t(define  telefono 0)\n\t(printf \"*TELEFONO*\\n\")\n\t(printf \"\\nDescuelgue el telefono. \")\n\t(printf \"\\nIngrese el telefono a marcar: \")\n\t(set! telefono (read))\n\t(printf \"\\nProcesando\")\n\t(printf \"\\n\\nEsta marcando al numero: ~a\" telefono)\n\t(printf \"\\nConversacion en curso.\")\n\t(printf \"\\nPulse una tecla si desea finalizar la llamada.\")\n\t(printf \"\\nLLAMADA FINALIZADA\")\n)\n\n(llamada)"
+            },
+            "3" : 
+            {
+                "codigo": ";Capture un dato de tipo entero por consola, el programa debe \n;enviar un mensaje antes de capturar y luego de capturar el \n;número.\n;Recuerde: Para capturar un dato, se debe tener una variable del\n;tipo de dato que se desee, en este caso un entero.\n;Asi: Tipo_dato Nombre_variable;\n(define (TipoDato)\n\t(define numero 0)\n\t(printf \"***Vamos a ingresar el numero.***\")\n\t(printf \"\\nIngrese el numero: \")\n\t(set! numero (read))\n\t(printf \"\\n***El numero fue ingresado.***\")\n\t(printf \"\\nEl numero fue: ~a\" numero)\n)\n\n(TipoDato)"
+            },
+            "4" : 
+            {
+                "codigo": ";Cree un programa en racket que calcule el area de un triangulo,\n;de acuerdo a una base y una altura arrojada por el usuario.\n;Nota: Use variables de tipo flotante.\n(define (areaTriangulo)\n\t(define base 0)(define altura 0)(define area 0)\n\t(printf \"AREA DE UN TRIANGULO:\\nBASE: \")\n\t(set! base (read))\n\t(printf \"\\nALTURA: \")\n\t(set! altura (read))\n\t(set! area (/ (* base altura) 2))\n\t(printf \"\\n\\nEl area del triangulo es: ~a\" area)\n)\n\n(areaTriangulo)"
+            },
+            "5" : 
+            {
+                "codigo": ";Implemente un programa en Racket que calcule el volumen de un cilindro.\n;El usuario es quien digita el radio y altura de este.\n;Trabaje PI como una constante.\n;Nota: El volumen de un cilindro esta dado por: v=Pi*r^2*h.\n;*El volumen es igual a el número pi multiplicado por el cuadrado\n;del radio del cilindro y a su vez multiplicado por la altura del \n;cilindro.\n(define PI 3.1416)\n(define (volumenCilindro)\n\t(define r 0)(define h 0)\n\t(define v 0)\n\t(printf \"VOLUMEN DE UN CILINDRO:\\nRADIO: \")\n\t(set! r (read))\n\t(printf \"\\nALTURA: \")\n\t(set! h (read))\n\tv=PI*r*r*h\n\t(printf \"\\n\\nEl volumen del cilindro con radio ~a y altura ~a es: ~a\" r h v)\n)\n\n(volumenCilindro)"
+            },
+            "6" : 
+            {
+                "codigo": ";Con un programa en Racket, calcule la diagonal de un rectangulo que el \n;usuario sea quien define el tamaño de los lados.\n;Nota: La diagonal de un rectangulo esta dada por la raiz cuadrada\n;del la suma de sus dos lados al cuadrado. Por lo que necesitaremos\n;una libreria para las funciones matematicas. Esta libreria es math.h\n;contiene la función sqrt para la raiz cuadrada.\n(define (diagonalRactangulo)\n\t(define lado1 0)(define lado2 0)\n\t(define diagonal 0)\n\t(printf \"DIAGONAL DE UN RECTANGULO:\\nLADO 1: \")\n\t(set! lado1 (read))\n\t(printf \"LADO 2: \")\n\t(set! lado2 (read))\n\t(set! diagonal (sqrt (+ (* lado1 lado1) (* lado2 lado2))))\n\t(printf \"\\nLa diagonal para el rectangulo de lados ~ax~a es: ~a\" lado1 lado2 diagonal)\n)\n\n(diagonalRactangulo)"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Cree e inicialice con cualquier dato del mismo tipo:\n-2 variables del tipo de dato entero.\n-1 variable de tipo de dato char.\nUna vez inicialidos todos los datos sume los dos enteros y\nalmacenelos en una variable.*/\nint main(){\n\tint variable1, variable2;\n\tvariable1=5;\n\tvariable2=8;\n\tchar caracter='h';\n\tint suma = variable1+variable2;\n}"
+            },
+            "2b" : 
+            {
+                "codigo": "/*Cree un programa en C, que secuencialmente simule una llamada\ntelefonica. A partir de mensajes muestre como seria el proceso,\ntambién capture el número que el usuario quiera marcar. Nota:\nPara imprimir mensajes y recibir datos por pantalla se usa printf\ny scanf respectivamente, funciones provenientes de la libreria \nstdio.h, dicha libreria debe ser importada.\nEn c se importan librerias asi:*/\n#include <stdio.h>\nint main(){\n\tlong telefono=0;\n\tprintf(\"*TELEFONO*\\n\");\n\tprintf(\"\\nDescuelgue el telefono. \");\n\tprintf(\"\\nIngrese el telefono a marcar: \");\n\tscanf(\"%ld\", &telefono);\n\tprintf(\"\\nProcesando\");\n\tprintf(\"\\n\\nEsta marcando al numero: %ld\", telefono);\n\tprintf(\"\\nConversacion en curso.\");\n\tprintf(\"\\nPulse una tecla si desea finalizar la llamada. \\n\");\n\tsystem(\"pause\");\n\tprintf(\"\\nLLAMADA FINALIZADA\");\n}"
+            },
+            "3b" : 
+            {
+                "codigo": "/*Capture un dato de tipo entero por consola, el programa debe\nenviar un mensaje antes de capturar y luego de capturar el \nnúmero.\nRecuerde: Para capturar un dato, se debe tener una variable del\ntipo de dato que se desee, en este caso un entero.\nAsi: Tipo_dato Nombre_variable;*/\n#include <stdio.h>\nint main(){\n\tint numero;\n\tprintf(\"***Vamos a ingresar el numero.***\");\n\tprintf(\"\\nIngrese el numero: \");\n\tscanf(\"%d\", &numero);\n\tprintf(\"\\n***El numero fue ingresado.***\");\n\tprintf(\"\\nEl numero fue: %d\", numero);\n}"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Cree un programa en c que calcule el area de un triangulo, \nde acuerdo a una base y una altura arrojada por el usuario.\nNota: Use variables de tipo flotante.*/\n#include <stdio.h>\nint main(){\n\tfloat base=0, altura=0, area=0;\n\tprintf(\"AREA DE UN TRIANGULO:\\nBASE: \");\n\tscanf(\"%f\", &base);\n\tprintf(\"ALTURA: \");\n\tscanf(\"%f\", &altura);\n\tarea=(base*altura)/2;\n\tprintf(\"\\n\\nEl area del triangulo es: %.2f\", area);\n}"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Implemente un programa en c que calcule el volumen de un cilindro.\nEl usuario es quien digita el radio y altura de este.\nTrabaje PI como una constante.\nNota: El volumen de un cilindro esta dado por: v=Pi*r^2*h.\n*El volumen es igual a el número pi multiplicado por el cuadrado\ndel radio del cilindro y a su vez multiplicado por la altura del \ncilindro.*/\n#include <stdio.h>\n#define PI 3.1416\nint main(){\n\tint r=0,h=0;\n\tfloat v;\n\tprintf(\"VOLUMEN DE UN CILINDRO:\\nRADIO: \");\n\tscanf(\"%d\", &r);\n\tprintf(\"ALTURA: \");\n\tscanf(\"%d\", &h);\n\tv=PI*r*r*h;\n\tprintf(\"\\n\\nEl volumen del cilindro con radio %d y altura %d es: %.2f\", r, h, v);\n}"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Con un programa en c, calcule la diagonal de un rectangulo que el \nusuario sea quien define el tamaño de los lados.\nNota: La diagonal de un rectangulo esta dada por la raiz cuadrada\ndel la suma de sus dos lados al cuadrado. Por lo que necesitaremos\nuna libreria para las funciones matematicas. Esta libreria es math.h\ncontiene la función sqrt para la raiz cuadrada.*/\n#include <stdio.h>\n#include <math.h>\nint main(){\n\tint lado1=0, lado2=0;\n\tfloat diagonal=0;\n\tprintf(\"DIAGONAL DE UN RECTANGULO:\\nLADO 1: \");\n\tscanf(\"%d\", &lado1);\n\tprintf(\"LADO 2: \");\n\tscanf(\"%d\", &lado2);\n\tdiagonal=sqrt(lado1*lado1 + lado2*lado2);\n\tprintf(\"\\n\\nLa diagonal para el rectangulo de lados %dx%d es: %.2f\", lado1, lado2, diagonal);\n}"
+            }
+        },
+
+        "condicionales":
+        {
+            "1" : 
+            {
+                "codigo":";Escribir un programa que detecte si un número introducido\n;desde el teclado es positivo o negativo.\n(define (main num)\n\t(if (< num 0)\n\t\t(printf \"Numero negativo: ~a\" num)\n\t\t(printf \"Numero positivo: ~a\" num)\n\t)\n)\n\n(main (read))"
+            },
+            "2" : 
+            {
+                "codigo":";Escribir un programa que lea tres números por teclado y nos diga \n;cuál es el mayor.\n(define (Mayor? num1 num2 num3)\n\t(if (and (> num1 num2) (> num1 num3))\n\t\t(printf \"El número mayor es: ~a\" num1)\n\t)\n\t(if (and (> num2 num1) (> num2 num3))\n\t\t(printf \"El número mayor es: ~a\" num2)\n\t)\n\t(if (and (> num3 num1) (> num3 num2))\n\t\t(printf \"El número mayor es: ~a\" num3)\n\t)\n)\n\n(Mayor? (read) (read) (read))"
+            },
+            "3" : 
+            {
+                "codigo":";Escribir un programa que nos diga si un estudiante  aprobó la \n;materia, el programa debe realizar los cálculos en función de \n;los siguientes criterios.\n;a. Apruba si las tres notas suman  3.5 o mas\n;b. Presenta pruba de validacion si la nota estan entre 3 y 3.4\n;c. Reprueba si la nota es menor a 3\n(define (aprobo? nota)\n\t(if (>= nota 3.5)\n\t\t(printf \"Aprobó la materia\")\n\t\t(if (and (>= nota 3) (< nota 3.4))\n\t\t\t(printf \"Presenta prueba de validación\")\n\t\t\t(if (and (>= nota 0) (< nota 3))\n\t\t\t\t(printf \"Reprobó la materia\")\n\t\t\t\t(printf \"ingrese una nota valida\")\n\t\t\t)\n\t\t)\n\t)\n)\n\n(aprobo? (read))"
+            },
+            "4" : 
+            {
+                "codigo":";Escribir un programa que muestre un menú donde las opciones sean \n;“Equilátero”, “Isósceles” y “Escaleno”, pida una opción y calcule \n;el perímetro del triángulo seleccionado.\n(define (perimetro)\n\t(printf \"1. Equilátero\")\n\t(printf \"2. Isósceles\")\n\t(printf \"3. Escaleno\")\n\t(define opc (read))\n\t(cond\n\t\t[(= opc 1)(printf \"Ingrese el lado: \")\n\t\t\t(printf \"perimetro: ~a\" (* 3 (read)))]\n\t\t[(= opc 2)(printf \"Ingrese el lado y la base: \")\n\t\t\t(printf \"perimetro: ~a\" (+ (* 2 (read)) (read)))]\n\t\t[(= opc 3)(printf \"Ingrese los 3 lados: \")\n\t\t\t(printf \"perimetro: ~a\" (+(+ (read)(read))(read)))]\n\t\t[else (printf \"Ingrese una opción valida\")]\n\t)\n)\n\n(perimetro)"
+            },
+            "5" : 
+            {
+                "codigo":";Escribir un programa que nos muestre un menu con las opciones de:\n;1.  Dia  corespondiente,  2. listar  dias,  crear  las  funciones\n;respectivas  a  las  opciones.\n(define (dias)\n\t(printf \"Seleccione una opción\")\n\t(printf \"1. Dia corespondiente\")\n\t(printf \"2. listar dias\")\n\t(define opc (read))\n\t(cond\n\t\t[(= opc 1) (printf \"ingrese un numero entre 1 y 7: \")(define (dia (read)))\n\t\t\t(cond\n\t\t\t\t[(= opc 1)(printf \"Lunes\")]\n\t\t\t\t[(= opc 2)(printf \"Martes\")]\n\t\t\t\t[(= opc 3)(printf \"Miercoles\")]\n\t\t\t\t[(= opc 4)(printf \"Jueves\")]\n\t\t\t\t[(= opc 5)(printf \"Viernes\")]\n\t\t\t\t[(= opc 6)(printf \"Sabado\")]\n\t\t\t\t[(= opc 7)(printf \"Domingo\")]\n\t\t\t\t[else (printf \"Ingrese una opción valida\")]\n\t\t\t)\n\t\t]\n\t\t[(= opc 2)\n\t\t\t(printf \"Lunes\")\n\t\t\t(printf \"Martes\")\n\t\t\t(printf \"Miercoles\")\n\t\t\t(printf \"Jueves\")\n\t\t\t(printf \"Viernes\")\n\t\t\t(printf \"Sabado\")\n\t\t\t(printf \"Domingo\")\n\t\t]\n\t\t[else (printf \"Ingrese una opción valida\")]\n\t)\n)\n\n(dias)"
+            },
+            "6" : 
+            {
+                "codigo":";Escribir un programa que calcule el sueldo que le corresponde al \n;trabajador de una empresa que cobra 40.000  dólares  anuales, el \n;programa debe realizar los cálculos en función de los siguientes \n;criterios.\n;a.Si lleva más de 15 años en la empresa obtiene un aumento del 12%.\n;b.Si lleva más de 10  y menos de 15 años obtiene un aumento del 8%.\n;c.Si lleva más de  5  y menos de 10 años obtiene un aumento del 5%.\n;d.  Si lleva menos de 5 años se le aplica un aumento del 3%.\n(define (salario)\n\t(printf \"seleccione una opcion\")\n\t(printf \"1. Calcular sueldo anual\")\n\t(printf \"2. Ver aumentos anuales\")\n\t(define opc (read))\n\t(printf \"Ingrese la cantidad de años que lleva en la empresa\")\n\t(define anios (read))\n\t(cond\n\t\t[(= opc 1)\n\t\t\t(if (> anios 15)\n\t\t\t\t(printf \"Salario anual de: ~a\" (+ (* 40000 1.2) 40000))\n\t\t\t\t(if (and (< anios 15) (> anios 10))\n\t\t\t\t(printf \"Salario anual de: ~a\" (+ (* 40000 0.8) 40000))\n\t\t\t\t(if (and (< anios 10) (> anios 5))\n\t\t\t\t\t(printf \"Salario anual de: ~a\" (+ (* 40000 0.5) 40000))\n\t\t\t\t\t(if (and (< anios 5) (> anios 0))\n\t\t\t\t\t(printf \"Salario anual de: ~a\" (+ (* 40000 0.3) 40000))\n\t\t\t\t\t(printf \"Ingrese una año valido\")\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t]\n\t\t[(= opc 2)\n\t\t\t(printf \"Si lleva más de 15 años en la empresa 12%\")\n\t\t\t(printf \"Si lleva menos de 15 pero más de 10 años 8%\")\n\t\t\t(printf \"Si lleva menos de 10 pero más de 5 años 5%\")\n\t\t\t(printf \"Si lleva menos de 5 años 3%\")\n\t\t]\n\t\t[else (printf \"Ingrese una opción valida\")]\n\t)\n)\n\n(salario)"
+            },
+            "1b" : 
+            {
+                "codigo":"//Escribir un programa que detecte si un número introducido\n//desde el teclado es positivo o negativo.\nint main (){\n\tint num;\n\tscanf(\"%d\", &num);\n\tif (num < 0){\n\t\tprintf (\"Numero negativo: %d\", num);\n\t\tprintf (\"Numero positivo: %d\", num);\n\t}\n}\n"
+            },
+            "2b" : 
+            {
+                "codigo":"//Escribir un programa que lea tres números por teclado y nos diga //cuál es el mayor.int main(){\n\tint num1, num2, num3;\n\tscanf(\"%d %d %d\", num1, num2, num3);\n\tif((num1 > num2) && (num1 > num3)){\n\t\tprintf (\"El número mayor es: %d\", num1);\n\t}\n\tif((num2 > num1) && (num2 > num3)){\n\t\tprintf (\"El número mayor es: %d\", num2);\n\t}\n\tif((num1 > num2) && (num1 > num3)){\n\t\tprintf (\"El número mayor es: %d\", num3);\n\t}\n}"
+            },
+            "3b" : 
+            {
+                "codigo":"//Escribir un programa que nos diga si un estudiante  aprobó la\n //materia, el programa debe realizar los cálculos en función de\n//los siguientes criterios.\n//a. Apruba si las tres notas suman  3.5 o mas\n//b. Presenta pruba de validacion si la nota estan entre 3 y 3.4\n//c. Reprueba si la nota es menor a 3\n#include <stdio.h>\nint main()\n{\n\tint nota;\n\tprintf(\"ingrese la nota: \");\n\tscanf(\"%s\", &nota);\n\tif(nota >= 3.5){\n\t\tprintf (\"Aprobó la materia\");\n\t}else{\n\t\tif ((nota >= 3) && (nota < 3.4)){\n\t\t\tprintf (\"Presenta prueba de validación\");\n\t\t}else{\n\t\t\tif ((nota >= 0) && (nota < 3)){\n\t\t\t\tprintf (\"Reprobó la materia\");\n\t\t\t}else{\n\t\t\t\tprintf (\"ingrese una nota valida\");\n\t\t\t}\n\t\t}\n\t}\n}\n"
+            },
+            "4b" : 
+            {
+                "codigo":"//Escribir un programa que muestre un menú donde las opciones sean \n//“Equilátero”, “Isósceles” y “Escaleno”, pida una opción y calcule \n//el perímetro del triángulo seleccionado.\n#include <stdio.h>\n#include <stdlib.h>\nint main()\n{\n\tint lado, lado2, lado3, base, opcion;\n\tprintf(\"Seleccione opción:\");\n\tprintf(\"1 – Equilátero\");\n\tprintf(\"2 – Isósceles\");\n\tprintf(\"3 – Escaleno\");\n\tscanf(\"%d\",&opcion);\n\tswitch (opcion)\n\t{\n\t\tcase 1:\n\t\t\tprintf(\"Introduzca lado del triángulo:\");\n\t\t\tscanf(\"%d\",&lado);\n\t\t\tprintf(\"El perímetro es: %d\",3*lado);\n\t\t\tbreak;\n\t\tcase 2:\n\t\t\tprintf(\"Ingrese el lado y la base: \");\n\t\t\tscanf(\"%d %d\", &lado, &base);\n\t\t\tprintf(\"El perímetro es: %d\",(2*lado)+base);\n\t\t\tbreak;\n\t\tcase 3:\n\t\t\tprintf (\"Ingrese los 3 lados: \");\n\t\t\tscanf(\"%d %d %d\", &lado, &lado2, &lado3);\n\t\t\tprintf(\"perimetro: %d\", (lado3 + (lado + lado2)));\n\t\t\tbreak;\n\t\tdefault:\n\t\t\tprintf(\"Opción no válida.\");\n\t\t\tbreak;\n\t}\n}\n"
+            },
+            "5b" : 
+            {
+                "codigo":"//Escribir un programa que nos muestre un menu con las opciones de:\n//1.  Dia  corespondiente,  2. listar  dias,  crear  las  funciones\n//respectivas  a  las  opciones.\n#include <stdio.h>\n#include <stdlib.h>\nint main()\n{\n\tint opcion, dia;\n\tprintf(\"1. Dia corespondiente\");\n\tprintf(\"2. listar dias\");\n\tswitch (opcion)\n\t{\n\t\tcase 1: printf(\"ingrese un numero entre 1 y 7: \");\n\t\t\tswitch (dia)\n\t\t\t{\n\t\t\tcase 1:\n\t\t\t\tprintf(\"Lunes\");\n\t\t\t\tbreak;\n\t\t\tcase 2:\n\t\t\t\tprintf(\"Martes\");\n\t\t\t\tbreak;\n\t\t\tcase 3:\n\t\t\t\tprintf(\"Miercoles\");\n\t\t\t\tbreak;\n\t\t\tcase 4:\n\t\t\t\tprintf(\"Jueves\");\n\t\t\t\tbreak;\n\t\t\tcase 5:\n\t\t\t\tprintf(\"Viernes\");\n\t\t\t\tbreak;\n\t\t\tcase 6:\n\t\t\t\tprintf(\"Sabado\");\n\t\t\t\tbreak;\n\t\t\tcase 7:\n\t\t\t\tprintf(\"Domingo\");\n\t\t\t\tbreak;\n\t\t\tdefault:\n\t\t\t\tprintf(\"Ingrese una opción valida\");\n\t\t\t\tbreak;\n\t\t\t}\n\t\t\tbreak;\n\t\tcase 2:\n\t\t\tprintf(\"Lunes\");\nt\t\tprintf(\"Martes\");\n\t\t\tprintf(\"Miercoles\");\n\t\t\tprintf(\"Jueves\");\n\t\t\tprintf(\"Viernes\");\n\t\t\tprintf(\"Sabado\");\n\t\t\tprintf(\"Domingo\");\n\t\t\tbreak;\n\t\tdefault:\n\t\t\tprintf(\"Ingrese una opción valida\");\n\t\t\tbreak;\n\t}\n}"
+            },
+            "6b" : 
+            {
+                "codigo":"//Escribir un programa que calcule el sueldo que le corresponde al \n//trabajador de una empresa que cobra 40.000  dólares  anuales, el \n//programa debe realizar los cálculos en función de los siguientes \n//criterios.\n//a.Si lleva más de 15 años en la empresa obtiene un aumento del 12%.\n//b.Si lleva más de 10  y menos de 15 años obtiene un aumento del 8%.\n//c.Si lleva más de  5  y menos de 10 años obtiene un aumento del 5%.\n//d.  Si lleva menos de 5 años se le aplica un aumento del 3%.\n#include <stdio.h>\n#include <stdlib.h>\nint main()\n{\n\tint anios, opcion;\n\tprintf(\"Seleccione opción:\");\n\tprintf(\"1. Calcular sueldo anual\");\n\tprintf(\"2. Ver aumentos anuales\");\n\tscanf(\"%d\",&opcion);\n\tswitch (opcion)\n\t{\n\t\tcase 1:\n\t\t\tif (anios > 15){\n\t\t\t\tprintf (\"Salario anual de: ~a\" ((40000 * 1.2) + 40000));\n\t\t\t}else{\n\t\t\t\tif ((anios < 15) && (anios > 10)){\n\t\t\t\t\tprintf (\"Salario anual de: ~a\" ((40000 * 0.8) + 40000));\n\t\t\t\t}else{\n\t\t\t\t\tif ((anios < 10) && (anios > 5)){\n\t\t\t\t\t\tprintf (\"Salario anual de: ~a\" ((40000 * 0.5) + 40000));\n\t\t\t\t\t}else{\n\t\t\t\t\t\tif ((anios < 5) && (anios > 0)){\n\t\t\t\t\t\t\tprintf (\"Salario anual de: ~a\" ((40000 * 0.3) + 40000));\n\t\t\t\t\t\t}else{\n\t\t\t\t\t\t\tprintf (\"Ingrese una año valido\");\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tbreak;\n\t\tcase 2:\n\t\t\tprintf (\"Si lleva más de 15 años en la empresa 12%\");\n\t\t\tprintf (\"Si lleva menos de 15 pero más de 10 años 8%\");\n\t\t\tprintf (\"Si lleva menos de 10 pero más de 5 años 5%\");\n\t\t\tprintf (\"Si lleva menos de 5 años 3%\");\n\t\t\tbreak;\n\t\t\tdefault:\n\t\t\tprintf(\"Opción no válida.\");\n\t\t\tbreak;\n}\n}"
+            } 
+        },
+
+        "ciclos":
+        {
+            "1" : 
+            {
+                "codigo": ";Construir un programa que muestre los números  del 1 hasta\n;el 10 utilizando la estructira de iteracion for\n(define (numeros)\n\t(for ([contador (in-range 1 11 1)])\n\t\t(printf \"\\n~a\" contador)\n\t)\n)\n(numeros)\n"
+            },
+            "2" : 
+            {
+                "codigo": ";Construir un programa que  imprima por pantalla la siguiente secuencia:\n;0 1 2 3 4\n;0 1 2 3 4\n;0 1 2 3 4\n;0 1 2 3 4\n;Como restriccion \n(define (secuencia)\n\t(for ([i (in-range 0 5 1)])\n\t\t(for ([j (in-range 0 5 1)])\n\t\t\t(printf \" ~a\" j)\n\t\t)\n\t\t(printf \"\\n\")\n\t)\n)\n(secuencia)"
+            },
+            "3" : 
+            {
+                "codigo": ";Calcular la suma de los números pares e impares comprendidos entre 1 y n.\n (define (suma)\n\t(define c 1)(define par 0)(define impar 0)\n\t(printf \"Ingrese la cantidad de numeros a sumas: \")\n\t(define num (read))\n\t(while (< c num)\n\t\t(if (= (remainder c 2) 0)\n\t\t\t(set! par (+ par c))\n\t\t\t(set! impar (+ impar c))\n\t\t)\t\t\n\t\t(set! c (+ c 1))\n\t)\n\t(printf \"Suma de pares: ~a\" par)\n\t(printf \"Suma de impares: ~a\" impar)\n)\n(suma)"
+            },
+            "4" : 
+            {
+                "codigo": ";Diseñar e implementar un programa que solicite a su usuario un valor no\n;negativo n y visualice la siguiente salida:\n;1 2 3 … n-1 n\n;1 2 3 … n-1\n;….\n;1 \n(define (decremento)\n\t(define k 1)(define i (read))\n\t(while (>= i  1)\n\t\t(set! k 1)\n\t\t(while (<= k i)\n\t\t\t(printf \" ~a\" k)\n\t\t\t(set! k (+ k 1))\n\t\t)\n\t\t(set! i (- i 1))\n\t)\n)\n(decremento)"
+            },
+            "5" : 
+            {
+                "codigo": ";Los padres de una niña le prometieron darle 10 dólares cuando cumpliera 12\n;años de edad y duplicar el regalo en cada cumpleaños subsiguiente hasta que\n;el regalo excediera 1000 dólares. Escriba un programa para determinar qué \n;edad tendrá la niña cuando se le dé la última cantidad y la cantidad total \n;recibida.\n(define (dinero)\n\t(define edad 12)(define d 10)(define total 10)(define i 0)\n\t(printf \"Calculo del dinero recibido: \")\n\t(do ((i 1 (+ i 1))) ((< total 1000))\n\t\t(set! d (* d 2))\n\t\t(set! total (+ total d))\n\t\t(set! edad (+ edad 1))\n\t)\n\t(printf \"Edad: ~a\", edad)\n\t(printf \"Dinero recibido: ~a\" d)\n\t(printf \"Total recibido: ~a\" total)\n)\n(dinero)"
+            },
+            "6" : 
+            {
+                "codigo": ";Construir un programa que calcule y visualice el siguiente esquema\n;1! + 2! + 3! + … + (n – 1)! + n!\n(define (factoriales)\n\t(define i = 1)(define m = 0)\n\t(define fact 0)(define suma 0)\n\t(printf \"Ingrese el valor de n: \")\n\t(define suma (read))\n\t(do ((i 1 (+ i 1))) ((<= i n))\n\t\t(set! fact 1)\n\t\t(set! m = i)\n\t\t(while (> m 1)\n\t\t\t(set! fact (* fact m))\n\t\t\t(set! m (- m 1))\n\t\t)\n\t\t(set! suma (+ suma fact))\n\t\t(printf \"\\t ~a! = ~a \" i fact)\n\t\t(set! i (+ i 1))\n\t)\n\t(printf \"\\tsuma = ~a\" suma)\n)\n(factoriales)"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Construir un programa que muestre los números  del 1 hasta\nel 10 utilizando la estructira de iteracion for*/\n#include <stdio.h>\nint main(){\n\tint contador=0;\n\tfor( contador=1; contador<11 ; contador++ ) {\n\t\tprintf(\"\\n%d\",contador);\n\t}\n\treturn 0;\n}"
+            },
+            "2b" : 
+            {
+                "codigo": "/*Construir un programa que  imprima por pantalla la siguiente secuencia:\n0 1 2 3 4\n0 1 2 3 4\n0 1 2 3 4\n0 1 2 3 4\nComo restriccion */\n#include <stdio.h>\nint main(){\n\tfor (int i = 0; i<5; i++){\n\t\tfor (int j=0; j<5; j++){\n\t\t\tprintf(\"%d\", j);\n\t\t}\n\t\tprintf(\"\\n\");\n\t}\n}\n"
+            },
+            "3b" : 
+            {
+                "codigo": "//Calcular la suma de los números pares e impares comprendidos entre 1 y n.\n#include <stdio.h>\nint main(){\n \tint num, c = 1, par = 0, impar = 0;\n\tprintf(\"Ingrese la cantidad de numeros a sumas: \");\n\tscanf(\"%d\", &num);\n\twhile (c < num){\n\t\tif(c % 2 == 0){\n\t\t\tpar += c;\n\t\t}else{\n\t\t\timpar += c;\n\t\t}\n\t\t\tc++;\n\t}\n\tprintf(\"Suma de pares: %d\", par);\n\tprintf(\"Suma de impares: %d\", impar);\n}\n"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Diseñar e implementar un programa que solicite a su usuario un valor no\nnegativo n y visualice la siguiente salida:\n1 2 3 … n-1 n\n1 2 3 … n-1\n ….\n1 */\n#include <stdio.h>\nvoid main(void){\n\tint k, i;\n\tprintf(\"Introduzca un valor entero:\");\n\tscanf(\"%d\",&i);\n\twhile(i >= 1){\n\t\tk = 1;\n\t\twhile(k <= i){\n\t\t\tprintf(\"%d\\t\",k);\n\t\t\tk++;\n\t\t}\n\t\ti--;\n\t}\n}\n"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Los padres de una niña le prometieron darle 10 dólares cuando cumpliera 12\naños de edad y duplicar el regalo en cada cumpleaños subsiguiente hasta que\nel regalo excediera 1000 dólares. Escriba un programa para determinar qué \nedad tendrá la niña cuando se le dé la última cantidad y la cantidad total \nrecibida.*/\n#include <stdio.h>\nint main(){\n\tint edad = 12, d = 10, total = 10;\n\tprintf(\"Calculo del dinero recibido: \");\n\tdo{\n\t\td = d * 2;\n\t\ttotal += d;\n\t\tedad++;\n\t}while(total < 1000);\n\tprintf(\"Edad: %d\", edad);\n\tprintf(\"Dinero recibido: %d\", d);\n\tprintf(\"Total recibido: %d\", total);\n}\n"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Construir un programa que calcule y visualice el siguiente esquema\n1! + 2! + 3! + … + (n – 1)! + n!*/\n#include <stdio.h>\nvoid main(void){\n\tint n, i = 1, m;\n\tfloat fact, suma = 0;\n\tprintf(\"Ingrese el valor de n: \");\n\tscanf(\"%d\",&n);\n\tdo{\n\t\tfact = 1;\n\t\tm = i;\n\t\twhile(m > 1){\n\t\t\tfact *= m;\n\t\t\tm--;\n\t\t}\n\t\tsuma+=fact;\n\t\tprintf(\"\\t %d! = %0.f\",i,fact);\n\t\ti++;\n\t}while(i <= n);\n\tprintf(\"\\tsuma = %0.f\",suma);\n} \n"
+            }
+        },
+
+        "cadenas":
+        {
+            "1" : 
+            {
+                "codigo": ";Cree en programa que capture una cadena y luego\n;convierta cada uno de los caracteres a letras mayúsculas.\n(define (cadena)\n\t(define cad \"\")\n\t(define cadMayus \"\")\n\t(printf \"Ingrese una cadena:  \")\n\t(set! cad (string-copy (read)))\n\t(set! cadMayus (string-upcase cad))\n\t(printf \"\\nLa cadena en mayusculas es: ~a\" cadMayus)\n)\n\n(cadena)"
+            },
+            "2" : 
+            {
+                "codigo": ";Construya un programa en racket que capture una cadena y almacene\n;en otra variable la cadena invertida.\n(define (reverse)\n\t(define cad \"\")\n\t(define cadReverse \"\")\n\t(printf \"Ingrese una cadena de caracteres: \")\n\t(set! cad (read))\n\t(deifne tam (string-length cad))\n\t(for ([i (in-range 0 (string-length cad) 1)])\n\t\t(string-copy! cadReverse tam (string-ref cad i))\n\t\t(set! tam (- tam 1))\n\t)\n\t(printf \"\\nCADENA INVERTIDA: \")\n\t(printf \"\\n~a\" cadReverse)\n)\n\n(reverse)"
+            },
+            "3" : 
+            {
+                "codigo": ";Cree un programa que analice cuantas letras mayusculas y \n;cuantas letras minusculas tiene una cadena ingresada por\n;el usuario. Nota: Puede usar ciclos anidados y codigo ASCII.\n(define (cantidad)\n\t(define mayus 0)(define minus 0)\n\t(define cad \"\")\n\t(printf \"Ingrese una cadena: \")\n\t(set! cad (read))\n\t(for ([i (in-range 0 (string-length cad) 1)])\n\t\t(for ([j (in-range 65 90 1)])\n\t\t\t(if (= (char->integer (string-ref cad i)) j)\n\t\t\t\t(set! mayus (+ mayus 1))\n\t\t\t)\n\t\t)\n\t\t(for ([j (in-range 97 122 1)])\n\t\t\t(if (= (char->integer (string-ref cad i)) j)\n\t\t\t\t(set! minus (+ minus 1))\n\t\t\t)\n\t\t)\n\t)\n\t(printf \"\\nCantidad de Mayusculas: ~a.\" mayus)\n\t(printf \"\\nCantidad de Minusculas: ~a.\" minus)\n)\n\n(cantidad)"
+            },
+            "4" : 
+            {
+                "codigo": ";Cree un programa en Racket que reciba una cadena de maximo 20\n;caracteres escrita por el usuario, el programa debe contar\n;cuantos numeros, y espacios en blanco contiene dicha cadena.\n;Nota: Una buena manera de realizar el ejercicio es usando el\n;codigo ASCII\n(define (contador)\t(deinfe cantNums 0)(deinfe cantSpace 0)\n\t(define cad \"\")\n\t(printf \"Ingrese una cadena maximo de 20 caracteres: \")\n\t(string-copy! cad (read))\n\t(for ([i (in-range 0 (string-length cad) 1)])\n\t\t(for ([j (in-range 48 58 1)])\n\t\t\t(if (= (char->integer (string-ref cad i)) j)\n\t\t\t\t(set! cantNums (+ cantNums 1))\n\t\t\t)\n\t\t)\n\t\t(if (= (char->integer (string-ref cad i)) 32)\n\t\t\t(set! cantSpace (+ cantSpace 1))\n\t\t)\n\t)\n\t(printf \"\\nLa Cadena ingresada tiene: \")\n\t(printf \"\\n%d valores numericos.\" cantNums)\n\t(printf \"\\n%d espacios en blanco. \" cantSpace)\n)\n\n(contador)"
+            },
+            "5" : 
+            {
+                "codigo": ";Cree una programa en C, que permita determinar si una cadena\n;ingresada por el usuario es o no palíndromo. Un palíndromo es \n;una palabra o frase que se lee igual en un sentido que en otro.\n(define (palindromo)\n\t(printf \"Escribe una cadena: \")\n\t(define cadena1 (string-copy (read)))\n\t(define cadena2 (make-string (string-length cadena1) #\\a))\n\t(define tam (- (string-length cadena1) 1))\n\t(for ([i (in-range 0 (string-length cadena1) 1)])\n\t\t(string-set! cadena2 tam (string-ref cadena1 i))\n\t\t(set! tam (- tam 1))\n\t)\n\t(if (equal? cadena1 cadena2)\n\t\t(printf \"Es un palindromo.\")\n\t\t(printf \"No es un palindromo.\")\n\t)\n)\n\n(palindromo)"
+            },
+            "6" : 
+            {
+                "codigo": ";Escriba un programa que lea dos cadenas, una para el nombre\n;y otra para el apodo de una persona, luego de leer, concatenar \n;las dos cadenas en una sola y mostrar por consola.\n(define (concatenar)\n\t(define nombre (string-copy \"\"))\n\t(define apodo (string-copy \"\"))\n\t(printf \"Ingrese el nombre de la persona: \")\n\t(set! nombre (read))\n\t(printf \"Apodo de ~a: \" nombre)\n\t(set! apodo (read))\n\t(string-append nombre apodo)\n\t(printf \"\\n\\tLa cadena concatenada es: ~a\" nombre)\n)\n\n(concatenar)"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Cree en programa que capture una cadena y luego\nconvierta cada uno de los caracteres a letras mayusculas.*/\n#include <stdio.h>\n#include <string.h>\n#include <ctype.h>\nint main(){\n\tint i, j;\n\tchar cadena[20];\n\tchar cadenaMayus[20];\n\tprintf(\"Ingrese una cadena:  \");\n\tscanf(\"%s\", cadena);\n\tfor(i=0; i<strlen(cadena); i++){\n\t\tcadenaMayus[i] =toupper(cadena[i]);\n\t}\n\tprintf(\"\\nLa cadena en mayusculas es: %s\", cadenaMayus);\n}\n"
+            },
+            "2b" : 
+            {
+                "codigo": "/*Construya un programa en C que capture una cadena y almacene \nen otra variable la cadena invertida.*/\n#include <stdio.h>\n#include <string.h>\nint main(){\n\tint i,tam;\n\tchar cadena[20];\n\tchar cadena_invertida[20]={};\n\tprintf(\"Ingrese una cadena de caracteres: \");\n\tgets(cadena);\n\ttam=strlen(cadena)-1;\n\tfor(i=0; i<strlen(cadena); i++){\n\t\tcadena_invertida[tam]=cadena[i];\n\t\ttam--;\t}\n\tprintf(\"\\nCADENA INVERTIDA: \");\n\tprintf(\"\\n%s\", cadena_invertida);\n}\n"
+            },
+            "3b" : 
+            {
+                "codigo": "/*Cree un programa que analice cuantas letras mayusculas y \ncuantas letras minusculas tiene una cadena ingresada por\nel usuario. Nota: Puede usar ciclos anidados y codigo ASCII.*/\n#include <stdio.h>\n#include <string.h>\nint main(){\n\tint contador_mayus=0, contador_minus=0, j, i;\n\tchar cadena[20];\n\tprintf(\"Ingrese una cadena: \");\n\tscanf(\"%s\", cadena);\n\tfor(i=0; i<strlen(cadena); i++){\n\t\tfor(j=65; j<=90; j++){\n\t\t\tif(cadena[i]==j)contador_mayus++;\n\t\t}\n\t\tfor(j=97; j<=122; j++){\n\t\t\tif(cadena[i]==j)contador_minus++;\n\t\t}\n\t}\n\tprintf(\"\\nCantidad de Mayusculas: %d.\", contador_mayus);\n\tprintf(\"\\nCantidad de Minusculas: %d.\", contador_minus);\n}\n"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Cree un programa en C que reciba una cadena de maximo 20\ncaracteres escrita por el usuario, el programa debe contar\ncuantos numeros, y espacios en blanco contiene dicha cadena.\nNota: Una buena manera de realizar el ejercicio es usando el\ncodigo ASCII*/\n#include <stdio.h>\n#include <string.h>\nint main(){\n\tint i,j, contador_numeros=0, contador_espacios=0;\n\tchar cadena[20];\n\tprintf(\"Ingrese una cadena maximo de 20 caracteres: \");\n\tgets(cadena);\n\tfor(i=0; i<strlen(cadena); i++){\n\t\tfor(j=48; j<58; j++){\n\t\t\tif(cadena[i]==j){\n\t\t\t\tcontador_numeros++;\n\t\t\t}\n\t\t}\n\t\tif(cadena[i]==32){\n\t\t\tcontador_espacios++;\n\t\t}\n\t}\n\tprintf(\"\\nLa Cadena ingresada tiene: \");\n\tprintf(\"\\n%d valores numericos.\", contador_numeros);\n\tprintf(\"\\n%d espacios en blanco. \", contador_espacios);\n}\n"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Cree una programa en C, que permita determinar si una cadena\ningresada por el usuario es o no palíndromo. Un palíndromo es \nuna palabra o frase que se lee igual en un sentido que en otro.*/\n#include <stdio.h>\n#include <string.h>\nint main(){\n\tprintf(\"Escribe una cadena: \");\n\tchar cadena1[20];\n\tgets(cadena1);\n\tchar cadena2[strlen(cadena1)];\n\tint tam=strlen(cadena1)-1;\n\tfor(int i=0; i<strlen(cadena1); i++) {\n\t\tcadena2[tam] = cadena1[i];\n\t\ttam--;\n\t}\n\tif (strcmp(cadena1, cadena2) == 0){\n\t\tprintf(\"\\nEs un palindromo.\\n\");\n\t}else printf(\"\\nNo es un palindromo.\\n\");\n}\n"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Escriba un programa que lea dos cadenas, una para el nombre\ny otra para el apodo de una persona, luego de leer, concatenar \nlas dos cadenas en una sola y mostrar por consola.*/\n#include <stdio.h>\n#include <string.h>\nint main(){\n\tchar nombre[20];\n\tchar apodo[20];\n\tprintf(\"Ingrese el nombre de la persona: \");\n\tscanf(\"%s\", nombre);\n\tprintf(\"Apodo de %s: \", nombre);\n\tscanf(\"%s\", apodo);\n\tstrcat(nombre, apodo);\n\tprintf(\"\\n\\tLa cadena concatenada es: %s\", nombre);\n}\n"
+            }
+        },
+
+        "vectores":
+        {
+            "1" : 
+            {
+                "codigo": ";Crear un vector de enteros que tenga tamaño igual a 3,\n;inicialicelo con valores al azar, luego use un ciclo para \n;imprimirlo. Seguidamente modificar la segunda posición del \n;vector e imprimir los cambios\n(define (setVector)\n\t(define vect (vector 1 2 3))\n\t(printf \"El vector es: \\n\")\n\t(for ([i (in-range 0 3 1)])\n\t\t(printf \"~a \" (vector-ref vect i))\n\t)\n\t(vector-set! vect 1 5)\n\t(printf \"El vector modificado es: \\n\")\n\t(for ([i (in-range 0 3 1)])\n\t(printf \"~a \" (vector-ref vect i))\n\t)\n)\n\n(setVector)\n"
+            },
+            "2" : 
+            {
+                "codigo": ";Cree un programa que le pida al usuario el tamaño  para un vector \n;de enteros, y luego que llene una a una las posiciones  del  vector. \n;Finalmente imprima el vector \n(define (llenarVect)\n\t(printf \"Ingrese el tamano para el vector: \")\n\t(define tam (read))\n\t(define valor 0)\n\t(define vect (make-vector tam 0))\n\t(for ([i (in-range 0 tam 1)])\n\t\t(printf \"Ingrese un valor entero para la posicion [~a]: \" i)\n\t\t(set! valor (read))\n\t\t(vector-set! vect i valor)\n\t)\n\t(printf \"El vector es: \\n\")\n\t(for ([i (in-range 0 tam 1)])\n\t\t(printf \"~a \" (vector-ref vect i))\n\t)\n)\n\n(LLenarVect)\n"
+            },
+            "3" : 
+            {
+                "codigo": ";Cree un programa que calcule el promedio de los datos dentro \n;de un vector de enteros.\n(define (promedio)\n\t(define sumatoria 0)\n\t(define vect (vector 6 7 8 9 10))\n\t(for ([i (in-range 0 5 1)])\n\t\t(set! sumatoria (+ sumatoria (vector-ref vect i)))\n\t)\n\t(printf \"\\nEl promedio de los valores es: ~a\" (/ sumatoria 5))\n)\n\n(promedio)\n"
+            },
+            "4" : 
+            {
+                "codigo": ";Crear un programa que permita calcular el producto escalar entre \n;dos vectores\n(define (ProductoEscalar)\n\t(define escalar 0)\n\t(define v1 (vector 2 3 4))\n\t(define v2 (vector 5 6 7))\n\t(for ([i (in-range 0 3 1)])\n\t\t(set! escalar (+ escalar (* (vector-ref v1 i) (vector-ref v2 i))))\n\t)\n\t(printf \"\\nEl producto escalar es: ~a\" escalar)\n)\n\n(ProductoEscalar)\n"
+            },
+            "5" : 
+            {
+                "codigo": ";Buscar un máximo entre un vector de 10 números flotantes\n(define (maximo)\n\t(define max 0)\n\t(define vect (vector 1.2 3.0 0.2 5 7 4.1 9.99 10.2 4 2))\n\t(for ([i (in-range 0 10 1)])\n\t\t(if (> (vector-ref vect i) (vector-ref vect max))\n\t\t\t(set! max i)\n\t\t\t(void)\n\t\t)\n\t)\n\t(printf \"\\nEl maximo de todos los numeros se encuentra en la posicion [~a] es: ~a\" max (vector-ref vect max))\n(maximo)\n"
+            },
+            "6" : 
+            {
+                "codigo": ";Buscar dentro de un vector cuantos números positivos y \n;cuantos negativos hay\n(define (busqueda)\n\t(define positivos 0)(define negativos 0)\n\t(define vect (vector -1.2 -3.0 0.2 5 7 -4.1 9.99 10.2 4 2))\n\t(for ([i (in-range 0 10 1)])\n\t\t(if (> (vector-ref vect i) 0)\n\t\t\t(set! negativos (+ negativos 1))\n\t\t\t(set! positivos (+ positivos 1))\n\t\t)\n\t)\n\t(printf \"\\nCantidad de Positivos: ~a de Negativos: ~a\" positivos negativos)\n)\n\n(busqueda)\n"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Crear un vector de enteros que tenga tamaño igual a 3, \ninicialicelo con valores al azar, luego use un ciclo para \nimprimirlo. Seguidamente modificar la segunda posición del \nvector e imprimir los cambios*/\n#include <stdio.h>\nint main(){\n\tint i=0;\n\tint vector[3]={1,2,3};\n\tprintf(\"El vector es: \\n\");\n\tfor(i=0; i<3; i++){\n\t\tprintf(\"%d \", vector[i]);\n\t}\n\tvector[1]=5;\n\tprintf(\"\\nEl vector modificado es: \\n\");\n\tfor(i=0; i<3; i++){\n\t\tprintf(\"%d \", vector[i]);\n\t}\n}\n"
+            },
+            "2b" : 
+            {
+                "codigo": "/*Cree un programa que le pida al usuario el tamaño  para un vector\nde enteros, y luego que llene una a una las posiciones  del  vector.\nFinalmente imprima el vector*/\n#include <stdio.h>\nint main(){\n\tint i=0, tamano=0, valor=0;\n\tprintf(\"Ingrese el tamano para el vector: \");\n\tscanf(\"%d\", &tamano);\n\tint vector[tamano];\n\tfor(i=0; i<tamano; i++){\n\t\tprintf(\"Ingrese un valor entero para la posicion [%d]: \", i);\n\t\tscanf(\"%d\", &valor);\n\t\tvector[i]=valor;\n\t}\n\tprintf(\"\\nEl vector es: \\n\");\n\tfor(i=0; i<tamano;i++){\n\t\tprintf(\"%d \", vector[i]);\n\t}\n}\n"
+            },
+            "3b" : 
+            {
+                "codigo": "/*Cree un programa que calcule el promedio de los datos dentro \nde un vector de enteros.*/\n#include <stdio.h>\nint main(){\n\tint i=0;\n\tfloat sumatoria=0; \n\tint vector[5]={6,7,8,9,10};\n\tfor(i=0; i<5; i++){\n\t\tsumatoria=vector[i]+sumatoria;\n\t}\n\tprintf(\"\\nEl promedio de los valores es: %f\", sumatoria/5);\n}\n"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Crear un programa que permita calcular el producto escalar entre \ndos vectores*/\n#include <stdio.h>\nint main(){\n\tint i=0, escalar=0;\n\tint v1[3]={2,3,4};\n\tint v2[3]={5,6,7};\n\tfor(i=0; i<3; i++){\n\t\tescalar=(v1[i]*v2[i])+escalar;\n\t}\n\tprintf(\"\\nEl producto escalar es: %d\", escalar);\n}\n"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Buscar un máximo entre un vector de 10 números flotantes*/#include <stdio.h>\nint main(){\n\tint i=0, max=0;\n\tfloat vector[10]={1.2, 3.0, 0.2, 5, 7, 4.1, 9.99, 10.2, 4, 2};\n\tfor(i=0; i<10; i++){\n\t\tif(vector[i]>vector[max]){\n\t\t\tmax=i;\n\t\t}\n\t}\n\tprintf(\"\\nEl maximo de todos los numeros se encuentra en la posicion [%d] es: %f\", max, vector[max]);\n}\n"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Buscar dentro de un vector cuantos números positivos y \ncuantos negativos hay*/\n#include <stdio.h>\nint main(){\n\tint i=0, positivos=0, negativos=0;\n\tfloat vector[10]={-1.2, -3.0, 0.2, 5, 7, -4.1, 9.99, 10.2, 4, 2};\n\tfor(i=0; i<10; i++){\n\t\tif(vector[i]<0){\n\t\t\tnegativos++;\n\t\t}else{\n\t\t\tpositivos++;\n\t\t}\n\t}\n\tprintf(\"\\nCantidad de Positivos: %d\\nCantidad de Negativos: %d\", positivos, negativos);\n}\n"
+            }
+        },
+        "matrices":
+        {
+            "1" : 
+            {
+                "codigo": ";Crear una matriz de enteros de orden 3x4, inicializarla \n;con los numeros en orden ascendente del 1 al 12, finalmente \n;imprimir la matriz.\n(require math/matrix)\n(define (ascendente)\n\t(define valor 1)\n\t(define mat (make-matrix 3 4 0))\n\t(for ([i (in-range 0 3 1)])\n\t\t(for ([j (in-range 0 4 1)])\n\t\t\t(matrix-set mat i j (set! valor (+ valor 1)))\n\t\t)\n\t)\n\t(printf \"\\n***La matriz digitada es: ***\\n\")\n\t(for ([i (in-range 0 3 1)])\n\t\t(for ([j (in-range 0 4 1)])\n\t\t\t(printf \"~a \" (matrix-ref mat i j))\n\t\t)\n\t)\n)\n\n(ascendente)\n"
+            },
+            "2" : 
+            {
+                "codigo": ";Crear un programa que pida por consola el tamaño para una \n;matriz de enteros, luego el usuario podrá llenar dicha matriz, \n;una vez hecho esto imprimir la matriz\n(require math/matrix)\n(define (fillMatrix)\n\t(define dato 0)\n\t(printf \"Ingrese la cantidad de filas que tendra la matriz: \")\n\t(define fil (read))\n\t(printf \"\\nAhora ingrese la cantidad de columnas: \")\n\t(define col (read))\n\t(define mat (make-matrix fil col 0))\n\t(printf \"\\nIngrese los valores para: \")\n\t(for ([i (in-range 0 fil 1)])\n\t\t(for ([j (in-range 0 col 1)])\n\t\t\t(printf \"\\nPosición [~a] [~a]: \" i j)\n\t\t\t(set! dato (read))\n\t\t\t(matrix-set mat i j dato)\n\t\t)\n\t)\n\t(printf \"\\n***La matriz digitada es: ***\\n\")\n\t(for ([i (in-range 0 3 1)])\n\t\t(for ([j (in-range 0 4 1)])\n\t\t\t(printf \"~a \" (matrix-ref mat i j))\n\t\t)\n\t)\n)\n\n(fillMatrix)\n"
+            },
+            "3" : 
+            {
+                "codigo": ";Crear un programa que llene dos matrices de igual orden e\n;imprima la suma de estas.\n(require math/matrix)\n(define (SumMatrices)\n\t(define dato 0)\n\t(printf \"Ingrese la cantidad de filas que tendra la matriz: \")\n\t(define fil (read))\n\t(printf \"\\nAhora ingrese la cantidad de columnas: \")\n\t(define col (read))\n\t(define mat (make-matrix fil col 0))\n\t(define mat2 (make-matrix fil col 0))\n\t(define suma (make-matrix fil col 0))\n\t(printf \"\\nIngrese los valores para la matriz 1: \")\n\t(for ([i (in-range 0 fil 1)])\n\t\t(for ([j (in-range 0 col 1)])\n\t\t\t(printf \"\\nPosición [~a] [~a]: \" i j)\n\t\t\t(set! dato (read))\n\t\t\t(matrix-set mat i j dato)\n\t\t)\n\t)\n\t(printf \"\\nIngrese los valores para la matriz 2: \")\n\t(for ([i (in-range 0 fil 1)])\n\t\t(for ([j (in-range 0 col 1)])\n\t\t\t(printf \"\\nPosición [~a] [~a]: \" i j)\n\t\t\t(set! dato (read))\n\t\t\t(matrix-set mat2 i j dato)\n\t\t)\n\t)\n\t(for ([i (in-range 0 fil 1)])\n\t\t(for ([j (in-range 0 col 1)])\n\t\t\t(matrix-set suma i j (+ (matrix-ref mat i j) (matrix-ref mat2 i j)))\n\t\t)\n\t)\n\t(for ([i (in-range 0 3 1)])\n\t\t(for ([j (in-range 0 4 1)])\n\t\t\t(printf \"~a \" (matrix-ref suma i j))\n\t\t)\n\t)\n)\n\n(SumMatrices)\n"
+            },
+            "4" : 
+            {
+                "codigo": ";Crear un programa que simule una base de datos, que tenga\n;el nombre de una persona junto con su número telefonico.\n(require math/matrix)\n(define (Database)\n\t(printf \"Personas a registrar en la base de datos: \")\n\t(define fil (read))\n\t(define nombres (make-matrix fil 50 0))\n\t(define numeros (make-matrix fil 12 0))\n\t(printf \"\\nLlenar la base de datos: \")\n\t(for ([i (in-range 0 fil 1)])\n\t\t(for ([j (in-range 0 2 1)])\n\t\t\t(printf \"\\nDigite el nombre de la persona ~a: \" i+1)\n\t\t\t(matrix-set nombres i j (read))\n\t\t\t(printf\"\\Numero de ~a: \" (matrix-ref nombres i j))\n\t\t\t(matrix-set numeros i j (read))\n\t\t)\n\t)\n\t(printf \"\\n***BASE DE DATOS: ***\\n\")\n\t(for ([i (in-range 0 fil 1)])\n\t\t(for ([j (in-range 0 2 1)])\n\t\t\t(printf \"\\nNombre: ~a | Telefono: ~a\" (matrix-ref nombres i j) (matrix-ref numeros i j))\n\t\t)\n\t)\n)\n\n(Database)\n"
+            },
+            "5" : 
+            {
+                "codigo": ";Crear un sistema que organice citas medicas, el programa\n;debe ofrecer la posibilidad de listar citas por mes.\n(require math/matrix)\n(define (citas)\n\t(define fil 0)(define col 0)\n\t(define opcion 0)(define mes 0)\n\t(printf \"Citas para agendar: \")\n\t(set! fil (read))\n\t(define paciente (make-matrix fil 50 0))\n\t(define fecha (make-matrix fil 4 0))\n\t(for ([i (in-range 0 fil 1)])\n\t\t(printf \"\\nDigite el nombre del paciente ~a: \", i+1)\n\t\t(matrix-set paciente i (+ i 1) (read))\n\t\t(printf \"\\nDatos de la cita:\\nDia: \")\n\t\t(matrix-set fecha i 0 (read))\n\t\t(printf \"Mes: \")\n\t\t(matrix-set fecha i 1 (read))\n\t\t(printf \"Anio: \")\n\t\t(matrix-set fecha i 2 (read))\n\t\t(printf \"Hora: \")\n\t\t(matrix-set fecha i 3 (read))\n\t)\n\t(printf \"\\nEscriba el numero del mes para listar las citas: \")\n\t(set! mes (read))\n\t(for ([i (in-range 0 fil 1)])\n\t\t (if (= mes (matrix-ref fecha i 1))\n\t\t\t(printf \"\\nPaciente ~a: \" (matrix-ref paciente i (+ i 1)))\n\t\t\t(printf \"\\nFecha: |~a|\" (matrix-ref fec0Napsterha i 0))\n\t\t\t(printf \"~a|~a| - \" (matrix-ref fecha i 1)(matrix-ref fecha i 2))\n\t\t\t(printf \"Hora: ~a:00\" (matrix-ref fecha i 3))\n\t\t)\n\t)\n)\n\n(citas)\n"
+            },
+            "6" : 
+            {
+                "codigo": ";Crear un programa que lleve la información acerca de los\n;modulos de un parqueadero. Un modulo tiene dos estados, libre\n;u ocupado, usar un menú.\n;CONSEJOS: Use una matriz las cuales tenga dos columnas, una \n;para el modulo y otra para el estado de dicho modulo, usar \n;0 o 1 para expresar el estado libre y ocupado respectivamente.\n(require math/matrix)\n(define (parqueadero)\n\t(define fil 0)(define col 2)(define opcion 0)(define mod 0)\n\t(printf \"Modulos del parqueadero: \")\n\t(set! fil (read))\n\t(define parqueadero (make-matrix fil col 0))\n\t(for ([i (in-range 0 fil 1)])\n\t\t(matrix-set parqueadero i 1 0)\n\t)\n\t(do ((i 1 (+ i 1))) ((eq? opcion 4))\n\t\t(printf \"*Menu Parqueadero*\\n1. Ingresar un Vehiculo.\")\n\t\t(printf \"\\n2. Salida Vehiculo.\\n3. Modulos libres y Ocupados.\")\n\t\t(printf \"\\n4. Salir\\nDigite una opcion: \")\n\t\t(set! opcion (read))\n\t\t(if (= opcion 1)\n\t\t\t(begin\n\t\t\t\t(printf \"\\nIngrese el modulo donde va a parquear: \")\n\t\t\t\t(set! mod (read))\n\t\t\t\t(matrix-set parqueadero (- mod 1) 1 1)\n\t\t\t)\n\t\t\t(void)\n\t\t)\n\t\t(if (= opcion 2)\n\t\t\t(begin\n\t\t\t\t(printf \"\\nIngrese el modulo de donde sale el vehiculo: \")\n\t\t\t\t(set! mod (read))\n\t\t\t\t(matrix-set parqueadero (- mod 1) 1 0)\n\t\t\t)\t\t\t(void)\n\t)\n\t\t(if (= opcion 3)\n\t\t\t(begin\n\t\t\t\t(printf \"\\nModulos libres: \")\n\t\t\t\t(for ([i (in-range 0 fil 1)])\n\t\t\t\t\t(if (= (matrix-ref parqueadero i 1) 0)\n\t\t\t\t\t\t(printf \"\\nModulo [~a]\" i+1)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t\t(printf \"\\nModulos Ocupados \")\n\t\t\t\t(for ([i (in-range 0 fil 1)])\n\t\t\t\t\t(if (= (matrix-ref parqueadero i 1) 1)\n\t\t\t\t\t\t(printf \"\\nModulo [~a]\" i+1)\n\t\t\t\t\t)\n\t\t\t\t)\n\t\t\t)\n\t\t\t(void)\n\t\t)\n\t)\n)\n\n(parqueadero)\n"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Crear una matriz de enteros de orden 3x4, inicializarla \ncon los numeros en orden ascendente del 1 al 12, finalmente \nimprimir la matriz.*/\n#include <stdio.h>\nint main(){\n\tint i, j, valor=1;\n\tint matriz[3][4];\n\tfor(i=0; i<3; i++){\n\t\tfor(j=0; j<4; j++){\n\t\t\tmatriz[i][j]=valor++;\n\t\t}\n\t}\n\tprintf(\"\\n\\n***La matriz digitada es: ***\\n\");\n\tfor(i=0; i<3; i++){\n\t\tprintf(\"\\n\");\n\t\tfor(j=0; j<4; j++){\n\t\t\tprintf(\"%d \", matriz[i][j]);\n\t\t}\n\t}\n}\n"
+            },
+            "2b" : 
+            {
+                "codigo": "/*Crear un programa que pida por consola el tamaño para una \nmatriz de enteros, luego el usuario podrá llenar dicha matriz, \nuna vez hecho esto imprimir la matriz*/\n#include <stdio.h>\nint main(){\n\tint i=0, j=0, filas=0, columnas=0, dato=0;\n\tprintf(\"Ingrese la cantidad de filas que tendra la matriz: \");\n\tscanf(\"%d\", &filas);\n\tprintf(\"\\nAhora ingrese la cantidad de columnas: \");\n\tscanf(\"%d\", &columnas);\n\tint matriz[filas][columnas];\n\tprintf(\"\\n\\nIngrese los valores para: \");\n\tfor(i=0; i<filas; i++){\n\t\tfor(j=0; j<columnas; j++){\n\t\t\tprintf(\"\\n\\tPosicion [%d] [%d]: \", i, j);\n\t\t\tscanf(\"%d\", &dato);\n\t\t\tmatriz[i][j]=dato;\n\t\t}\n\t}\n\tprintf(\"\\n***La matriz digitada es: ***\\n\");\n\tfor(i=0; i<filas; i++){\n\t\tprintf(\"\\n\");\n\t\tfor(j=0; j<columnas; j++){\n\t\t\tprintf(\"\\t%d \", matriz[i][j]);\n\t\t}\n\t}\n}\n"
+            },
+            "3b" : 
+            {
+                "codigo": "/*Crear un programa que llene dos matrices de igual orden e \nimprima la suma de estas.*/\n#include<stdio.h>\nint main(){\n\tint i=0, j=0, filas=0, columnas=0, dato=0;\n\tprintf(\"Cantidad de filas: \");\n\tscanf(\"%d\", &filas);\n\tprintf(\"\\nCantidad de columnas: \");\n\tscanf(\"%d\", &columnas);\n\tint matriz1[filas][columnas];\n\tint matriz2[filas][columnas];\n\tint suma[filas][columnas];\n\tprintf(\"\\n\\nIngrese los valores para la matriz 1: \");\n\tfor(i=0; i<filas; i++){\n\t\tfor(j=0; j<columnas; j++){\n\t\t\tprintf(\"\\n\\tPosicion [%d] [%d]: \", i, j);\n\t\t\tscanf(\"%d\", &dato);\n\t\t\tmatriz1[i][j]=dato;\n\t\t}\n\t}\n\tprintf(\"\\n\\nIngrese los valores para la matriz 2: \");\n\tfor(i=0; i<filas; i++){\n\t\tfor(j=0; j<columnas; j++){\n\t\t\tprintf(\"\\n\\tPosicion [%d] [%d]: \", i, j);\n\t\t\tscanf(\"%d\", &dato);\n\t\t\tmatriz2[i][j]=dato;\n\t\t}\n\t}\n\tfor(i=0; i<filas; i++){\n\t\tfor(j=0; j<columnas; j++){\n\t\t\tsuma[i][j]=matriz1[i][j]+matriz2[i][j];\n\t\t}\n\t}\n\tprintf(\"\\n\\n***La suma de las matrices es: ***\\n\");\n\tfor(i=0; i<filas; i++){\n\t\tprintf(\"\\n\");\n\t\tfor(j=0; j<columnas; j++){\n\t\t\tprintf(\"\\t%d \", suma[i][j]);\n\t\t}\n\t}\n}\n"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Crear un programa que simule una base de datos, que tenga \nel nombre de una persona junto con su número telefonico.*/\n#include<stdio.h>\nint main(){\n\tint i=0, filas=0; \n\tprintf(\"Personas a registrar en la base de datos: \");\n\tscanf(\"%d\", &filas);\n\tchar nombres[filas][50];\n\tchar numeros[filas][12];\n\tprintf(\"\\n\\nLlenar la base de datos:\");\n\tfor(i=0; i<filas; i++){\n\t\tprintf(\"\\n\\n\\tDigite el nombre de la persona %d: \", i+1);\n\t\tscanf(\"%s\",&nombres[i]);\n\t\tprintf(\"\\tNumero de %s: \", nombres[i]);\n\t\tscanf(\"%s\", &numeros[i]);\n\t}\n\tprintf(\"\\n***BASE DE DATOS: ***\\n\");\n\tfor(i=0; i<filas; i++){\n\t\tprintf(\"\\n\\tNombre: %s | Telefono: %s\", nombres[i], numeros[i]);\n\t}\n}\n"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Crear un sistema que organice citas medicas, el programa\ndebe ofrecer la posibilidad de listar citas por mes.*/\n#include<stdio.h>\n#include<stdlib.h>\nint main(){\n\tint i=0, j=0, filas=0, opcion=0, mes=0;\n\tprintf(\"Citas para agendar: \");\n\tscanf(\"%d\", &filas);\n\tsystem(\"cls\");\n\tchar paciente[filas][50];\n\tint fecha[filas][4];\n\tfor(i=0; i<filas; i++){\n\t\tfor(j=0; j<4; j++){\n\t\t\tfecha[i][j]=0;\n\t\t}\n\t}\n\tfor(i=0; i<filas; i++){\n\t\tprintf(\"\\n\\n\\tDigite el nombre del paciente %d: \", i+1);\n\t\tscanf(\"%s\",&paciente[i]);\n\t\tprintf(\"\\n\\tDatos de la cita:\\n\\tDia: \");\n\t\tscanf(\"%d\", &fecha[i][0]);\n\t\tprintf(\"\\tMes: \");\n\t\tscanf(\"%d\", &fecha[i][1]);\n\t\tprintf(\"\\tAnio: \");\n\t\tscanf(\"%d\", &fecha[i][2]);\n\t\tprintf(\"\\tHora: \");\n\t\tscanf(\"%d\", &fecha[i][3]);\n\t}\n\tsystem(\"pause\");\n\tsystem(\"cls\");\n\tprintf(\"Escriba el numero del mes para listar las citas: \");\n\tscanf(\"%d\", &mes);\n\tfor(i=0; i<filas; i++){\n\t\tif(mes==fecha[i][1]){\n\t\t\tprintf(\"\\n\\n\\tPaciente %s: \", paciente[i]);\n\t\t\tprintf(\"Fecha: |%d|\", fecha[i][0]);\n\t\t\tprintf(\"%d|%d| - \", fecha[i][1],fecha[i][2],fecha[i][3]);\n\t\t\tprintf(\"Hora: %d:00\", fecha[i][3]);\n\t\t}\n\t}\n}\n"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Crear un programa que lleve la información acerca de los\nmodulos de un parqueadero. Un modulo tiene dos estados, libre\nu ocupado, usar un menú.\nCONSEJOS: Use una matriz las cuales tenga dos columnas, una \npara el modulo y otra para el estado de dicho modulo, usar \n0 o 1 para expresar el estado libre y ocupado respectivamente.*/\n#include<stdio.h>\n#include<stdlib.h>\nint main(){\n\tint i=0, filas=0, columnas=2, opcion=0, mod=0;\n\tprintf(\"Modulos del parqueadero: \");\n\tscanf(\"%d\", &filas);\n\tint parqueadero[filas][columnas];\n\tfor(i=0; i<filas; i++){\n\t\tparqueadero[i][1]=0;\n\t}\n\tdo{\n\t\tsystem(\"cls\");\n\t\tprintf(\"*Menu Parqueadero*\\n1. Ingresar un Vehiculo.\");\n\t\tprintf(\"\\n2. Salida Vehiculo.\\n3. Modulos libres y Ocupados.\");\n\t\tprintf(\"\\n4. Salir\\n\\n\\tDigite una opcion: \");\n\t\tscanf(\"%d\", &opcion);\n\t\tif(opcion==1){\n\t\t\tprintf(\"\\nIngrese el modulo donde va a parquear: \");\n\t\t\tscanf(\"%d\", &mod);\n\t\t\tparqueadero[mod-1][1]=1;\n\t\t\tsystem(\"pause\");\n\t\t}else if(opcion==2){\n\t\t\tprintf(\"\\nIngrese el modulo de donde sale el vehiculo: \");\n\t\t\tscanf(\"%d\", &mod);\n\t\t\tparqueadero[mod-1][1]=0;\n\t\t\tsystem(\"pause\");\n\t\t}else if(opcion==3){\n\t\t\tprintf(\"\\nModulos libres: \");\n\t\t\tfor(i=0; i<filas; i++){\n\t\t\t\tif(parqueadero[i][1]==0){\n\t\t\t\t\tprintf(\"\\n\\tModulo [%d]\", i+1);\n\t\t\t\t}\n\t\t\t}\n\t\t\tprintf(\"\\nModulos Ocupados: \");\n\t\t\tfor(i=0; i<filas; i++){\n\t\t\t\tif(parqueadero[i][1]==1){\n\t\t\t\t\tprintf(\"\\n\\tModulo [%d]\", i+1);\n\t\t\t\t}\n\t\t\t}\t\t\tsystem(\"pause\");\n\t\t}\n\t}while(opcion!=4);\n}\n"
+            }
+        },
+
+        "estructuras":
+        {
+            "1" : 
+            {
+                "codigo": ";Crear en programa en Racket que tenga una estructura para almacenar fechas,\n;leer e imprimir dos estructuras de este tipo.\n(define-struct fecha(\n\t\tdia\n\t\tmes\n\t\tanio\n\t)\n)\n\n(define (main)\n\t(printf \"Ingrese una fecha de nacimiento: \")\n\t(define Nacimiento(make-fecha\n\t\t\t(begin (printf \"\\nDia: \")(read))\n\t\t\t(begin (printf \"\\nMes: \")(read))\n\t\t\t(begin (printf \"\\nAnio: \")(read))\n\t\t)\n\t)\n\t(printf \"\\nIngrese la fecha del dia de hoy: \")\n\t(define F_Actual(make-fecha\n\t\t\t(begin (printf \"\\nDia: \")(read))\n\t\t\t(begin (printf \"\\nMes: \")(read))\n\t\t\t(begin (printf \"\\nAnio: \")(read))\n\t\t)\n\t)\n\t(printf \"\\nLA FECHA DE NACIMIENTO INGRESADA FUE:\")\n\t(printf \" ~a/~a/~a\" (fecha-dia Nacimiento)(fecha-mes Nacimiento)(fecha-anio Nacimiento))\n\t(printf \"\\nLA FECHA DEL DIA DE HOY ES:\")\n\t(printf \" ~a/~a/~a\" (fecha-dia F_Actual)(fecha-mes F_Actual)(fecha-anio F_Actual))\n)\n\n(main)"
+            },
+            "2" : 
+            {
+                "codigo": ";Cree en programa en Racket que lea e imprima una estructura\n;que almacena la informacion basica de una persona.\n(define-struct DataPerson(\n\t\t\tnombre\n\t\t\tapellido\n\t\t\tcedula\n\t)\n)\n\n(define (main)\n\t(define Persona(make-DataPerson\n\t\t\t(begin (printf \"\\nIngrese el nombre de la persona: \")(read))\n\t\t\t(begin (printf \"\\nIngrese el apellido: \")(read))\n\t\t\t(begin (printf \"\\nIngrese la cedula: \")(read))\n\t\t)\n\t)\n\t(printf \"\\n\\nLA PERSONA INGRESADA FUE:\")\n\t(printf \"\\nNombre: ~a\" (DataPerson-nombre Persona))\n\t(printf \"\\nApellido: ~a\" (DataPerson-apellido Persona))\n\t(printf \"\\nCedula: ~a\" (DataPerson-cedula Persona))\n)\n\n(main)"
+            },
+            "3" : 
+            {
+                "codigo": ";Cree en programa en Racket que tenga dos estructuras anidadas, una para\n;la informacion basica de una persona, y otra para la fecha de nacimiento.\n;lea e imprima ambas estructuras.\n(define-struct fecha(\n\t\tdia\n\t\tmes\n\t\tanio\n\t)\n)\n\n(define-struct DataPerson(\n\t\tnombre\n\t\tapellido\n\t\tcedula\n\t\tFECHA\n\t)\n)\n\n(define (main)\n\t(define Persona(make-DataPerson\n\t\t\t(begin (printf \"\\nIngrese el nombre de la persona: \")(read))\n\t\t\t(begin (printf \"\\nIngrese el apellido: \")(read))\n\t\t\t(begin (printf \"\\nIngrese la cedula: \")(read))\n\t\t\t(make-fecha \n\t\t\t\t(begin (printf \"\\nIngrese la fecha de nacimiento:\\nDia: \")(read))\n\t\t\t\t(begin (printf \"\\nMes:\")(read))\n\t\t\t\t(begin (printf \"\\nAnio: \")(read))\n\t\t\t)\n\t\t)\n\t)\n\t(printf \"\\n\\nLA PERSONA INGRESADA FUE:\")\n\t(printf \"\\nNombre: ~a\" (DataPerson-nombre Persona))\n\t(printf \"\\nApellido: ~a\" (DataPerson-apellido Persona))\n\t(printf \"\\nCedula: ~a\" (DataPerson-cedula Persona))\n\t(printf \"\\nFecha de Nacimiento:\")\n\t(printf \" ~a/\" (fecha-dia (DataPerson-FECHA Persona)))\n\t(printf \"~a/\" (fecha-mes (DataPerson-FECHA Persona)))\n\t(printf \"~a\" (fecha-anio (DataPerson-FECHA Persona)))\n)\n\n(main)"
+            },
+            "4" : 
+            {
+                "codigo": ";Realice un programa en Racket que capture dos horas (hora militar) \n;y calcule la diferencia de tiempo entre ellas.\n(define-struct hora(\n\t\thoras\n\t\tminutos\n\t)\n)\n\n(define (main)\n\t(define hora 0)(define minuto 0)\n\t(printf \"Ingrese la hora 1: \")\n\t(define Hora1(make-hora\n\t\t\t(begin (printf \"\\nHoras: \")(read))\n\t\t\t(begin (printf \"\\nMinutos: \")(read))\n\t)\n\t)\n\t(printf \"Ingrese la hora 2: \")\n\t(define Hora2(make-hora\n\t\t\t(begin (printf \"\\nHoras: \")(read))\n\t\t\t(begin (printf \"\\nMinutos: \")(read))\n\t\t)\n\t)\n\t(set! hora (- (hora-horas Hora2) (hora-horas Hora1)))\n\t(set! minuto (- (hora-minutos Hora2) (hora-minutos Hora1)))\n\t(if(< hora 0)\n\t\t(set! hora (* hora -1))\n\t\t(void)\n\t)\n\t(if(< minuto 0)\n\t\t(set! minuto (* minuto -1))\n\t\t(void)\n\t)\n\t(printf \"\\n\\nLa diferencia es de: ~a horas y ~a minutos.\" hora minuto)\n)\n\n(main)"
+            },
+            "5" : 
+            {
+                "codigo": ";Crear una vector de estructuras que guarde la información de N empleados.\n(define-struct Persona(\n\t\tnombre\n\t\tsexo\n\t\tsalario\n\t)\n)\n\n(define (main)\n\t(define nemp 0)(define i 0)\n\t(printf \"Introduzca el numero de empleados: \")\n\t(set! nemp (read))\n\t(define empleado (make-vector nemp))\n\t(for ([i (in-range 0 nemp 1)])\n\t\t(vector-set! empleado i \n\t\t\t(make-Persona\n\t\t\t\t(begin (printf \"\\nNombre[~a]: \" (+ i 1))(read))\n\t\t\t\t(begin (printf \"\\nSexo[~a]: \" (+ i 1))(read))\n\t\t\t\t(begin (printf \"\\nSalario[~a]: \" (+ i 1))(read))\n\t\t\t)\n\t\t)\n\t)\n)\n\n(main)"
+            },
+            "6" : 
+            {
+                "codigo": ";Crear una vector de estructuras que guarde la información de N personas, \n;y debe permitir realizar una busqueda sobre las personas ingresadas.\n(define-struct persona(\n\t\tnombre\n\t\tcedula\n\t)\n)\n\n(define (main)\n\t(define n_personas 0)(define i 0)(define iguales 0)(define buscar 0)\n\t(define cedula_buscar 0)\n\t(printf \"Introduzca el numero de personas a guardar: \")\n\t(set! n_personas (read))\n\t(define personas(make-vector n_personas))\n\t(for ([i (in-range 0 n_personas 1)])\n\t\t(vector-set! personas i \n\t\t\t(make-persona\n\t\t\t\t(begin (printf \"\\nNombre[~a]: \" (+ i 1))(read))\n\t\t\t\t(begin (printf \"\\nCedula[~a]: \" (+ i 1))(read))\n\t\t\t)\n\t\t)\n\t)\n\t(printf \"\\n\\nIngrese la cedula de la persona a buscar: \")\n\t(set! cedula_buscar (read))\n\t(while(= buscar 0)\n\t\t(for ([j (in-range 0 n_personas 1)])\n\t\t\t(if(= (persona-cedula (vector-ref personas j)) cedula_buscar)\n\t\t\t\t(begin\n\t\t\t\t\t(printf \"\\n\\nEL NOMBRE DE LA PERSONA ES: \")\n\t\t\t\t\t(printf \"~a\" (persona-nombre (vector-ref personas j)))\n\t\t\t\t\t(set! buscar 1)\n\n\t\t\t\t)\n\t\t\t\t(set! i (+ i 1))\n\t\t\t)\n\t\t)\n\t\t(set! buscar 1)\n\t)\n\t(if(= i n_personas)\n\t\t(printf \"\\nLA PERSONA NO SE ENCONTRO\")\n\t\t(void)\n\t)\n)\n\n(main)"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Crear en programa en c que tenga una estructura para almacenar fechas,\nleer e imprimir dos estructuras de este tipo.*/\n#include <stdio.h>\nstruct fecha{\n\tint dia;\n\tint mes;\n\tint anio;\n};\n\nint main(){\n\tstruct fecha Nacimiento;\n\tstruct fecha Fecha_Actual;\n\tprintf(\"Ingrese una fecha de nacimiento:\\nDia: \");\n\tscanf(\"%d\", &Nacimiento.dia);\n\tprintf(\"Mes: \");\n\tscanf(\"%d\", &Nacimiento.mes);\n\tprintf(\"Anio: \");\n\tscanf(\"%d\", &Nacimiento.anio);\n\tprintf(\"Ingrese la fecha del dia de hoy:\\nDia: \");\n\tscanf(\"%d\", &Fecha_Actual.dia);\n\tprintf(\"Mes: \");\n\tscanf(\"%d\", &Fecha_Actual.mes);\n\tprintf(\"Anio: \");\n\tscanf(\"%d\", &Fecha_Actual.anio);\n\tprintf(\"\\n\\nLA FECHA DE NACIMIENTO INGRESADA FUE:\");\n\tprintf(\" %d/%d/%d\", Nacimiento.dia, Nacimiento.mes, Nacimiento.anio);\n\tprintf(\"\\n\\nLA FECHA DEL DIA DE HOY ES:\");\n\tprintf(\" %d/%d/%d\", Fecha_Actual.dia, Fecha_Actual.mes, Fecha_Actual.anio);\n}"
+            },
+            "2b" : 
+            {
+                "codigo": "/*Cree en programa en c que lea e imprima una estructura\nque almacena la informacion basica de una persona.*/\n#include <stdio.h>\nstruct datos_persona{\n\tchar nombre[20];\n\tchar apellido[20];\n\tchar cedula[12];\n};\n\nint main(){\n\tstruct datos_persona Persona1;\n\tprintf(\"Ingrese el nombre de la persona: \");\n\tscanf(\"%s\", Persona1.nombre);\n\tprintf(\"Ingrese el apellido de %s: \", Persona1.nombre);\n\tscanf(\"%s\", Persona1.apellido);\n\tprintf(\"Ingrese la cedula de %s: \", Persona1.nombre);\n\tscanf(\"%s\", Persona1.cedula);\n\tprintf(\"\\n\\nLA PERSONA INGRESADA FUE:\");\n\tprintf(\"\\nNombre: %s\", Persona1.nombre);\n\tprintf(\"\\nApellido: %s\", Persona1.apellido);\n\tprintf(\"\\nCedula: %s\", Persona1.cedula);\n}"
+            },
+            "3b" : 
+            {
+                "codigo": "/*Cree en programa en c que tenga dos estructuras anidadas, una para\nla informacion basica de una persona, y otra para la fecha de nacimiento.\nlea e imprima ambas estructuras.*/\n#include <stdio.h>\nstruct fecha{\n\tint dia;\n\tint mes;\n\tint anio;\n};\n\nstruct datos_persona{\n\tchar nombre[20];\n\tchar apellido[20];\n\tchar cedula[12];\n\tstruct fecha fecha_Nacimiento;\n};\n\nint main(){\n\tstruct datos_persona Persona1;\n\tprintf(\"Ingrese el nombre de la persona: \");\n\tscanf(\"%s\", Persona1.nombre);\n\tprintf(\"Ingrese el apellido de %s: \", Persona1.nombre);\n\tscanf(\"%s\", Persona1.apellido);\n\tprintf(\"Ingrese la cedula de %s: \", Persona1.nombre);\n\tscanf(\"%s\", Persona1.cedula);\n\tprintf(\"Ingrese la fecha de nacimiento:\\nDia: \");\n\tscanf(\"%d\", &Persona1.fecha_Nacimiento.dia);\n\tprintf(\"Mes: \");\n\tscanf(\"%d\", &Persona1.fecha_Nacimiento.mes);\n\tprintf(\"Anio: \");\n\tscanf(\"%d\", &Persona1.fecha_Nacimiento.anio);\n\tprintf(\"\\n\\nLA PERSONA INGRESADA FUE:\");\n\tprintf(\"\\nNombre: %s\", Persona1.nombre);\n\tprintf(\"\\nApellido: %s\", Persona1.apellido);\n\tprintf(\"\\nCedula: %s\", Persona1.cedula);\n\tprintf(\"\\nFecha de Nacimiento:\");\n\tprintf(\"%d/\", Persona1.fecha_Nacimiento.dia);\n\tprintf(\"%d/\", Persona1.fecha_Nacimiento.mes);\n\tprintf(\"%d\", Persona1.fecha_Nacimiento.anio);\n}"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Realice un programa en C que capture dos horas (hora militar) \ny calcule la diferencia de tiempo entre ellas.*/\n#include <stdio.h>\nstruct hora{\n\tint horas;\n\tint minutos;\n};\n\nint main(){\n\tint hora=0, minuto=0;\n\tstruct hora Hora1;\n\tprintf(\"Ingrese la hora 1:\\nHoras: \");\n\tscanf(\"%d\", &Hora1.horas);\n\tprintf(\"Minutos: \");\n\tscanf(\"%d\", &Hora1.minutos);\n\tstruct hora Hora2;\n\tprintf(\"Ingrese la hora 2:\\nHoras: \");\n\tscanf(\"%d\", &Hora2.horas);\n\tprintf(\"Minutos: \");\n\tscanf(\"%d\", &Hora2.minutos);\n\thora=Hora2.horas-Hora1.horas;\n\tminuto=Hora2.minutos-Hora1.minutos;\n\tif(hora<0){\n\t\thora=hora*-1;\n\t}\n\tif(minuto<0){\n\t\tminuto=minuto*-1;\n\t}\n\tprintf(\"\\n\\nLa diferencia es de: %d horas y %d minutos,\", hora, minuto);\n}"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Crear un vector de estructuras que guarde la información de N empleados.*/\n#include<stdio.h>\nstruct Persona{\n\tchar nombre[30];\n\tchar sexo[12];\n\tfloat salario;\n};\n\nint main(){\n\tint nemp, i;\n\tprintf(\"Introduzca el numero de empleados: \");\n\tscanf(\"%d\",&nemp);\n\tstruct Persona emp[nemp];\n\tfor(i=0;i<nemp;i++){\n\t\tprintf(\"\\nNombre[%d]: \",i+1);\n\t\tscanf(\"%s\",emp[i].nombre);\n\t\tprintf(\"Sexo[%d]: \",i+1);\n\t\tscanf(\"%s\",emp[i].sexo);\n\t\tprintf(\"Salario[%d]: \",i+1);\n\t\tscanf(\"%f\",&emp[i].salario);\n\t}\n}\n"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Crear una vector de estructuras que guarde la información de N personas,\ny debe permitir realizar una busqueda sobre las personas ingresadas.*/\n#include<stdio.h>\nstruct persona{\n\tchar nombre[30];\n\tint cedula;\n};\n\nint main(){\n\tint n_personas, i, iguales, buscar=0;\n\tint cedula_buscar;\n\tprintf(\"Introduzca de personas a guardar: \");\n\tscanf(\"%d\",&n_personas);\n\tstruct persona personas[n_personas];\n\tfor(i=0;i<n_personas;i++){\n\t\tprintf(\"\\nNombre[%d]: \",i+1);\n\t\tscanf(\"%s\",personas[i].nombre);\n\t\tprintf(\"Cedula[%d]: \",i+1);\n\t\tscanf(\"%d\", &personas[i].cedula);\n\t}\n\tprintf(\"\\n\\nIngrese la cedula de la persona a buscar: \");\n\tscanf(\"%d\", &cedula_buscar);\n\twhile(buscar==0){\n\t\tfor(i=0; i<n_personas; i++){\n\t\t\tif(personas[i].cedula==cedula_buscar){\n\t\t\t\tprintf(\"\\n\\nEL NOMBRE DE LA PERSONA ES: %s\", personas[i].nombre);\n\t\t\t\tbuscar=1;\n\t\t\t}\n\t\t}\n\t\tbuscar=1;\n\t}\n\tif(i==n_personas){\n\t\tprintf(\"\\nLA PERSONA NO SE ENCONTRO\");\n\t}\n}\n"
+            }
+        },
+
+        "funciones":
+        {
+            "1" : 
+            {
+                "codigo": ";Cree una funcion que evalue si un número es par o impar.\n(define (esperar n)\n\t(if (= (remainder n 2) 0)\n\t\t1\n\t\t0\n\t)\n)\n\n(define (main)\n\t(define numero 0)\n\t(printf \"Ingrese un numero: \")\n\t(set! numero (read))\n\t(if (= (esperar numero) 1)\n\t\t(printf \"\\nEl numero ingresado es Par. \")\n\t\t(printf \"\\nEl numero ingresado es Impar. \")\n\t)\n)\n\n(main)"
+            },
+            "2" : 
+            {
+                "codigo": ";Crear un programa que tenga una función encargada de \n;aplicar descuento a un producto que este en venta.\n(define (descuento precio descuento)\n\t(define total 0)\n\t(if(and (> precio 0) (> descuento 0))\n\t\t(set! total (* precio(/ (- 100 descuento) 100)))\n\t)\n\ttotal\n)\n\n(define (main)\n\t(define precio 0) (define desc 0)\n\t(printf \"Ingrese el precio del producto: \")\n\t(set! precio (read))\n\t(printf \"Ingrese el descuento en porcentaje para el producto: \")\n\t(set! desc (read))\n\t(printf \"\\nEl precio final es: ~a\" (descuento precio desc))\n)\n\n(main)"
+            },
+            "3" : 
+            {
+                "codigo": ";Cree una función que se encargue de devolver el maximo \n;valor de los valores ingresados en un vector de enteros \n;que el usuario digita.\n(define  (maximo vect N)\n\t(define mayor 0)\n\t(for ([i (in-range 0 N 1)])\n\t\t(if (< mayor (vector-ref vect i))\n\t\t\t(set! mayor (vector-ref vect i))\n\t\t\t(void)\n\t\t)\n\t)\n\tmayor\n)\n\n(define (main)\n\t(printf \"Ingrese la cantidad de enteros a guardar en el vector: \")\n\t(define N (read))\n\t(define vect ) \n\t(for ([i (in-range 0 N 1)])\n\t\t(printf \"Valor para la posicion [~a]: \" i+1)\n\t\t(vector-set! vect i (read))\n\t)\n\t(printf \"\\nEL VALOR MAXIMO ES: ~a\" (maximo vect N))\n)\n\n(main)"
+            },
+            "4" : 
+            {
+                "codigo": ";Cree un programa en Racket tenga un menú de opciones de una \n;calculadora deoperaciones matemáticas basicas.\n(define (suma)\n\t(define a 0)(define b 0)\n\t(printf \"Numero a: \")\n\t(set! a (read))\n\t(printf \"\\nNumero b: \")\n\t(set! b (read))\n\t(+ a b)\n)\n\n(define (resta)\n\t(define a 0)(define b 0)\n\t(printf \"Numero a: \")\n\t(set! a (read))\n\t(printf \"\\nNumero b: \")\n\t(set! b (read))\n\t(- a b)\n)\n\n(define (multiplicacion)\n\t(define a 0)(define b 0)\n\t(printf \"Numero a: \")\n\t(set! a (read))\n\t(printf \"\\nNumero b: \")\n\t(set! b (read))\n\t(* a b)\n)\n\n(define (division)\n\t(define a 0)(define b 0)\n\t(printf \"Numero a: \")\n\t(set! a (read))\n\t(printf \"\\nNumero b: \")\n\t(set! b (read))\n\t(/ a b)\n)\n\n(define (main)\n\t(define opcion 0)\n\t(printf \"\\nCALCULADORA:\\n1. Suma.\\n2. Resta.\\n3. Multiplicacion\")\n\t(printf \"\\n4. Division..\\n5. Salir\\nOpcion: \")\n\t(set! opcion (read))\n\t(cond\n\t\t((= opcion 1) (printf \"\\nLa suma da como resultado: ~a\" \n\t\t\t(suma)))\n\t\t((= opcion 2) (printf \"\\nLa resta da como resultado: ~a\" \n\t\t\t(resta)))\n\t\t((= opcion 3) (printf \"\\nLa multiplicacion da como resultado: ~a\" \n\t\t\t(multiplicacion)))\n\t\t((= opcion 4) (printf \"\\nLa division da como resultado: ~a\" \n\t\t\t(division)))\n\t\t((= opcion 5) (printf \"Salir\"))\t\t(else (begin (printf \"ingrese una opcion valida.\") (main)))\n\t)\n)\n\n(main)"
+            },
+            "5" : 
+            {
+                "codigo": ";Cree una función que utilice recursión para calcular el\n;factorial de un número.\n(define (factorial n)\n\t(if(= n 0)\n\t\t1\n\t\t(if(= n 1)\n\t\t\t1\n\t\t\t(* n (factorial (- n 1)))\n\t\t)\n\t)\n)\n\n(define (main) \n\t(define numero 0)\n\t(printf \"Ingresa un numero para calcular su factorial: \")\n\t(set! numero (read))\n\t(printf \"\\nEl factorial del numero ~a es: ~a\" numero (factorial numero))\n)\n\n(main)"
+            },
+            "6" : 
+            {
+                "codigo": ";Escriba un programa que use funciones recursivas\n;el cual permita escribir la sucesión de Fibonacci.\n(define (fibonacci n)\n\t(if (= n 1)\n\t\t1\n\t\t(if (= n 2)\n\t\t\t1\n\t\t\t(+ (fibonacci (- n 1)) (fibonacci (- n 2)))\n\t\t)\n\t)\n)\n\n(define (main)\n\t(define limite 0)\n\t(printf \"Escriba el limite para la sucesion de fibonacci: \")\n\t(set! limite (read))\n\t(for ([i (in-range 0 limite 1)])\n\t\t(printf \"~a\\n\" (fibonacci i))\n\t)\n)\n\n(main)"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Cree una funcion que evalue si un número es par o impar.*/\n#include <stdio.h>\nint espar(int n){\n\tif(n%2==0){\n\t\treturn 1;\n\t}else return 0;\n}\n\nint main(){\n\tint numero;\n\tprintf(\"Ingrese un numero: \");\n\tscanf(\"%d\", &numero);\n\tif(espar(numero) == 1){\n\t\tprintf(\"\\nEl numero ingresado es Par. \");\n\t}else printf(\"\\nEl numero ingresado es Impar. \");\n}"
+            },
+            "2b" : 
+            {
+                "codigo": "/* Crear un programa que tenga una función encargada de aplicar descuento a un producto que este en venta.*/#include <stdio.h>\nfloat descuento(float precio, float descuento){\n\tfloat total=0;\n\tif(precio>0 && descuento>0){\n\t\ttotal=precio*((100-descuento)/100);\n\t}\n\treturn total;\n}\n\nint main(){\n\tfloat precio=0, desc=0;\n\tprintf(\"Ingrese el precio del producto: \");\n\tscanf(\"%f\", &precio);\n\tprintf(\"Ingrese el descuento en porcentaje para el producto: \");\n\tscanf(\"%f\", &desc);\n\tprintf(\"\\n\tEl precio final es: %.2f\", descuento(precio, desc));\n}"
+            },
+            "3b" : 
+            {
+                "codigo": "/*Cree una función que se encargue de devolver el maximo \nvalor de los valores ingresados en un vector de enteros \nque el usuario digita.*/\n#include <stdio.h>\nint maximo(int vector[], int N){\n \tint i, mayor=0;\n\tfor(i=0; i<N; i++){\n\t\tif(mayor<vector[i]){\n\t\t\tmayor=vector[i];\n\t\t}\n\t}\n\treturn mayor;\n}\n\nint main(){\n\tint N, i;\n\tprintf(\"Ingrese la cantidad de enteros a guardar en el vector: \");\n\tscanf(\"%d\", &N);\n\tint vector[N];\n\tfor(i=0; i<N; i++){\n\t\tprintf(\"Valor para la posicion [%d]: \", i+1);\n\t\tscanf(\"%d\", &vector[i]);\n\t}\n\tprintf(\"\\nEL VALOR MAXIMO ES: %d\", maximo(vector, N));\n}"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Cree un programa en C tenga un menú de opciones de una \ncalculadora deoperaciones matemáticas basicas.*/\n#include <stdio.h>\nint suma(){\n\tint a, b;\n\tprintf(\"Numero a: \");\n\tscanf(\"%d\", &a);\n\tprintf(\"\\nNumero b: \");\n\tscanf(\"%d\", &b);\nreturn a+b;\n}\n\nint resta(){\n\tint a, b;\n\tprintf(\"Numero a: \");\n\tscanf(\"%d\", &a);\n\tprintf(\"\\nNumero b: \");\n\tscanf(\"%d\", &b);\n\treturn a-b;\n}\n\nint multiplicacion(){\n\tint a, b;\n\tprintf(\"Numero a: \");\n\tscanf(\"%d\", &a);\n\tprintf(\"\\nNumero b: \");\n\tscanf(\"%d\", &b);\n\treturn a*b;\n}\n\nfloat division(){\n\tfloat a, b;\n\tprintf(\"Numero a: \");\n\tscanf(\"%f\", &a);\n\tprintf(\"\\nNumero b: \");\n\tscanf(\"%f\", &b);\n\treturn a/b;\n}\n\nint main(){\n\tint opcion;\n\tdo{\n\t\tprintf(\"\\nCALCULADORA:\\n1. Suma.\\n2. Resta.\\n3. Multiplicacion\");\n\t\tprintf(\"\\n4. Division..\\n5. Salir\\nOpcion: \");\n\t\tscanf(\"%d\", &opcion);\n\t\tswitch(opcion){\n\t\t\tcase 1: printf(\"\\nLa suma da como resultado: %d\", suma());\n\t\t\t\tbreak;\n\t\t\tcase 2: printf(\"\\nLa resta da como resultado: %d\",resta());\n\t\t\t\tbreak;\n\t\t\tcase 3: printf(\"\\nLa multiplicacion da como resultado: %d\",multiplicacion());\n\t\t\t\tbreak;\n\t\t\tcase 4: printf(\"\\nLa division da como resultado: %f\",division());\n\t\t\t\tbreak;\n\t\t\tdefault: printf(\"ingrese una opcion valida.\");\n\t\t}\n\t}while(opcion!=5);\n}"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Cree una función que utilice recursión para calcular el\nfactorial de un número.*/\n#include <stdio.h>\nint factorial(int n) {\n\tif(n < 0) return 0;\n\telse if(n > 1) return n*factorial(n-1);\n\treturn 1;\n}\n\nint main() {\n\tint numero;\n\tprintf(\"Ingresa un numero para calcular su factorial: \");\n\tscanf(\"%d\", &numero);\n\tprintf(\"\\n\\nEl factorial del numero %d es: %d.\", numero, factorial(numero));\n}"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Escriba un programa que use funciones recursivas \nel cual permita escribir la sucesión de Fibonacci.*/\n#include <stdio.h>\n#include <stdlib.h>\nint fibonacci(int n){\n\tif (n == 1){\n\t\treturn 1;\n\t}else if (n==2){\n\t\treturn 1;\n\t}else return fibonacci(n-1) + fibonacci(n-2);\n}\n\nint main(){\n\tint i, limite;\n\tprintf(\"Escriba el limite para la sucesion de fibonacci: \");\n\tscanf(\"%d\", &limite);\n\tfor (i=0; i<limite; i++){\n\t\tprintf(\"%d\\n\", fibonacci(i));\n\t}\n}"
+            }
+        },
+
+        "composicion":
+        {
+            "1" : 
+            {
+                "codigo": ";Crear un programa en Racket que capture una letra y y devuelva \n;la letra siguiente. Nota: Use el codigo ASCII, use dos funciones, \n;una para comprobar el valor de la letra, y otra para aumentar \n;dicho valor\n(define (ASCII letra)\n\t(char->integer letra)\n)\n\n(define (aumentar letra)\n\t(define valor 0)\n\t(set! valor (ASCII letra))\n\t(if(= valor 90)\n\t\t65\n\t\t(if(= valor 122)\n\t\t\t97\n\t\t\t(set!  valor (+ valor 1))\n\t\t)\n\t)\n)\n\n(define (main)\n\t(define letra \"\")\n\t(printf \"Ingrese una letra: \")\n\t(set! letra (read))\n\t(printf \"\\nLa siguiente letra es: ~a\" (aumentar letra))\n)\n\n(main)"
+            },
+            "2" : 
+            {
+                "codigo": ";Cree un programa en Racket que realice una resta de enteros con la\n;condición de que el resultado de positivo, use funciones anidadas.\n(define (mayor a b)\n\t(if(> b a) \n\t\tb\n\t\ta\n\t)\n)\n\n(define (resta a b)\n\t(if(= (mayor a b) a)\n\t\t(- a b)\n\t\t-1\n\t)\n)\n\n(define (main)\n\t(define a 0)(define b 0)\n\t(printf \"Resta de numeros positivos.\\nPrimer Numero: \")\n\t(set! a (read))\n\t(printf \"Segundo Numero: \")\n\t(set! b (read))\n\t(if(= (resta a b) -1)\n\t\t(printf \"\\n*El segundo numero no puede ser mas grande que el primero.\")\n\t\t(printf \"\\nLa resta entre los numeros ingresados es: ~a\" (resta a b))\n\t)\n)\n\n(main)"
+            },
+            "3" : 
+            {
+                "codigo": ";Realizar la implementación con funciones en Racket de un programa que\n;lea una fecha dada por el usuario y se compruebe si el dia y mes estan \n;bien escritos y luego imprima el mes en palabras.\n(define (mes_palabras mes)\n\t(cond \n\t\t((= mes 1) (printf \"Enero\"))\n\t\t((= mes 2) (printf \"Febrero\"))\n\t\t((= mes 3) (printf \"Marzo\"))\n\t\t((= mes 4) (printf \"Abril\"))\n\t\t((= mes 5) (printf \"Mayo\"))\n\t\t((= mes 6) (printf \"Junio\"))\n\t\t((= mes 7) (printf \"Julio\"))\n\t\t((= mes 8) (printf \"Agosto\"))\n\t\t((= mes 9) (printf \"Septiembre\"))\n\t\t((= mes 10) (printf \"Octubre\"))\n\t\t((= mes 11) (printf \"Noviembre\"))\n\t\t((= mes 12) (printf \"Diciembre\"))\n\t)\n)\n\n(define (comprobar dia mes)\n\t(if (and (and (> dia 0) (< dia 32)) (and (> mes 0) (< mes 13)))\n\t\t(begin\n\t\t\t(mes_palabras mes)\n\t\t\t1\n\t\t)\n\t\t0\n\t)\n)\n\n(define (main)\n\t(define d 0)(define m 0)(define a 0)\n\t(printf \"Dia: \")\n\t(set! d (read))\n\t(printf \"\\nMes: \")\n\t(set! m (read))\n\t(if(= (comprobar d m) 1)\n\t\t(printf \"\\nLA FECHA ESTA CORRECTAMENTE ESCRITA. \")\n\t\t(printf \"\\nLA FECHA ESTA INCORRECTA. \")\n\t)\n)\n\n(main)"
+            },
+            "4" : 
+            {
+                "codigo": ";Crear un programa que permita realizar la contabilidad al vender\n;un producto. El programa debe tener dos funciones anidadas, una que \n;multiplique la cantidad total y otra que aplique el descuento.\n(define (descuento valor_cantidad descuento)\n\t(define total 0)\n\t(if(and (> valor_cantidad 0) (> descuento 0))\n\t\t(set! total (* valor_cantidad (/ (- 100 descuento) 100)))\n\t)\n\ttotal\n)\n\n(define (cantidad precio cantidad desc)\n\t(define valor 0)\n\t(set! valor (* precio cantidad))\n\t(descuento valor desc)\n)\n\n(define (main)\n\t(define precio 0)(define desc 0)(define  cant 0) \n\t(printf \"Ingrese el precio del producto: \")\n\t(set! precio (read))\n\t(printf \"Ingrese la cantidad del producto: \")\n\t(set! cant (read))\n\t(printf \"Ingrese el descuento en porcentaje para el producto: \")\n\t(set! desc (read))\n\t(printf \"\\nEl precio final es: ~a\" (cantidad precio cant desc))\n)\n\n(main)"
+            },
+            "5" : 
+            {
+                "codigo": ";Cree una función recursiva que permita calcular el minimo común \n;multiplo entre dos numeros. Nota: Se puede usar el maximo comun \n;entre los dos números. Se aplica el concepto de funciones anidadas.\n(define (maximo_comun_divisor a b)\n\t(define temporal 0)\n\t(while (not (= b 0))\n\t\t(set! temporal b)\n\t\t(set! b (remainder a b)\n\t\t(set! a temporal)\n\t)\n\ta\n)\n\n(define minimo_comun_multiplo(int a, int b)\n\t(/ (a * b) (maximo_comun_divisor a b))\n)\n\n(define (main) \n\t(define a 0)(define b 0)\n\t(printf \"Ingrese el numero a: \")\n\t(set! a (read))\n\t(printf \"\\nIngrese el numero b: \")\n\t(set! b (read))\n\t(define mcm (minimo_comun_multiplo a b)\n\t(printf \"\\nMCM de ~a y ~a = ~a\\n\" a b mcm)\n)\n\n(main)"
+            },
+            "6" : 
+            {
+                "codigo": ";Haga un programa en Racket que use dos funciones recursivas anidadas\n;para calcular la n-esima potencia de un número dado por el usuario.\n(define (multi a b)\n\t(if(or (= a 0) (= b 0))\n\t\t0\n\t\t(+ a (multi a (- b 1)))\n\t)\n)\n\n(define (potencia base exp)\n\t(define res 0)\n\t(if (= exp 0)\n\t\t(set! res 1.0)\n\t\t(if (> exp 0)\n\t\t\t(set! res (multi base (potencia base (- exp 1))))\n\t\t\t(set! res (/ 1.0 (multi base (potencia base (+ exp 1)))))\n\t\t)\n\t)\n\tres\n)\n\n(define (main)\n\t(define base 0)(define exp 0)\n\t(printf \"Base: \")\n\t(set! base (read))\n\t(printf \"Exponente: \")\n\t(set! exp (read))\n\t(printf \"POTENCIA: ~a\" (potencia base exp))\n)\n\n(main)"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Crear un programa en c que capture una letra y y devuelva la \nletra siguiente. Nota: Use el codigo ASCII, use dos funciones, \nuna para comprobar el valor de la letra, y otra para aumentar \ndicho valor*/\n#include <stdio.h>\nint ASCII(char letra){\n\treturn letra;\n}\n\nint aumentar(char letra){\n\tint valor;\n\tvalor=ASCII(letra);\n\tif(valor==90){\n\t\treturn 65;\n\t}else if(valor==122){\n\t\treturn 97;\n\t}else return valor+1;\n}\n\nint main(){\n\tchar letra;\n\tprintf(\"Ingrese una letra: \");\n\tscanf(\"%c\", &letra);\n\tprintf(\"\\n\\nLa siguiente letra es: %c\", aumentar(letra));\n}"
+            },
+            "2b" : 
+            {
+                "codigo": "/*Cree un programa en c que realice una resta de enteros con la\ncondición de que el resultado de positivo, use funciones anidadas.*/\n#include <stdio.h>\nint mayor(int a, int b){\n\tif(b>a) return b;\n\telse return a;\n}\n\nint resta(int a, int b){\n\tif(mayor(a,b)==a){\n\t\treturn a-b;\n\t}else return -1;\n}\n\nint main(){\n\tint a, b;\n\tprintf(\"Resta de numeros positivos.\\nPrimer Numero: \");\n\tscanf(\"%d\", &a);\n\tprintf(\"Segundo Numero: \");\n\tscanf(\"%d\", &b);\n\tif(resta(a,b)==-1){\n\t\tprintf(\"\\n\\n*El segundo numero no puede ser mas grande que el primero. \");\n\t}else printf(\"\\n\\nLa resta entre los numeros ingresados es: %d\", resta(a,b));\n}"
+            },
+            "3b" : 
+            {
+                "codigo": "/*Realizar la implementación con funciones en c de un programa que\nlea una fecha dada por el usuario y se compruebe si el dia y mes \nestan bien escritos y luego imprima el mes en palabras.*/\n#include <stdio.h>\nvoid mes_palabras(int mes){\n\tswitch(mes){\n\t\t\tcase 1: printf(\"Enero\");break;\n\t\t\tcase 2: printf(\"Febrero\");break;\n\t\t\tcase 3: printf(\"Marzo\");break;\n\t\t\tcase 4: printf(\"Abril\");break;\n\t\t\tcase 5: printf(\"Mayo\");break;\n\t\t\tcase 6: printf(\"Junio\");break;\n\t\t\tcase 7: printf(\"Julio\");break;\n\t\t\tcase 8: printf(\"Agosto\");break;\n\t\t\tcase 9: printf(\"Septiembre\");break;\n\t\t\tcase 10: printf(\"Octubre\");break;\n\t\t\tcase 11: printf(\"Noviembre\");break;\n\t\t\tcase 12: printf(\"Diciembre\");break;\n\t}\n}\n\nint comprobar(int dia, int mes){\n\tif(dia>=1 && dia<=31 && mes>=1 && mes<=12){\n\t\tmes_palabras(mes);\n\t\treturn 1;\n\t}else return 0;\n}\n\nint main(){\n\tint d,m,a;\n\tprintf(\"Dia: \");\n\tscanf(\"%d\", &d);\n\tprintf(\"\\nMes: \");\n\tscanf(\"%d\", &m);\n\tif(comprobar(d, m) == 1){\n\t\tprintf(\"\\nLA FECHA ESTA CORRECTAMENTE ESCRITA. \");\n\t}else printf(\"\\nLA FECHA ESTA INCORRECTA. \");\n}"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Crear un programa que permita realizar la contabilidad al vender\nun producto. El programa debe tener dos funciones anidadas, una que \nmultiplique la cantidad total y otra que aplique el descuento.*/\n#include <stdio.h>\nfloat descuento(float valor_cantidad, float descuento){\n\tfloat total=0;\n\tif(valor_cantidad>0 && descuento>0){\n\t\ttotal=valor_cantidad*((100-descuento)/100);\n\t}\n\treturn total;\n}\n\nfloat cantidad(float precio, float cantidad, float desc){\n\tfloat valor=0;\n\tvalor=precio*cantidad;\n\treturn descuento(valor, desc);\n}\n\nint main(){\n\tfloat precio=0, desc=0, cant=0;\n\tprintf(\"Ingrese el precio del producto: \");\n\tscanf(\"%f\", &precio);\n\tprintf(\"Ingrese la cantidad del producto: \");\n\tscanf(\"%f\", &cant);\n\tprintf(\"Ingrese el descuento en porcentaje para el producto: \");\n\tscanf(\"%f\", &desc);\n\tprintf(\"\\nEl precio final es: %.2f\", cantidad(precio, cant, desc));\n}"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Cree una función recursiva que permita calcular el minimo común \nmultiplo entre dos numeros. Nota: Se puede usar el maximo comun \nentre los dos números. Se aplica el concepto de funciones anidadas.*/\n#include <stdio.h>\nint maximo_comun_divisor(int a, int b){\n\tint temporal;\n\twhile (b != 0) {\n\t\ttemporal = b;\n\t\tb = a % b;\n\t\ta = temporal;\n\t}\n\treturn a;\n}\n\nint minimo_comun_multiplo(int a, int b){\n\treturn (a * b) / maximo_comun_divisor(a, b);\n}\n\nint main(void) {\n\tint a,b;\n\tprintf(\"Ingrese el numero a: \");\n\tscanf(\"%d\", &a);\n\tprintf(\"\\nIngrese el numero b: \");\n\tscanf(\"%d\", &b);\n\tint mcm = minimo_comun_multiplo(a, b);\n\tprintf(\"\\n\\nMCM de %d y %d = %d\\n\", a, b, mcm);\n}"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Haga un programa en C que use dos funciones recursivas anidadas \npara calcular la n-esima potencia de un número dado por el usuario.*/\n#include <stdio.h>\nfloat multi(float a, float b){\n\tif(a==0 || b==0)\n\t\treturn 0;\n\telse{\n\t\treturn a+multi(a,b-1);\n\t}\n}\n\nfloat potencia(float base, int exp){\n\tfloat res;\n\tif (exp == 0)\n\t\tres=1.0;\n\telse if (exp > 0){\n\t\tres=multi(base,potencia(base,exp - 1));\n\t}\n\telse if (exp < 0){\n\t\tres=1.0/multi(base,potencia(base,exp + 1));\n\t}\n\treturn res;\n}\n\nint main(){\n\tint base, exp;\n\tprintf(\"Base: \");\n\tscanf(\"%d\", &base);\n\tprintf(\"Exponente: \");\n\tscanf(\"%d\", &exp);\n\tprintf(\"POTENCIA: %f\", potencia(base, exp));\n}"
+            }
+        },
+
+        "procedimientos":
+        {
+            "1" : 
+            {
+                "codigo": ";Implemente un procedimiento que reciba un numero e imprima\n;si el numero es positivo o negativo, en caso de ser positivo\n;debe analizar si es par o impar.\n(define (analisis n)\n\t(if (> n 0)\n\t\t(begin\n\t\t\t(printf \"\\nEl numero ingresado es positivo.\")\n\t\t\t(if (= (remainder n 2) 0)\n\t\t\t\t(printf \"\\nAdemas el numero es par.\")\n\t\t\t\t(printf \"\\nAdemas el numero es impar.\")\n\t\t\t)\n\t\t)\n\t\t(printf \"\\nEl numero ingresado es Negativo.\")\n\t)\n\n)\n\n(define (main)\n\t(define numero 0)\n\n\t(printf \"Ingrese un numero para analizar: \")\n\t(set! numero (read))\n\t(analisis numero)\n)\n\n(main)"
+            },
+            "2" : 
+            {
+                "codigo": ";Implemente un procedimiento que dado un numero imprima en\n;palabrasel mes del año correspondiente.\n(define (mes_palabras mes)\n\t(cond\n\t\t((= mes 1) (printf \"Enero\"))\n\t\t((= mes 2) (printf \"Febrero\"))\n\t\t((= mes 3) (printf \"Marzo\"))\n\t\t((= mes 4) (printf \"Abril\"))\n\t\t((= mes 5) (printf \"Mayo\"))\n\t\t((= mes 6) (printf \"Junio\"))\n\t\t((= mes 7) (printf \"Julio\"))\n\t\t((= mes 8) (printf \"Agosto\"))\n\t\t((= mes 9) (printf \"Septiembre\"))\n\t\t((= mes 10) (printf \"Octubre\"))\n\t\t((= mes 11) (printf \"Noviembre\"))\n\t\t((= mes 12) (printf \"Diciembre\"))\n\t)\n)\n\n(define (main)\n\t(define mes 0)\n\t(do ((i 1 (+ i 1))) ((and (> mes 0)(< mes 13)))\n\t\t(printf \"\\nIngrese un numero: \")\n\t\t(set! mes (read))\n\t\t(mes_palabras mes)\n\t)\n)\n\n(main)"
+            },
+            "3" : 
+            {
+                "codigo": ";Crear un programa en Racket que contenga un procedimiento que\n;imprima un cuadrado de acuerdo a un caracter que se le\n;entrega junto con el tamaño de los lados de este.\n(define (cuadrado c lado)\n\t(for ([i (in-range 0 lado 1)])\n\t\t(for ([j (in-range 0 lado 1)])\n\t\t\t(printf \"~a \" c)\n\t\t)\n\t\t(printf \"\\n\")\n\t)\n)\n\n(define (main)\n\t(define c 0)\n\t(define lado 0)\n\t(printf \"Ingrese un caracter para imprimir: \")\n\t(set! c (read))\n\t(printf \"Ingrese el tamano de los lados del cuadrado: \")\n\t(set! lado (read))\n\t(cuadrado c lado)\n)\n\n(main)"
+            },
+            "4" : 
+            {
+                "codigo": ";Cree un programa que reciba una fecha (dia, mes y año) en\n;variables separadas, luego implemente un procedimiento que\n;muestre la fecha siguiente.\n(define (fecha_siguiente dia mes anio)\n\t(printf \"\\n\\n***FECHA SIGUIENTE:***\\n\")\n\t(if (dia>0 && dia<=31 && mes>0 && mes<=12)\n\t\t(if (and (= dia 31)  (= mes 12))\n\t\t\t(begin\n\t\t\t\t(set! dia 1)\n\t\t\t\t(set! mes 1)\n\t\t\t\t(set! anio (+ anio 1))\n\t\t\t\t(printf \"[~a/~a/~a]\" dia mes anio)\n\t\t\t)\n\t\t\t(if (= dia 31)\n\t\t\t\t(begin \n\t\t\t\t\t(set! dia 1)\n\t\t\t\t\t(set! mes (+ mes 1))\n\t\t\t\t\t(printf \"[~a/~a/~a]\" dia mes anio)\n\t\t\t\t)\n\t\t\t\t(begin\n\t\t\t\t\t(set! dia (+ dia 1))\n\t\t\t\t\t(printf \"[~a/~a/~a]\" dia mes anio)\n\t\t\t\t)\n\t\t\t)\n\t\t)\n\t\t(printf \"\\n***FECHA INVALIDA***\")\n\t)\n)\n\n(define (main)\n\t(define d 0)(define m 0)(define a 0)\n\t(printf \"Ingrese una fecha.\\nDia: \")\n\t(set! d (read))\n\t(printf \"Mes: \")\n\t(set! m (read))\n\t(printf \"Anio: \")\n\t(set! a (read))\n\t(fecha_siguiente d m a)\n)\n\n(main)"
+            },
+            "5" : 
+            {
+                "codigo": ";Cree un programa en c que tenga los procedimientos basicos \n;relacionados con vectores, llenar e imprimir un vector.\n(define (imprimir_vector vec tam)\n\t(printf \"\\n***EL VECTOR ES: ***\\n\")\n\t(for ([i (in-range 0 tam 1)])\n\t\t(printf \"~a \" (vector-ref vect i))\n\t)\n)\n\n(define (llenar_vector vect tam)\n\t(define num 0)\n\t(for ([i (in-range 0 tam 1)])\n\t\t(printf \"\\nPosicion ~a: \" i+1)\n\t\t(set! num (read))\n\t\t(vector-set! vect i num)\n\t)\n\t(imprimir_vector vect tam)\n)\n\n(define (main)\n\t(define tam 0)\n\t(printf \"Ingrese un tamano para el vector: \")\n\t(set! tam (read))\n\t(define vect (make-vector tam 0))\n\t(llenar_vector vect tam)\n)\n\n(main)"
+            },
+            "6" : 
+            {
+                "codigo": ";Con base al anterior programa, cree un procedimiento que\n;ordene de manera ascendente los valores de un vector de N\n;enteros dado por el usuario.\n(define (imprimir_vector vec tam)\n\t(printf \"\\n***EL VECTOR ES: ***\\n\")\n\t(for ([i (in-range 0 tam 1)])\n\t\t(printf \"~a \" (vector-ref vect i))\n\t)\n)\n\n(define (ordenar_vector vect tam)\n\t(define temp 0)\n\t(for ([i (in-range 0 tam 1)])\n\t\t(for ([j (in-range 0 tam 1)])\n\t\t\t(if (< (vector-ref vect j) (vector-ref vect i))\n\t\t\t\t(begin\n\t\t\t\t\t(set! temp (vector-ref vect j))\n\t\t\t\t\t(vector-set! vect j (vector-ref vect i))\n\t\t\t\t\t(vector-set! vect i temp)\n\t\t\t\t)\n\t\t\t\t(void)\n\t\t\t)\n\t\t)\n\t)\n\t(imprimir_vector vect tam)\n)\n\n(define (llenar_vector vect tam)\n\t(define num 0)\n\t(for ([i (in-range 0 tam 1)])\n\t\t(printf \"\\nPosicion ~a: \" i+1)\n\t\t(set! num (read))\n\t\t(vector-set! vect i num)\n\t)\n\t(imprimir_vector vect tam)\n\t(ordenar_vector vect tam)\n)\n\n(define (main)\n\t(define tam 0)\n\t(printf \"Ingrese un tamano para el vector: \")\n\t(set! tam (read))\n\t(define vect (make-vector tam 0))\n\t(llenar_vector vect tam)\n)\n\n(main)"
+            },
+            "1b" : 
+            {
+                "codigo": "/*Implemente un procedimiento que reciba un numero e imprima\nsi el numero es positivo o negativo, en caso de ser positivo\ndebe analizar si es par o impar.*/\n#include <stdio.h>\nvoid analisis(int n){\n\tif(n>0){\n\t\tprintf(\"\\nEl numero ingresado es positivo.\");\n\t\tif(n%2==0){ \n\t\t\tprintf(\"\\nAdemas el numero es par.\");\n\t\t}else {\n\t\t\tprintf(\"\\nAdemas el numero es impar.\");\n\t\t}\n\t}else printf(\"\\nEl numero ingresado es Negativo.\");\n}\n\nint main(){\n\tint numero;\n\tprintf(\"Ingrese un numero para analizar: \");\n\tscanf(\"%d\", &numero);\n\tanalisis(numero);\n}"
+            },
+            "2b" : 
+            {
+                "codigo": "/*Implemente un procedimiento que dado un numero imprima en\npalabrasel mes del año correspondiente.*/\n#include <stdio.h>\nvoid mes_palabras(int mes){\n\tswitch(mes){\n\t\tcase 1: printf(\"Enero\");break;\n\t\tcase 2: printf(\"Febrero\");break;\n\t\tcase 3: printf(\"Marzo\");break;\n\t\tcase 4: printf(\"Abril\");break;\n\t\tcase 5: printf(\"Mayo\");break;\n\t\tcase 6: printf(\"Junio\");break;\n\t\tcase 7: printf(\"Julio\");break;\n\t\tcase 8: printf(\"Agosto\");break;\n\t\tcase 9: printf(\"Septiembre\");break;\n\t\tcase 10: printf(\"Octubre\");break;\n\t\tcase 11: printf(\"Noviembre\");break;\n\t\tcase 12: printf(\"Diciembre\");break;\n\t}\n}\n\nint main(){\n\tint mes;\n\tdo{\n\t\tprintf(\"\\nIngrese un numero: \");\n\t\tscanf(\"%d\", &mes);\n\t\tmes_palabras(mes);\n\t}while(mes>0 && mes<=12);\n}"
+            },
+            "3b" : 
+            {
+                "codigo": "/*Crear un programa en C que contenga un procedimiento que\nimprima un cuadrado de acuerdo a un caracter que se le \nentrega junto con el tamaño de los lados de este.*/\n#include <stdio.h>\nvoid cuadrado(char c, int lado){\n\tint i, j;\n\tfor(i=0; i<lado; i++){\n\t\tfor(j=0; j<lado; j++){\n\t\t\tprintf(\"%c\", c);\n\t\t}\n\t\tprintf(\"\\n\");\n\t}\n}\n\nint main(){\n\tchar c;\n\tint lado;\n\tprintf(\"Ingrese un caracter para imprimir: \");\n\tscanf(\"%c\", &c);\n\tprintf(\"Ingrese el tamano de los lados del cuadrado: \");\n\tscanf(\"%d\", &lado);\n\tcuadrado(c, lado);\n}"
+            },
+            "4b" : 
+            {
+                "codigo": "/*Cree un programa que reciba una fecha (dia, mes y año) en\nvariables separadas, luego implemente un procedimiento que \nmuestre la fecha siguiente.*/\n#include <stdio.h>\nvoid fecha_siguiente(int dia, int mes, int anio){\n\tprintf(\"\\n\\n***FECHA SIGUIENTE:***\\n\");\n\tif(dia>0 && dia<=31 && mes>0 && mes<=12){\n\t\tif(dia==31 && mes==12){\n\t\t\tdia=1;\n\t\t\tmes=1;\n\t\t\tanio=anio+1;\n\t\t\tprintf(\"[%d/%d/%d]\", dia, mes, anio);\n\t\t}else if(dia==31){\n\t\t\tdia=1;\n\t\t\tmes=mes+1;\n\t\t\tprintf(\"[%d/%d/%d]\", dia, mes, anio);\n\t\t}else{\n\t\t\tdia=dia+1;\n\t\t\tprintf(\"[%d/%d/%d]\", dia, mes, anio);\n\t\t}\n\t}else printf(\"\\n\\n***FECHA INVALIDA***\");\n}\n\nint main(){\n\tint d, m, a;\n\tprintf(\"Ingrese una fecha.\\nDia: \");\n\tscanf(\"%d\", &d);\n\tprintf(\"Mes: \");\n\tscanf(\"%d\", &m);\n\tprintf(\"Anio: \");\n\tscanf(\"%d\", &a);\n\tfecha_siguiente(d,m,a);\n}"
+            },
+            "5b" : 
+            {
+                "codigo": "/*Cree un programa en c que tenga los procedimientos basicos \nrelacionados con vectores, llenar e imprimir un vector.*/\n#include <stdio.h>\nvoid imprimir_vector(int vector[], int tamano){\n\tprintf(\"\\n\\n***EL VECTOR ES: ***\\n\");\n\tfor(int i=0; i<tamano; i++){\n\t\tprintf(\"%d \", vector[i]);\n\t}\n}\n\nvoid llenar_vector(int vector[], int tamano){\n\tint num;\n\tfor(int i=0; i<tamano; i++){\n\t\tprintf(\"\\nPosicion %d :\", i+1);\n\t\tscanf(\"%d\", &num);\n\t\tvector[i]=num;\n\t}\n\timprimir_vector(vector, tamano);\n}\n\nint main(){\n\tint tamano;\n\tprintf(\"Ingrese un tamano para el vector: \");\n\tscanf(\"%d\", &tamano);\n\tint vector[tamano];\n\tllenar_vector(vector, tamano);\n}"
+            },
+            "6b" : 
+            {
+                "codigo": "/*Con base al anterior programa, cree un procedimiento que \nordene de manera ascendente los valores de un vector de N \nenteros dado por el usuario.*/\n#include <stdio.h>\nvoid imprimir_vector(int vector[], int tamano){\n\tprintf(\"\\n\\n***EL VECTOR ES: ***\\n\");\n\tfor(int i=0; i<tamano; i++){\n\t\tprintf(\"%d\", vector[i]);\n\t}\n}\n\nvoid ordenar_vector(int vector[], int tamano){\n\tint i, j, temp;\n\tfor (i=0; i<(tamano-1); i++){\n\t\tfor (j=i+1; j<tamano; j++){\n\t\t\tif (vector[j]<vector[i]){\n\t\t\t\ttemp=vector[j];\n\t\t\t\tvector[j]=vector[i];\n\t\t\t\tvector[i]=temp;\n\t\t\t}\n\t\t}\n\t}\n\timprimir_vector(vector, tamano);\n}\n\nvoid llenar_vector(int vector[], int tamano){\n\tint num;\n\tfor(int i=0; i<tamano; i++){\n\t\tprintf(\"\\nPosicion %d: \", i+1);\n\t\tscanf(\"%d\", &num);\n\t\tvector[i]=num;\n\t}\n\timprimir_vector(vector, tamano);\n\tordenar_vector(vector, tamano);\n}\n\nint main(){\n\tint tamano;\n\tprintf(\"Ingrese un tamano para el vector: \");\n\tscanf(\"%d\", &tamano);\n\tint vector[tamano];\n\tllenar_vector(vector, tamano);\n}"
+            }
+        }
+    }
+]
