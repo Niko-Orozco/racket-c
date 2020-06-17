@@ -49,20 +49,29 @@ function C(props) {
 
 export default class Steps extends Component {
 
+  getExercice(mod){
+    var val = mod.charAt(mod.length-1);
+    return val;
+  }
+
   getData = (e) => {
     var {module} = this.props;
-    document.getElementById('steps').value = data[0][module]['1']['1'];
-    document.getElementById('exp1').value = data[0][module]['1']['2'];
-    document.getElementById('exp2').value = data[0][module]['1']['3'];
+    var n = this.getExercice(module);
+    module = module.replace(n, '');
+    document.getElementById('steps').value = data[0][module][n]['1'];
+    document.getElementById('exp1').value = data[0][module][n]['2'];
+    document.getElementById('exp2').value = data[0][module][n]['3'];
   }
 
   render() {
     const mod1 = new exp();
     const mod2 = new exp2();
     var {module} = this.props;
+    var n = this.getExercice(module);
+    module = module.replace(n, '');
     return (
       <div className="Compare">
-        <Racket code={mod1.ejemplos(1, module)}></Racket>
+        <Racket code={mod1.ejemplos(parseInt(n), module)}></Racket>
         <div className="Compare__text-area">
           <textarea id="steps" className="texts" disabled />
           <div>
@@ -73,7 +82,7 @@ export default class Steps extends Component {
               Comparar
           </a>
         </div>
-        <C code={mod2.ejemplos(1, module)}></C>
+        <C code={mod2.ejemplos(parseInt(n), module)}></C>
       </div>
     );
   }

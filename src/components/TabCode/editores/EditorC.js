@@ -111,9 +111,11 @@ export default class Editor extends Component {
   };
 
   onKeyDownHandler() {
-    var a = window.event.keyCode
-    if(a == 13){
-      alert("key pressed salto de linea"+document.getElementById('in2').value);
+    var input;
+    var capture = window.event.keyCode;
+    if(capture == 13){
+      input = document.getElementById('in2').value
+      document.getElementById('in2').value = ""
     }
   }
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import dynamic from 'next/dynamic';
-import { Button } from '@material-ui/core';
 import './editor-stryle.scss';
 
 const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
@@ -51,16 +50,16 @@ export default class Editor extends Component {
     const code = this.state.code;
     const options = {
       selectOnLineNumbers: true,
+      readOnly: false,
       minimap: {
         enabled: false,
       },
     };
     return (
-      <div>
-        <div className="monaco-theme">
+      <div className="compiler compiler--left">
+        <div className="compiler__editor monaco-theme">
           <MonacoEditor
-            width="600px"
-            height="400px"
+            height="400px" 
             language="c"
             value={code}
             options={options}
@@ -71,18 +70,14 @@ export default class Editor extends Component {
         <div>
           <textarea
             id="output"
-            className="text-area"
+            className="compiler__output"
             placeholder="output"
             disabled
           />
         </div>
-        <Button
-          variant="outlined"
-          color="primary"
-          onClick={Compilador(this.state.code)}
-        >
-          Run
-        </Button>
+        <button className="compiler__button" onClick={Compilador(this.state.code)}>
+          Ejecutar
+        </button>
       </div>
     );
   }

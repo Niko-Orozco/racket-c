@@ -8,6 +8,7 @@ import Vect from '../../../LogicModel/vectores';
 import Expresiones from '../../../LogicModel/expresiones';
 import Secu from '../../../LogicModel/secuencia';
 import Cads from '../../../LogicModel/Cadenas';
+import { render } from 'react-dom';
 const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
 
 export default class Editor extends Component {
@@ -110,9 +111,11 @@ export default class Editor extends Component {
   };
 
   onKeyDownHandler() {
-    var a = window.event.keyCode
-    if(a == 13){
-      alert("key pressed salto de linea");
+    var input;
+    var capture = window.event.keyCode;
+    if(capture == 13){
+      input = document.getElementById('in2').value
+      document.getElementById('in2').value = ""
     }
   }
 

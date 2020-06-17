@@ -9,7 +9,7 @@ function Example(props) {
       <div className="ejemplo__editor">
         <Editor1 ejemplo={props.label} module={props.modules} />
       </div>
-      <a href={"/comparison/:"+props.modules} className="compiler__button">
+      <a href={"/comparison/:"+props.modules+props.label} className="compiler__button">
         Comparar
       </a>
       <div className="ejemplo__editor">

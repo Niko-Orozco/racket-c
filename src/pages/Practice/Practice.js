@@ -3,8 +3,8 @@ import './Practice.scss';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import Tabs from '../../components/Tabs/Tabs.jsx';
 import exercises from '../../assets/data/practicas.json';
-import Example from '../../components/TabCode/editores/EditorC';
-import Editor from '../../components/TabCode/editores/EditorRacket';
+import Editor2 from '../../components/Editor/EditorC';
+import Editor1 from '../../components/Editor/EditorRacket';
 
 function ejercicios(ejemplo, module) {
   var ejer;
@@ -48,7 +48,7 @@ function Practices(props) {
             {ejercicios(currentActive, modul)}
           </div>
           <div className="Practice__editor">
-            <Editor></Editor>
+            <Editor1></Editor1>
           </div>
         </div>
       </div>

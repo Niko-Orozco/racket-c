@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import MonacoEditor from "@etclabscore/react-monaco-editor";
-import { Button } from '@material-ui/core';
+import dynamic from 'next/dynamic';
 import './editor-stryle.scss';
+
+const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
 var request = require('request');
 
   
@@ -47,27 +48,34 @@ export default class Editor extends Component {
         const code = this.state.code;
         const options = {
             selectOnLineNumbers: true,
-        };
+            readOnly: false,
+            minimap: {
+              enabled: false,
+            },
+          };
         return (
-            <div>
-                <div className="monaco-theme">
-                    <MonacoEditor 
-                            
-                            width="600px" 
-                            height="400px" 
-                            language="scheme"
-                            value={code} 
-                            options={options}
-                            onChange={this.handleChange}
-                            editorDidMount={this.handleEditorDidMount}
+            <div className="compiler compiler--left">
+                <div className="compiler__editor monaco-theme">
+                    <MonacoEditor
+                        height="400px" 
+                        language="scheme"
+                        value={code}
+                        options={options}
+                        onChange={this.handleChange}
+                        editorDidMount={this.handleEditorDidMount}
                     />
                 </div>
                 <div>
-                    <textarea id = "output" className = "text-area" placeholder="output" disabled/>
+                <textarea
+                    id="output"
+                    className="compiler__output"
+                    placeholder="output"
+                    disabled
+                />
                 </div>
-                <Button variant="outlined" color="primary" onClick ={this.onSubmit} >
-                    Run
-                </Button>
+                <button className="compiler__button" onClick={this.onSubmit}>
+                    Ejecutar
+                </button>
             </div>
         )
     }
