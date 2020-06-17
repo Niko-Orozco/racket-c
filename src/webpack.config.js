@@ -3,8 +3,4 @@ module.exports = {
   plugins: [
     new MonacoWebpackPlugin()
   ],
-  devServer: {
-    host: '0.0.0.0',
-    disableHostCheck: true,
-  }
 };

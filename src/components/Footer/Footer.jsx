@@ -1,5 +1,6 @@
 import React from 'react';
 import { FooterWrapper, Text, FooterImg, ImageWrapper } from './styles';
+import MonacoEditor from "@etclabscore/react-monaco-editor";
 
 const Footer = () => (
   <FooterWrapper>
