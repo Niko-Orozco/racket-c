@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import Popup from "reactjs-popup";
 
 class Expresiones{
+
+    
     uno(){
 
         var input = (Math.random()*(26-1))+1;
@@ -61,9 +63,12 @@ class Expresiones{
 }
 
 export default class expresiones extends Component {
-    uno(){
 
-        var input = (Math.random()*(26-1))+1;
+    uno(num){
+
+        
+        //var input = (Math.random()*(26-1))+1;
+        var input = num
         return "El perimetro es: " + ((2 * 3.141592)* input);
     }
 
