@@ -2,6 +2,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+install deps
+## 'npm install @etclabscore/react-monaco-editor --save'
+## 'npm install @rescripts/cli @rescripts/utilities --save-dev'
+## 'npm install monaco-editor-webpack-plugin --save-dev'
+
 In the project directory, you can run:
 
 ### `npm start`
