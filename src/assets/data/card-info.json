@@ -84,10 +84,17 @@
     "difficulty": "Avanzado"
   },
   {
-    "title": "13. Practica",
+    "title": "13. Practica C",
     "description": "En esta sección final harás una pequeña prueba para validar el conocimiento adquirido,¡Mucha suerte!",
     "img": "https://res.cloudinary.com/djqxz1kvu/image/upload/v1590366359/PR%C3%81CTICA_lg9l84.jpg",
-    "page": "/practice",
+    "page": "/modpractice1/:expresiones",
+    "difficulty": "Elemental"
+  },
+  {
+    "title": "14. Practica Racket",
+    "description": "En esta sección final harás una pequeña prueba para validar el conocimiento adquirido,¡Mucha suerte!",
+    "img": "https://res.cloudinary.com/djqxz1kvu/image/upload/v1590366359/PR%C3%81CTICA_lg9l84.jpg",
+    "page": "/modpractice2/:expresiones",
     "difficulty": "Elemental"
   }
 ]

@@ -4,7 +4,7 @@ import Navbar from '../../components/Navbar/Navbar.jsx';
 import Tabs from '../../components/Tabs/Tabs.jsx';
 import exercises from '../../assets/data/practicas.json';
 import Editor2 from '../../components/EditorPractice/C'
-import Editor1 from '../../components/Editor/EditorRacket';
+import Editor1 from '../../components/EditorPractice/Racket'
 
 function ejercicios(ejemplo, module) {
   var ejer;
@@ -22,14 +22,29 @@ function ejercicios(ejemplo, module) {
   return ejer;
 }
 
+function Edit(props){
+  const { editors, urls } = props;
+  if("/modpractice1/:modules" == editors){
+    var dir = urls.replace('1', '2');
+    return(
+      <Editor2 url = {dir}></Editor2>
+    );
+  }else{
+    var dir = urls.replace('2', '1');
+    return(
+      <Editor1 url = {dir}></Editor1>
+    );
+  }
+}
+
+
 function Practices(props) {
   //Declaración de la variable de estado active
-  const { dat } = props;
+  const { dat, editor, url } = props;
   const [active, setActive] = useState(0);
   const [currentActive, setCurrentActive] = useState(1);
   var name = dat.replace(':', '');
   const modul = name;
-
   return (
     <div className="Container">
       <Navbar mod={modul} />
@@ -48,7 +63,7 @@ function Practices(props) {
             {ejercicios(currentActive, modul)}
           </div>
           <div className="Practice__editor">
-            <Editor2></Editor2>
+            <Edit editors={editor} urls={url}></Edit>
           </div>
         </div>
       </div>
@@ -57,10 +72,11 @@ function Practices(props) {
 }
 
 export default class Practice extends Component {
-  render() {
+  render(){
+    console.log()
     return (
       <div>
-        <Practices dat={this.props.match.params.modules} />
+        <Practices dat={this.props.match.params.modules} editor={this.props.match.path} url={this.props.match.url}/>
       </div>
     );
   }

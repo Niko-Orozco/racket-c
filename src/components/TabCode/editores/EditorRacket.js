@@ -111,11 +111,11 @@ export default class Editor extends Component {
   };
 
   onKeyDownHandler() {
-    var input;
+    var input = 0;
     var capture = window.event.keyCode;
     if(capture == 13){
-      input = document.getElementById('in2').value
-      document.getElementById('in2').value = ""
+      input = document.getElementById('in1').value;
+      document.getElementById('in1').value = "";
     }
   }
 

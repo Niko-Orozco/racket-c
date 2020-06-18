@@ -23,7 +23,7 @@ export default class Editor extends Component {
   
 
   render() {
-    const code = ';type code here';
+    const code = '//type code here';
     const options = {
       selectOnLineNumbers: true,
       readOnly: false,
@@ -50,9 +50,14 @@ export default class Editor extends Component {
           placeholder="output"
           disabled
         />
-        <button className="compiler__button" onClick={this.onSubmit}>
-          Ejecutar
-        </button>
+        <div >
+          <a className="compiler__button" href={this.props.url}>
+            Ir a Racket
+          </a>
+          <button className="compiler__button" onClick={this.onSubmit}>
+            Ejecutar
+          </button>
+        </div>
       </div>
     );
   }

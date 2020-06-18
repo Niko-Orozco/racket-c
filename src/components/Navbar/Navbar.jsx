@@ -22,7 +22,7 @@ class Navbar extends Component {
           <a className="Navbar__link Navbar__link--element" href="/menu">
             Módulos
           </a>
-          <a className="Navbar__link Navbar__link--element" href={"/modpractice/:"+this.module()}>
+          <a className="Navbar__link Navbar__link--element" href={"/modpractice1/:"+this.module()}>
             Práctica
           </a>
           <a className="Navbar__link Navbar__link--element" href="/">
