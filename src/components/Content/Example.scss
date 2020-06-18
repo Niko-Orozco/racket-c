@@ -12,8 +12,18 @@
 }
 
 .compiler__button {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0px;
+  align-items: flex-end;
+
   &:hover {
     color: white;
     text-decoration: none;
   }
+}
+
+.spacing{
+  margin-bottom: 330px;
 }

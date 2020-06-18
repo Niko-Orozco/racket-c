@@ -52,6 +52,7 @@ function Modules(props) {
   const { dat } = props;
   const [active, setActive] = useState(0);
   const [currentActive, setCurrentActive] = useState(1);
+  console.log(setCurrentActive)
   var name = dat.replace(':', '');
   name = name.replace('#', '');
   const modul = mods(name);
@@ -67,7 +68,7 @@ function Modules(props) {
           index={6}
           type="Ejemplo"
         />
-        <Example label={currentActive} modules={modul} />
+        <Example label={currentActive} modules={modul} count={0}/>
       </div>
     </div>
   );
