@@ -70,6 +70,7 @@
   },
   "devDependencies": {
     "@rescripts/cli": "0.0.14",
+    "@rescripts/rescript-env": "0.0.12",
     "@rescripts/utilities": "0.0.7",
     "electron": "^9.0.4",
     "json-loader": "0.5.7",

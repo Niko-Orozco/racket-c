@@ -14,6 +14,8 @@ const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
 export default class Editor extends Component {
   constructor(props) {
     super(props);
+    this.one = 0
+    this.i = 0
   }
 
   ejemplos(ejemplo, module) {
@@ -90,7 +92,7 @@ export default class Editor extends Component {
 
     switch (this.props.ejemplo) {
       case 1:
-        document.getElementById('output').value = modul.uno();
+        document.getElementById('output').value = modul.uno(this.one);
         break;
       case 2:
         document.getElementById('output').value = modul.dos();
@@ -113,11 +115,84 @@ export default class Editor extends Component {
   onKeyDownHandler() {
     var input = 0;
     var capture = window.event.keyCode;
+<<<<<<< HEAD
+    
+    if (capture == 13) {
+      input = document.getElementById('in1').value
+      document.getElementById('in1').value = ""
+      var numero = parseInt(input)
+
+      this.i++
+      alert(this.i)
+      switch (this.props.module) {
+        case 'expresiones':
+          switch (this.props.ejemplo) {
+            case 1:
+              switch (this.i) {                
+                case 1:
+                  this.one = numero
+                  break
+              }
+              break;
+            case 2:
+              break;
+            case 3:
+
+              break;
+            case 4:
+
+              break;
+            case 5:
+
+              break;
+            case 6:
+
+              break;
+            ///poner un default
+          }
+          break;
+        case 'secuencia':
+
+          break;
+        case 'condicionales':
+
+          break;
+        case 'ciclos':
+
+          break;
+        case 'cadenas':
+
+          break;
+        case 'vectores':
+
+          break;
+        case 'matrices':
+
+          break;
+        case 'estructuras':
+
+          break;
+        case 'funciones':
+
+          break;
+        case 'composicion':
+
+          break;
+        case 'procedimientos':
+
+          break;
+        case 'Modo gráfico':
+
+          break;
+      }
+  }}
+=======
     if(capture == 13){
       input = document.getElementById('in1').value;
       document.getElementById('in1').value = "";
     }
   }
+>>>>>>> a599f1b2bf8f201b07a62c9cc5552a50628c6456
 
   render() {
     const code = this.ejemplos(this.props.ejemplo, this.props.module);
@@ -146,7 +221,7 @@ export default class Editor extends Component {
           placeholder="output"
           disabled
         />
-        <input className="compiler__input" type="text" id="in1" onKeyDown={this.onKeyDownHandler}></input>
+        <input className="compiler__input" type="text" id="in1" onKeyDown={() => this.onKeyDownHandler()}></input>
         <button className="compiler__button" onClick={this.onSubmit}>
           Ejecutar
         </button>
