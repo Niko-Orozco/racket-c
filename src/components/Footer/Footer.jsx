@@ -1,18 +1,14 @@
 import React from 'react';
-import { FooterWrapper, Text, FooterImg, ImageWrapper } from './styles';
+import { FooterWrapper} from './styles';
 import MonacoEditor from "@etclabscore/react-monaco-editor";
 
 const Footer = () => (
   <FooterWrapper>
-    <Text>
-      Esta aplicación web fue desarollada por Msc Luis Eduardo Muñoz Guerrero.
-      Docente de planta en la Universidad Tecnológica de Pereira usando las
-      siguientes tecnologías:
-    </Text>
-    <ImageWrapper>
-      <FooterImg src={require('../../assets/img/react.png')} />
-      <FooterImg src={require('../../assets/img/node.png')} />
-    </ImageWrapper>
+    <footer class="page-footer bg-light mt-5">
+       <div class="footer-copyright text-center py-3">© 2020 Copyright:
+         <a href="https://www.utp.edu.co/" target="_blank"> Universidad Tecnologica Pereira</a>
+       </div>
+    </footer>
   </FooterWrapper>
 );
 

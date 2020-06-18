@@ -7,6 +7,7 @@ import Condi from '../../../LogicModel/condicionales';
 import Vect from '../../../LogicModel/vectores';
 import Expresiones from '../../../LogicModel/expresiones';
 import Secu from '../../../LogicModel/secuencia';
+import Empty from '../../../LogicModel/Empty';
 
 const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
 
@@ -38,6 +39,7 @@ export default class Editor extends Component {
       case 6:
         code = data[0][module]['6b']['codigo'];
         break;
+      default: code = "";
     }
     return code;
   }
@@ -90,6 +92,7 @@ export default class Editor extends Component {
       case 'Modo gráfico':
         moduls = new Vect();
         break;
+      default : moduls = new Empty();
     }
 
     switch (this.props.ejemplo) {

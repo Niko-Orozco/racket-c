@@ -41,8 +41,8 @@ function Start() {
           </div>
         </div>
       </div>
-      <hr></hr>
-      <Footer />
+      <hr className="footer"></hr>
+      <Footer/>
     </div>
   );
 }
