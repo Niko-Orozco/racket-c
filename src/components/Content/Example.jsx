@@ -10,7 +10,7 @@ function Example(props) {
   return (
     <div className="ejemplo">
       <div className="ejemplo__editor">
-        <Editor1 ejemplo={props.label} module={props.modules} />
+        <Editor1 ejemplo={props.label} module={props.modules} cero={0}/>
       </div>
       <div>
         <button className="compiler__button" onClick={()=>setCount(count = props.label)}>
@@ -22,7 +22,7 @@ function Example(props) {
         </a>
       </div>
       <div className="ejemplo__editor">
-        <Editor2 ejemplo={count} module={props.modules} />
+        <Editor2 ejemplo={count} module={props.modules} cero={0}/>
       </div>
     </div>
   );

@@ -115,8 +115,6 @@ export default class Editor extends Component {
   onKeyDownHandler() {
     var input = 0;
     var capture = window.event.keyCode;
-<<<<<<< HEAD
-    
     if (capture == 13) {
       input = document.getElementById('in1').value
       document.getElementById('in1').value = ""
@@ -186,15 +184,9 @@ export default class Editor extends Component {
           break;
       }
   }}
-=======
-    if(capture == 13){
-      input = document.getElementById('in1').value;
-      document.getElementById('in1').value = "";
-    }
-  }
->>>>>>> a599f1b2bf8f201b07a62c9cc5552a50628c6456
 
   render() {
+    this.i = this.props.cero; 
     const code = this.ejemplos(this.props.ejemplo, this.props.module);
     const options = {
       selectOnLineNumbers: true,

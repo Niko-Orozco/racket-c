@@ -2,15 +2,6 @@ import React, { Component } from 'react'
 import Popup from "reactjs-popup";
 
 class Expresiones{
-<<<<<<< HEAD
-
-    
-    uno(){
-=======
-    constructor(props){
-        this.uno = props.uno;
-    }
->>>>>>> a599f1b2bf8f201b07a62c9cc5552a50628c6456
 
     uno(){
         return "El perimetro es: ";
