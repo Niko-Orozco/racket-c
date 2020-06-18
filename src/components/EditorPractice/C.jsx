@@ -50,10 +50,10 @@ export default class Editor extends Component {
           placeholder="output"
           disabled
         />
-        <div >
-          <a className="compiler__button" href={this.props.url}>
+        <div className="rows">
+          <button className="compiler__button" href={this.props.url}>
             Ir a Racket
-          </a>
+          </button>
           <button className="compiler__button" onClick={this.onSubmit}>
             Ejecutar
           </button>

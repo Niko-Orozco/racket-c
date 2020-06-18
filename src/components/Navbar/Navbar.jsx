@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Navbar.scss';
 import logo from '../../assets/img/logo.png';
+import pdf from '../../assets/data/manual.pdf';
 
 class Navbar extends Component {
   
@@ -27,6 +28,9 @@ class Navbar extends Component {
           </a>
           <a className="Navbar__link Navbar__link--element" href="/">
             Inicio
+          </a>
+          <a className="Navbar__link Navbar__link--element" href = {pdf} target = "_blank">
+            Manual
           </a>
         </nav>
       </header>
