@@ -17,7 +17,7 @@ export default class Editor extends Component {
   };
 
   onSubmit = (e) => {
-    
+    document.getElementById('output2').value = "Compilador en mantenimiento";
   };
 
   
@@ -51,9 +51,6 @@ export default class Editor extends Component {
           disabled
         />
         <div >
-          <a className="compiler__button" href={this.props.url}>
-            Ir a C
-          </a>
           <button className="compiler__button" onClick={this.onSubmit}>
             Ejecutar
           </button>

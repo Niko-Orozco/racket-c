@@ -17,7 +17,7 @@ export default class Editor extends Component {
   };
 
   onSubmit = (e) => {
-    
+    document.getElementById('output1').value = "Compilador en mantenimiento";
   };
 
   
@@ -45,15 +45,12 @@ export default class Editor extends Component {
           />
         </div>
         <textarea
-          id="output2"
+          id="output1"
           className="compiler__output"
           placeholder="output"
           disabled
         />
         <div className="rows">
-          <button className="compiler__button" href={this.props.url}>
-            Ir a Racket
-          </button>
           <button className="compiler__button" onClick={this.onSubmit}>
             Ejecutar
           </button>

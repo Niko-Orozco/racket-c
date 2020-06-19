@@ -37,9 +37,11 @@
     text-align: center;
     padding: 10px;
     outline: none;
+    cursor: context-menu;
 
     &:hover {
       text-decoration: none;
+      color: 3e5ba9;
     }
 
     &--element {
