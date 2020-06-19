@@ -15,6 +15,8 @@ import Expresiones from '../../../LogicModel/expresiones';
 import Secu from '../../../LogicModel/secuencia';
 import Empty from '../../../LogicModel/Empty';
 import { render } from 'react-dom';
+
+import MonacoEditors from "@etclabscore/react-monaco-editor";
 const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
 
 export default class Editor extends Component {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Card.scss';
 import { useHistory } from 'react-router-dom';
+import MonacoEditor from "@etclabscore/react-monaco-editor";
 
 function getLabelColor(difficulty) {
   switch (difficulty) {

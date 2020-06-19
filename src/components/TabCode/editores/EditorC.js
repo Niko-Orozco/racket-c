@@ -14,6 +14,7 @@ import Procedimientos from '../../../LogicModel/Procedimientos';
 import Expresiones from '../../../LogicModel/expresiones';
 import Secu from '../../../LogicModel/secuencia';
 import Empty from '../../../LogicModel/Empty';
+import MonacoEditorsd from "@etclabscore/react-monaco-editor";
 
 const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
 

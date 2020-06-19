@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+Pagina web desplegada
+http://guia-comparativa-racket-y-c.xyz/
+
+
 ## Available Scripts
 
 install deps
@@ -8,6 +12,7 @@ install deps
 ## 'npm install monaco-editor-webpack-plugin --save-dev'
 
 In the project directory, you can run:
+
 
 ### `npm start`
 

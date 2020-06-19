@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import dynamic from 'next/dynamic';
 import './editor-style.scss';
-
+import MonacoEditors from "@etclabscore/react-monaco-editor";
 
 const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
 

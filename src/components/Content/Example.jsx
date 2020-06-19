@@ -3,6 +3,7 @@ import './Example.scss';
 import Editor1 from '../TabCode/editores/EditorRacket';
 import Editor2 from '../TabCode/editores/EditorC';
 import { useHistory } from 'react-router-dom';
+import MonacoEditor from "@etclabscore/react-monaco-editor";
 
 function Example(props) {
   var show = 0;
