@@ -15,6 +15,10 @@ export default class Editor extends Component {
   constructor(props) {
     super(props);
     this.one = 0
+    this.two = 0
+    this.thrid = 0
+    this.four = 0
+    this.five = 0
     this.i = 0
   }
 
@@ -43,7 +47,7 @@ export default class Editor extends Component {
     return code;
   }
 
-  handleEditorDidMount = (editor) => {};
+  handleEditorDidMount = (editor) => { };
 
   handleChange = (ev, value) => {
     //if you want to get de text of efitor
@@ -92,22 +96,22 @@ export default class Editor extends Component {
 
     switch (this.props.ejemplo) {
       case 1:
-        document.getElementById('output').value = modul.uno(this.one);
+        document.getElementById('output').value = modul.uno(this.one,this.two,this.thrid,this.four,this.five);
         break;
       case 2:
-        document.getElementById('output').value = modul.dos();
+        document.getElementById('output').value = modul.dos(this.one,this.two,this.thrid,this.four,this.five);
         break;
       case 3:
-        document.getElementById('output').value = modul.tres();
+        document.getElementById('output').value = modul.tres(this.one,this.two,this.thrid,this.four,this.five);
         break;
       case 4:
-        document.getElementById('output').value = modul.cuatro();
+        document.getElementById('output').value = modul.cuatro(this.one,this.two,this.thrid,this.four,this.five);
         break;
       case 5:
-        document.getElementById('output').value = modul.cinco();
+        document.getElementById('output').value = modul.cinco(this.one,this.two,this.thrid,this.four,this.five);
         break;
       case 6:
-        document.getElementById('output').value = modul.seis();
+        document.getElementById('output').value = modul.seis(this.one,this.two,this.thrid,this.four,this.five);
         break;
     }
   };
@@ -121,39 +125,272 @@ export default class Editor extends Component {
       var numero = parseInt(input)
 
       this.i++
-      alert(this.i)
+
       switch (this.props.module) {
         case 'expresiones':
           switch (this.props.ejemplo) {
             case 1:
-              switch (this.i) {                
+              switch (this.i) {
                 case 1:
                   this.one = numero
                   break
               }
               break;
             case 2:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+              }
               break;
             case 3:
-
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero
+                  break
+              }
               break;
             case 4:
-
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+              }
               break;
             case 5:
-
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero
+                  break
+              }
               break;
             case 6:
-
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+              }
               break;
             ///poner un default
           }
           break;
         case 'secuencia':
-
+          switch (this.props.ejemplo) {
+            case 1:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+              }
+              break
+            case 2:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+            case 3:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+            case 4:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+            case 5:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+            case 6:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+          }
           break;
         case 'condicionales':
-
+          switch (this.props.ejemplo) {
+            case 1:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+              }
+              break
+            case 2:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+            case 3:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+            case 4:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+            case 5:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+            case 6:
+              switch (this.i) {
+                case 1:
+                  this.one = numero
+                  break
+                case 2:
+                  this.two = numero 
+                  break
+                case 3:
+                  this.thrid = numero 
+                  break
+                case 4:
+                  this.four = numero
+                  break
+                case 5:
+                  this.five = numero
+                  break
+              }
+              break
+          }
           break;
         case 'ciclos':
 
@@ -183,10 +420,11 @@ export default class Editor extends Component {
 
           break;
       }
-  }}
+    }
+  }
 
   render() {
-    this.i = this.props.cero; 
+    this.i = this.props.cero;
     const code = this.ejemplos(this.props.ejemplo, this.props.module);
     const options = {
       selectOnLineNumbers: true,

@@ -61,7 +61,7 @@ class Expresiones{
 
 export default class expresiones extends Component {
 
-    uno(num){
+    uno(num,num2,num3,num4,num5){
 
         
         //var input = (Math.random()*(26-1))+1;
@@ -69,42 +69,47 @@ export default class expresiones extends Component {
         return "El perimetro es: " + ((2 * 3.141592)* input);
     }
 
-    dos(){
-        var input = (Math.random()*(26-1))+1;
+    dos(num,num2,num3,num4,num5){
+        //var input = (Math.random()*(26-1))+1;
+        var input = num
         return "El volumen del cubo es: " + (input ** 3);
     }
 
-    tres(){
-        var input = Math.floor((Math.random()*(100-1))+1), input2 = Math.floor((Math.random()*(100-1))+1);
+    tres(num,num2,num3,num4,num5){
+        //var input = Math.floor((Math.random()*(100-1))+1), input2 = Math.floor((Math.random()*(100-1))+1);
+        var input = num, input2 = num2;
         return "la hipotenusa es: " + Math.sqrt(Math.pow(input,2) + Math.pow(input2,2));
     }
     
-    cuatro(){
-        var input = (Math.random()*(32-1))+1;
+    cuatro(num,num2,num3,num4,num5){
+        var input = num
         var coste_azucar = 0.6, coste_cafe = 0.72, kilos_azucar, kilos_cafe;
         kilos_azucar = input / 2 / coste_azucar;
         kilos_cafe = input / 3 / coste_cafe;
         input = input / 6;
-        return kilos_azucar + " Kilos de azucar0\n"+
+        return kilos_azucar + " Kilos de azucar\n"+
                kilos_cafe + "Kilos de cafe\n"+
                "Quedan "+ input + "euros";
     }
 
-    cinco(){
-        var input = Math.floor((Math.random()*(100-1))+1), input2 = Math.floor((Math.random()*(100-1))+1);
+    cinco(num,num2,num3,num4,num5){
+        //var input = Math.floor((Math.random()*(100-1))+1), input2 = Math.floor((Math.random()*(100-1))+1);
+        var input = num, input2 = num2
         var pul, yar, met, mil;
         pul = (input*12) + (input2/0.0254);
         yar = (input*3) + (input2*1.09361);
         input2 = (input*0.3045) + input2;
         mil = (input*0.00019) + (input2*0.00062);
+        met = (input*0.3045) + input2
         return  "La suma en pulgadas es: " + pul +
                 "\nLa suma en yardas es: " + yar +
                 "\nLa suma en metros es: " + met +
                 "\nLa suma en millas es: " + mil;
     }
 
-    seis(){
-        var input = (Math.random()*(100-1))+1;
+    seis(num,num2,num3,num4,num5){
+        //var input = (Math.random()*(100-1))+1;
+        var input = num
         var m_c, p_c, r_m, r_p, c_m, c_p;
         m_c = input/1000;
         p_c = m_c/0.0283;

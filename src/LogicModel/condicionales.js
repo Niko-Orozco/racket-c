@@ -1,22 +1,32 @@
 
 export default class Condicionales{
-    uno(){
-        var input = Math.floor(Math.random()*199) - 99;
+    uno(num,num2,num3,num4,num5){
+        //var input = Math.floor(Math.random()*199) - 99;
+        var input = num
         return (input > 0)? "Numero positivo: " + input : "Numero negativo: " + input;
     }
 
-    dos(){
-        var input = Math.floor((Math.random()*(55-1))+1), input2 = Math.floor((Math.random()*(55-1))+1), input3 = Math.floor((Math.random()*(55-1))+1);
+    dos(num,num2,num3,num4,num5){
+        //var input = Math.floor((Math.random()*(55-1))+1), input2 = Math.floor((Math.random()*(55-1))+1), input3 = Math.floor((Math.random()*(55-1))+1);
+        var input = num
+        var input2 = num2
+        var input3 = num3
         return ((input < input2) && (input < input3))? input : ((input2 < input) && (input2 < input3))? input2 : input3;
     }
 
-    tres(){
-        var input = (Math.random()*(6-1))+1;
+    tres(num,num2,num3,num4,num5){
+        //var input = (Math.random()*(6-1))+1;
+        var input = num
         return (input >= 3.5) ? "Aprobó la materia" : ((input >= 3) && (input < 3.4))? "Presenta prueba de validación" : ((input >= 0) && (input < 3))? "Reprobó la materia" : "ingrese una nota valida";
     }
     
-    cuatro(){
-        var input = Math.floor((Math.random()*(4-1))+1), input2 = Math.random(), input3 = Math.random(), input4 = Math.random(), input5= Math.random();
+    cuatro(num,num2,num3,num4,num5){
+        //var input = Math.floor((Math.random()*(4-1))+1), input2 = Math.random(), input3 = Math.random(), input4 = Math.random(), input5= Math.random();
+        var input = num
+        var input2 = num2
+        var input3 = num3
+        var input4 = num4
+        var input5 = num5
         var dat =   "Seleccione opción:\n" +
                     "1 – Equilátero\n" +
                     "2 – Isósceles\n" +
@@ -42,8 +52,10 @@ export default class Condicionales{
         return dat;
     }
 
-    cinco(){
-        var input = Math.floor((Math.random()*(3-1))+1), input2 = Math.floor((Math.random()*(8-1))+1);
+    cinco(num,num2,num3,num4,num5){
+        //var input = Math.floor((Math.random()*(3-1))+1), input2 = Math.floor((Math.random()*(8-1))+1);
+        var input = num
+        var input2 =num2
         var dat = "1. Dia corespondiente\n" + "2. listar dias\n";
         switch(input){
             case 1: dat += "ingrese un numero entre 1 y 7: "+ input + "\n";
@@ -90,8 +102,10 @@ export default class Condicionales{
         return dat;
     }
 
-    seis(){
-        var input = Math.floor((Math.random()*(3-1))+1), input2 = Math.floor((Math.random()*(16-1))+1);
+    seis(num,num2,num3,num4,num5){
+        //var input = Math.floor((Math.random()*(3-1))+1), input2 = Math.floor((Math.random()*(16-1))+1);
+        var input = num
+        var input2 = num2
         var dat = "";
         switch (input){
             case 1:
