@@ -1,6 +1,6 @@
 
 export default class Ciclos{
-    uno(){
+    uno(num,num2,num3,num4,num5){
         var nums = "";
         for( var contador=1; contador<11 ; contador++ ) {
             nums += contador + " ";
@@ -8,13 +8,14 @@ export default class Ciclos{
         return nums;
     }
 
-    dos(){
+    dos(num,num2,num3,num4,num5){
         var count = ["0  1  2  3  4\n0  1  2  3  4\n0  1  2  3  4\n0  1  2  3  4\n"];
         return count;
     }
 
-    tres(){
-        var input = Math.floor((Math.random()*(55-1))+1);
+    tres(num,num2,num3,num4,num5){
+        //var input = Math.floor((Math.random()*(55-1))+1);
+        var input = num
         var c=1, par = 0, impar = 0;
         while (c <  input){
             if((c % 2) == 0){
@@ -27,8 +28,9 @@ export default class Ciclos{
         return "Suma de pares: "+par+"\nSuma de impares: "+impar;
     }
     
-    cuatro(){
-        var input = Math.floor((Math.random()*(25-1))+1);
+    cuatro(num,num2,num3,num4,num5){        
+        //var input = Math.floor((Math.random()*(25-1))+1);
+        var input = num
         var k, i = input;
         var dat = "";
         while(i >= 1){
@@ -43,7 +45,7 @@ export default class Ciclos{
         return dat;
     }
 
-    cinco(){
+    cinco(num,num2,num3,num4,num5){
         var edad = 12, d = 10, total = 10;
         do{
             d = d * 2;
@@ -55,8 +57,9 @@ export default class Ciclos{
                 "\nTotal recibido: " + total;
     }
 
-    seis(){
-        var input = Math.floor((Math.random()*(26-1))+1);
+    seis(num,num2,num3,num4,num5){
+        //var input = Math.floor((Math.random()*(26-1))+1);
+        var input=num
         var n = input, i = 1, m, fact, suma = 0, dat = "";
         do{
             fact = 1;

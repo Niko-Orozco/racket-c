@@ -146,7 +146,7 @@
 
 /*Crear un programa que simule una base de datos, que tenga 
 el nombre de una persona junto con su n�mero telefonico.*/
-#include<stdio.h>
+/* #include<stdio.h>
 int main(){
 	int i=0, filas=0; 
 	printf("Personas a registrar en la base de datos: ");
@@ -164,10 +164,10 @@ int main(){
 	for(i=0; i<filas; i++){
 		printf("\n\tNombre: %s | Telefono: %s", nombres[i], numeros[i]);
 	}
-}
+} */
 /*Crear un sistema que organice citas medicas, el programa
 debe ofrecer la posibilidad de listar citas por mes.*/
-#include<stdio.h>
+/* #include<stdio.h>
 #include<stdlib.h>
 int main(){
 	int i=0, j=0, filas=0, opcion=0, mes=0;
@@ -205,14 +205,14 @@ int main(){
 			printf("Hora: %d:00", fecha[i][3]);
 		}
 	}
-}
+} */
 /*Crear un programa que lleve la información acerca de los
 modulos de un parqueadero. Un modulo tiene dos estados, libre
 u ocupado, usar un menú.
 CONSEJOS: Use una matriz las cuales tenga dos columnas, una 
 para el modulo y otra para el estado de dicho modulo, usar 
 0 o 1 para expresar el estado libre y ocupado respectivamente.*/
-#include<stdio.h>
+/* #include<stdio.h>
 #include<stdlib.h> 
 int main(){
 	int i=0, filas=0, columnas=2, opcion=0, mod=0;
@@ -255,6 +255,5 @@ int main(){
 		}
 	}while(opcion!=4);
 }
+ */
 
-
-*/

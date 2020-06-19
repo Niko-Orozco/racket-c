@@ -1,6 +1,6 @@
 /*Crear en programa en c que tenga una estructura para almacenar fechas, 
 leer e imprimir dos estructuras de este tipo.*/
-#include <stdio.h>
+/* #include <stdio.h>
 struct fecha{
 	int dia;
 	int mes;
@@ -26,11 +26,11 @@ int main(){
 	printf(" %d/%d/%d", Nacimiento.dia, Nacimiento.mes, Nacimiento.anio);
 	printf("\n\nLA FECHA DEL DIA DE HOY ES:");
 	printf(" %d/%d/%d", Fecha_Actual.dia, Fecha_Actual.mes, Fecha_Actual.anio);
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------------
 /*Cree en programa en c que lea e imprima una estructura
 que almacena la informacion basica de una persona.*/
-#include <stdio.h>
+/* #include <stdio.h>
 struct datos_persona{
 	char nombre[20];
 	char apellido[20];
@@ -49,12 +49,12 @@ int main(){
 	printf("\nNombre: %s", Persona1.nombre);
 	printf("\nApellido: %s", Persona1.apellido);
 	printf("\nCedula: %s", Persona1.cedula);
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------------------------
 /*Cree en programa en c que tenga dos estructuras anidadas, una para
 la informacion basica de una persona, y otra para la fecha de nacimiento.
 lea e imprima ambas estructuras.*/
-#include <stdio.h>
+/* #include <stdio.h>
 struct fecha{
 	int dia;
 	int mes;
@@ -90,11 +90,11 @@ int main(){
 	printf("%d/", Persona1.fecha_Nacimiento.dia);
 	printf("%d/", Persona1.fecha_Nacimiento.mes);
 	printf("%d", Persona1.fecha_Nacimiento.anio);
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------------------------
 /*Realice un programa en C que capture dos horas (hora militar) 
 y calcule la diferencia de tiempo entre ellas.*/
-#include <stdio.h>
+/* #include <stdio.h>
 struct hora{
 	int horas;
 	int minutos;
@@ -122,10 +122,10 @@ int main(){
 		minuto=minuto*-1;
 	}
 	printf("\n\nLa diferencia es de: %d horas y %d minutos,", hora, minuto);
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------------
 /*Crear un vector de estructuras que guarde la información de N empleados.*/
-#include<stdio.h>
+/* #include<stdio.h>
 struct Persona{
 	char nombre[30];
 	char sexo[12];
@@ -145,11 +145,11 @@ int main(){
 		printf("Salario[%d]: ",i+1);
 		scanf("%f",&emp[i].salario);
 	}
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------------
 /*Crear una vector de estructuras que guarde la información de N personas, 
 y debe permitir realizar una busqueda sobre las personas ingresadas.*/
-#include<stdio.h>
+/* #include<stdio.h>
 struct persona{
 	char nombre[30];
 	int cedula;
@@ -184,3 +184,4 @@ int main(){
 		printf("\nLA PERSONA NO SE ENCONTRO");
 	}	
 }
+ */
