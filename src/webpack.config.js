@@ -3,4 +3,7 @@ module.exports = {
   plugins: [
     new MonacoWebpackPlugin()
   ],
+  devServer: {
+   historyApiFallback: true 
+  }
 };
