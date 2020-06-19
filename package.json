@@ -82,6 +82,5 @@
   },
   "rescripts": [
     "rescript-monaco"
-  ],
-  "proxy": "https://api.jdoodle.com/v1/execute"
+  ]
 }
