@@ -1,7 +1,7 @@
 /*Implemente un procedimiento que reciba un numero e imprima
 si el numero es positivo o negativo, en caso de ser positivo
 debe analizar si es par o impar.*/
-#include <stdio.h>
+/* #include <stdio.h>
 void analisis(int n){
 	if(n>0){
 		printf("\nEl numero ingresado es positivo.");
@@ -18,13 +18,13 @@ int main(){
 	printf("Ingrese un numero para analizar: ");
 	scanf("%d", &numero);
 	analisis(numero);
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------
 /*
 Implemente un procedimiento que dado un numero imprima en
 palabrasel mes del a�o correspondiente.
 */
-#include <stdio.h>
+/* #include <stdio.h>
 void mes_palabras(int mes){
 	switch(mes){
 		case 1: printf("Enero");break;
@@ -49,12 +49,12 @@ int main(){
 		scanf("%d", &mes);
 		mes_palabras(mes);
 	}while(mes>0 && mes<=12);
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------
 /*Crear un programa en C que contenga un procedimiento que
 imprima un cuadrado de acuerdo a un caracter que se le 
 entrega junto con el tama�o de los lados de este.*/
-#include <stdio.h>
+/* #include <stdio.h>
 void cuadrado(char c, int lado){
 	int i, j;
 	for(i=0; i<lado; i++){
@@ -73,12 +73,12 @@ int main(){
 	printf("Ingrese el tamano de los lados del cuadrado: ");
 	scanf("%d", &lado);
 	cuadrado(c, lado);
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------
 /*Cree un programa que reciba una fecha (dia, mes y a�o) en
 variables separadas, luego implemente un procedimiento que 
 muestre la fecha siguiente.*/
-#include <stdio.h>
+/* #include <stdio.h>
 void fecha_siguiente(int dia, int mes, int anio){
 	printf("\n\n***FECHA SIGUIENTE:***\n");
 	if(dia>0 && dia<=31 && mes>0 && mes<=12){
@@ -107,11 +107,11 @@ int main(){
 	printf("Anio: ");
 	scanf("%d", &a);
 	fecha_siguiente(d,m,a);
-}
+} */
 //------------------------------------------------------------------------------------------------------------------------
 /*Cree un programa en c que tenga los procedimientos basicos 
 relacionados con vectores, llenar e imprimir un vector.*/
-void imprimir_vector(int vector[], int tamano){
+/* void imprimir_vector(int vector[], int tamano){
 	printf("\n\n***EL VECTOR ES: ***\n");
 	for(int i=0; i<tamano; i++){
 		printf("%d ", vector[i]);
@@ -136,12 +136,12 @@ int main(){
 	int vector[tamano];
 	llenar_vector(vector, tamano);
 	
-}
+} */
 //--------------------------------------------------------------------------------------------------------------------------------
 /*Con base al anterior programa, cree un procedimiento que 
 ordene de manera ascendente los valores de un vector de N 
 enteros dado por el usuario.*/
-#include <stdio.h>
+/* #include <stdio.h>
 void imprimir_vector(int vector[], int tamano){
 	printf("\n\n***EL VECTOR ES: ***\n");
 	for(int i=0; i<tamano; i++){
@@ -180,4 +180,4 @@ int main(){
 	scanf("%d", &tamano);
 	int vector[tamano];
 	llenar_vector(vector, tamano);
-}
+} */
