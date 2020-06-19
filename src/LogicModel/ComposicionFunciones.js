@@ -1,7 +1,7 @@
 /*Crear un programa en c que capture una letra y y devuelva la 
 letra siguiente. Nota: Use el codigo ASCII, use dos funciones, 
 una para comprobar el valor de la letra, y otra para aumentar 
-dicho valor*/
+dicho valor
 #include <stdio.h>
 int ASCII(char letra){
 	return letra;
@@ -25,7 +25,7 @@ int main(){
 }
 //------------------------------------------------------------------------------------------------------------------------------
 /*Cree un programa en c que realice una resta de enteros con la
-condición de que el resultado de positivo, use funciones anidadas.*/
+condición de que el resultado de positivo, use funciones anidadas.
 #include <stdio.h>
 int mayor(int a, int b){
 	if(b>a) return b;
@@ -51,7 +51,7 @@ int main(){
 //------------------------------------------------------------------------------------------------------------------------------
 /*Realizar la implementación con funciones en c de un programa que
 lea una fecha dada por el usuario y se compruebe si el dia y mes 
-estan bien escritos y luego imprima el mes en palabras.*/
+estan bien escritos y luego imprima el mes en palabras.
 #include <stdio.h>
 void mes_palabras(int mes){
 	switch(mes){
@@ -90,7 +90,7 @@ int main(){
 //------------------------------------------------------------------------------------------------------------------------------
 /*Crear un programa que permita realizar la contabilidad al vender
 un producto. El programa debe tener dos funciones anidadas, una que 
-multiplique la cantidad total y otra que aplique el descuento.*/
+multiplique la cantidad total y otra que aplique el descuento.
 #include <stdio.h>
 float descuento(float valor_cantidad, float descuento){
 	float total=0;
@@ -120,7 +120,7 @@ int main(){
 //------------------------------------------------------------------------------------------------------------------------------
 /*Cree una función recursiva que permita calcular el minimo común 
 multiplo entre dos numeros. Nota: Se puede usar el maximo comun 
-entre los dos números. Se aplica el concepto de funciones anidadas.*/
+entre los dos números. Se aplica el concepto de funciones anidadas.
 #include <stdio.h>
 int maximo_comun_divisor(int a, int b){
     int temporal;
@@ -148,7 +148,7 @@ int main(void) {
 
 //------------------------------------------------------------------------------------------------------------------------------
 /*Haga un programa en C que use dos funciones recursivas anidadas 
-para calcular la n-esima potencia de un número dado por el usuario.*/
+para calcular la n-esima potencia de un número dado por el usuario.*
 #include <stdio.h>
 float multi(float a, float b){
 	if(a==0 || b==0)
@@ -179,3 +179,5 @@ int main(){
 	scanf("%d", &exp);
 	printf("POTENCIA: %f", potencia(base, exp));
 }
+
+*/

@@ -5,9 +5,15 @@ import data from '../../../assets/code/codigos.json';
 import Ciclos from '../../../LogicModel/ciclos';
 import Condi from '../../../LogicModel/condicionales';
 import Vect from '../../../LogicModel/vectores';
+import Matrices from '../../../LogicModel/Matrices';
+import Cadenas from '../../../LogicModel/Cadenas';
+import Estructuras from '../../../LogicModel/Struct';
+import Funciones from '../../../LogicModel/Funciones';
+import Composicion from '../../../LogicModel/ComposicionFunciones';
+import Procedimientos from '../../../LogicModel/Procedimientos';
 import Expresiones from '../../../LogicModel/expresiones';
 import Secu from '../../../LogicModel/secuencia';
-import Cads from '../../../LogicModel/Cadenas';
+import Empty from '../../../LogicModel/Empty';
 import { render } from 'react-dom';
 const MonacoEditor = dynamic(import('react-monaco-editor'), { ssr: false });
 
