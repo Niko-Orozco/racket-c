@@ -1,14 +1,30 @@
 .Module {
   text-align: center;
   width: 100%;
-  padding-right: 30px;
   margin-bottom: 200px;
 
   &__title {
     font-weight: bolder;
   }
+
+  &__pad{
+    padding-top: 1px;
+    padding-right: 120px;
+    padding-left: 160px;
+  }
 }
 
-.compiler__button {
-  padding-bottom: 10px;
+.pad{
+  padding-left: 1110px;
 }
+
+._button {
+  margin-top: 30px;
+  background-color: #3e5ba9;
+  color: white;
+  width: 141px;
+  height: 41px;
+  border-radius: 30px;
+  border: none;
+}
+

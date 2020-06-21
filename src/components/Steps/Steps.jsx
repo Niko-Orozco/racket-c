@@ -11,7 +11,7 @@ function Racket(props) {
   return (
     <div className="outline">
       <MonacoEditor
-        width="400"
+        width="450"
         height="400"
         language="scheme"
         value={props.code}
@@ -31,7 +31,7 @@ function C(props) {
   return (
     <div className="outline">
       <MonacoEditor
-        width="400"
+        width="450"
         height="400"
         language="c"
         value={props.code}
@@ -54,13 +54,12 @@ export default class Steps extends Component {
     return val;
   }
 
-  getData = (e) => {
+  getData(num){
     var {module} = this.props;
     var n = this.getExercice(module);
     module = module.replace(n, '');
-    document.getElementById('steps').value = data[0][module][n]['1'];
-    document.getElementById('exp1').value = data[0][module][n]['2'];
-    document.getElementById('exp2').value = data[0][module][n]['3'];
+    var datas = (num == 1)? data[0][module][n]['1'] : (num == 2)? data[0][module][n]['2'] : data[0][module][n]['3'];
+    return datas;
   }
 
   render() {
@@ -69,20 +68,28 @@ export default class Steps extends Component {
     var {module} = this.props;
     var n = this.getExercice(module);
     module = module.replace(n, '');
+    var d1 = this.getData(1);
+    var d2 = this.getData(2);
+    var d3 = this.getData(3);
     return (
-      <div className="Compare">
-        <Racket code={mod1.ejemplos(parseInt(n), module)}></Racket>
-        <div className="Compare__text-area">
-          <textarea id="steps" className="texts" disabled />
-          <div>
-            <textarea id="exp1" className="texts2" disabled />
-            <textarea id="exp2" className="texts2" disabled />
+      <div className="Steps_flex">
+        <div className="Compare">
+          <div className="Compare__spacing">
+            <div className="Compare__between">
+              <Racket code={mod1.ejemplos(parseInt(n), module)}></Racket>
+            </div>
+            <div className="Compare__between">
+              <C code={mod2.ejemplos(parseInt(n), module)}></C>
+            </div> 
           </div>
-          <a href = "#" className="compiler__button" onClick = {this.getData}>
-              Comparar
-          </a>
         </div>
-        <C code={mod2.ejemplos(parseInt(n), module)}></C>
+        <div className="Text-area">
+          <textarea id="steps" className="Text-area__texts" disabled >{d1}</textarea>
+          <div >
+            <textarea id="exp1" className="Text-area__texts2" disabled >{d2}</textarea>
+            <textarea id="exp2" className="Text-area__texts2" disabled >{d3}</textarea>
+          </div>
+        </div>
       </div>
     );
   }

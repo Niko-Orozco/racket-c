@@ -12,7 +12,6 @@ export default class Comparsion extends Component {
 
   onSubmit = (e) => {
     window.history.back();
-    window.history.back();
   }
 
   render() {
@@ -20,13 +19,17 @@ export default class Comparsion extends Component {
     modules = modules.replace('#', '');
     var n = this.getNum(modules);
     return (
-      <div className="Container">
-        <Navbar mod={modules.replace(n, '')} />
+      <div className="Module">
+        <div className="Module__pad">
+          <Navbar mod={modules.replace(n, '')} />
+        </div> 
         <h1 className="Module__title">Racket vs C</h1>
         <Steps module = {modules}></Steps>
-        <button className= "compiler__button" onClick = {this.onSubmit}>
-          Regresar
-        </button>
+        <div className="pad">
+          <button className="_button" onClick = {this.onSubmit}>
+            Regresar
+          </button>
+        </div>
       </div>
     );
   }
