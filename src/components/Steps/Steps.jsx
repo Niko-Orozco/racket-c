@@ -104,7 +104,7 @@ export default class Steps extends Component {
           </div>
         </div>
         <div className="Text-area">
-          <Compare code={d1}/>
+          <textarea id="exp0" className="Text-area__texts ">{d1}</textarea>
           <div >
             <textarea id="exp1" className="Text-area__texts2 Text-area__texts2__font1" disabled >{d2}</textarea>
             <textarea id="exp2" className="Text-area__texts2 Text-area__texts2__font2" disabled >{d3}</textarea>

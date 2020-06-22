@@ -324,37 +324,37 @@
         {
             "1" : 
             {
-                "1": "En este ejemplo se usa:\n\tFunciones",
+                "1": "En este ejemplo se usa:\n\tFunciones\n\nDe Racket a C\n-------------------\n(define (esperar n)\n\t(if (= (remainder n 2) 0)\n\t\t1\n\t\t0\n\t)\n)\n\t\t\tVs.\nint espar(int n){\n\tif(n%2==0){\n\t\treturn 1;\n\t}else return 0;\n}\n-------------------\n(if (= (esperar numero) 1)\n\t\t\tVs.\nif(espar(numero) == 1){\n-------------------",
                 "2": "\t\t\tRACKET\nFUNCIONES:\nEn Racket basta con escribir la palabra reservada define y seguido dar un nombre o identificador para la función, a continuación se escriben sus parametros y las instrucciones correspondientes.\nSintácticamente: (define nombre_funcion (num1 num2)\nInstrucciones\n)",
                 "3": "\t\t\tC\nFUNCIONES:\nEn C el definir funciones es algo sencillo pero especifico, se debe tener en cuenta el tipo de dato que la función retornará y el tipo de dato de los parametros de entrada.\nSintácticamente:\n tipo_dato_salida nombre_funcion (tipo_dato_entrada entrada1, tipo_dato_entrada entrada2){\n\tInstrucciones\n}"
             },
             "2" : 
             {
-                "1": "En este ejemplo se usa:\n\tFunciones",
+                "1": "En este ejemplo se usa:\n\tFunciones\n\nDe Racket a C\n-------------------\n(define (descuento precio descuento)\n\t(define total 0)\n\t(if(and (> precio 0) (> descuento 0))\n\t\t(set! total (* precio\n\t\t(/ (- 100 descuento) 100)))\n\t)\n\ttotal\n)\n\t\t\tVs.\nfloat descuento(float precio, float\ndescuento){\n\tfloat total=0;\n\tif(precio>0 && descuento>0){\n\t\ttotal=precio*(\n\t\t(100-descuento)/100);\n\t}\n\treturn total;\n}\n-------------------\n(printf \"El precio final es: ~a\" \n\t\t(descuento precio desc))\n\t\t\tVs.\nprintf(\"El precio final es: %.2f\",\n\t\tdescuento(precio, desc));\n-------------------",
                 "2": "\t\t\tRACKET\nFUNCIONES:\nEn Racket basta con escribir la palabra reservada define y seguido dar un nombre o identificador para la función, a continuación se escriben sus parametros y las instrucciones correspondientes.\nSintácticamente: (define nombre_funcion (num1 num2)\nInstrucciones\n)",
                 "3": "\t\t\tC\nFUNCIONES:\nEn C el definir funciones es algo sencillo pero especifico, se debe tener en cuenta el tipo de dato que la función retornará y el tipo de dato de los parametros de entrada.\nSintácticamente:\n tipo_dato_salida nombre_funcion (tipo_dato_entrada entrada1, tipo_dato_entrada entrada2){\n\tInstrucciones\n}"
             },
             "3" : 
             {
-                "1": "En este ejemplo se usa:\n\tFunciones",
+                "1": "En este ejemplo se usa:\n\tFunciones\n\nDe Racket a C\n-------------------\n(for ([i (in-range 0 N 1)])\n\t(if (< mayor (vector-ref vect i))\n\t\t(set! mayor (vector-ref vect i))\n\t\t(void)\n\t)\n)\nmayor\n\t\t\tVs.\nfor(i=0; i<N; i++){\n\tif(mayor<vector[i]){\n\t\tmayor=vector[i];\n\t}\n}\nreturn mayor;\n-------------------",
                 "2": "\t\t\tRACKET\nFUNCIONES:\nEn Racket basta con escribir la palabra reservada define y seguido dar un nombre o identificador para la función, a continuación se escriben sus parametros y las instrucciones correspondientes.\nSintácticamente: (define nombre_funcion (num1 num2)\nInstrucciones\n)",
                 "3": "\t\t\tC\nFUNCIONES:\nEn C el definir funciones es algo sencillo pero especifico, se debe tener en cuenta el tipo de dato que la función retornará y el tipo de dato de los parametros de entrada.\nSintácticamente:\n tipo_dato_salida nombre_funcion (tipo_dato_entrada entrada1, tipo_dato_entrada entrada2){\n\tInstrucciones\n}"
             },
             "4" : 
             {
-                "1": "En este ejemplo se usa:\n\tFunciones",
+                "1": "En este ejemplo se usa:\n\tFunciones\n\nDe Racket a C\n--------------------\n(cond\n\t((= opcion 1)\n\t\t\tVs.\nswitch(opcion){\n\tcase 1: \n--------------------\nint resta(){\tint a, b;\tprintf(\"Numero a:\");\tscanf(\"%d\", &a);\tprintf(\"\nNumero b: \");\tscanf(\"%d\", &b);\treturn a-b;}\t\t\tVs.\nint resta(){\tint a, b;\tprintf(\"Numero a: \");\tscanf(\"%d\", &a);\tprintf(\"Numero b:\");\tscanf(\"%d\", &b);\treturn a-b;}\n--------------------",
                 "2": "\t\t\tRACKET\nFUNCIONES:\nEn Racket basta con escribir la palabra reservada define y seguido dar un nombre o identificador para la función, a continuación se escriben sus parametros y las instrucciones correspondientes.\nSintácticamente: (define nombre_funcion (num1 num2)\nInstrucciones\n)",
                 "3": "\t\t\tC\nFUNCIONES:\nEn C el definir funciones es algo sencillo pero especifico, se debe tener en cuenta el tipo de dato que la función retornará y el tipo de dato de los parametros de entrada.\nSintácticamente:\n tipo_dato_salida nombre_funcion (tipo_dato_entrada entrada1, tipo_dato_entrada entrada2){\n\tInstrucciones\n}"
             },
             "5" : 
             {
-                "1": "En este ejemplo se usa:\n\tFunciones\n\tRecursividad",
+                "1": "En este ejemplo se usa:\n\tFunciones\n\tRecursividad\n\nDe Racket a C\n--------------------\n(printf  \"El factorial del numero ~a es: ~a \" \n\tnumero (factorial numero))\n\t\t\tVs.\nprintf(\"El factorial del numero %d es: \n%d.\",\nnumero, factorial(numero));\n--------------------\n(define (factorial n)\n\t(if(= n 0)\n\t\t1\n\t\t(if(= n 1)\n\t\t\t1\n\t\t\t(* n (factorial (- n 1)))\n\t\t)\n\t)\n)\n\t\t\tVs.\nint factorial(int n) {\n\tif(n < 0) return 0;\n\telse if(n > 1) return n*factorial(n-1);\n\treturn 1;\n}\n--------------------",
                 "2": "\t\t\tRACKET\nFUNCIONES:\nEn Racket basta con escribir la palabra reservada define y seguido dar un nombre o identificador para la función, a continuación se escriben sus parametros y las instrucciones correspondientes.\nSintácticamente: (define nombre_funcion (num1 num2)\nInstrucciones\n)",
                 "3": "\t\t\tC\nFUNCIONES:\nEn C el definir funciones es algo sencillo pero especifico, se debe tener en cuenta el tipo de dato que la función retornará y el tipo de dato de los parametros de entrada.\nSintácticamente:\n tipo_dato_salida nombre_funcion (tipo_dato_entrada entrada1, tipo_dato_entrada entrada2){\n\tInstrucciones\n}"
             },
             "6" : 
             {
-                "1": "En este ejemplo se usa:\n\tFunciones\n\tRecursividad",
+                "1": "En este ejemplo se usa:\n\tFunciones\n\tRecursividad\n\nDe Racket a C\n------------------\n(define (fibonacci n)\n\t(if (= n 1)\n\t\t1\n\t\t(if (= n 2)\n\t\t\t1\n\t\t\t(+ (fibonacci (- n 1))\n\t\t\t(fibonacci (- n 2)))\n\t\t)\n\t)\n)\n\t\t\tVs.\nint fibonacci(int n){\n\tif (n == 1){\n\t\treturn 1;\n\t}else if (n==2){\n\t\treturn 1;\n\t}else return fibonacci(n-1) +\n\t\t\t\tfibonacci(n-2);\n}\n------------------",
                 "2": "\t\t\tRACKET\nFUNCIONES:\nEn Racket basta con escribir la palabra reservada define y seguido dar un nombre o identificador para la función, a continuación se escriben sus parametros y las instrucciones correspondientes.\nSintácticamente: (define nombre_funcion (num1 num2)\nInstrucciones\n)",
                 "3": "\t\t\tC\nFUNCIONES:\nEn C el definir funciones es algo sencillo pero especifico, se debe tener en cuenta el tipo de dato que la función retornará y el tipo de dato de los parametros de entrada.\nSintácticamente:\n tipo_dato_salida nombre_funcion (tipo_dato_entrada entrada1, tipo_dato_entrada entrada2){\n\tInstrucciones\n}"
             }
@@ -364,37 +364,37 @@
         {
             "1" : 
             {
-                "1": "En este ejemplo se usa:\n\tComposición de Funciones",
+                "1": "En este ejemplo se usa:\n\tComposición de Funciones\n\nDe Racket a C\n------------------\n(set! valor (ASCII letra))\n\t\t\tVs.\nvalor=ASCII(letra);\n------------------\n(define (ASCII letra)\n\t(char->integer letra)\n)\n\t\t\tVs.\nint ASCII(char letra){\n\treturn letra;\n}\n------------------",
                 "2": "\t\t\tRACKET\nCOMPOSICIÓN DE FUNCIONES\nEn Racket es posible anidar funciones, es decir, tener una función en la cual se tenga el llamado a otra función u otras funciones. Esto se hace con el propósito de unir funciones para lograr un solo objetivo.",
                 "3": "\t\t\tC\nCOMPOSICIÓN DE FUNCIONES\nEn C existen llamados a funciones dentro de otras, esto se llama composición o anidación de funciones. Cada función retorna un valor que es usado en la función donde se realiza el llamado, esto para lograr un objetivo específico."
             },
             "2" : 
             {
-                "1": "En este ejemplo se usa:\n\tComposición de Funciones",
+                "1": "En este ejemplo se usa:\n\tComposición de Funciones\n\nDe Racket a C\n------------------\n(if(= (mayor a b) a)\n\t(- a b)\n\t-1\n)\n\t\t\tVs.\nif(mayor(a,b)==a){\n\treturn a-b;\n}else return -1;\n------------------\n(define (mayor a b)\n\t(if(> b a) \n\t\tb\n\t\ta\n\t)\n)\n\t\t\tVs.\nint mayor(int a, int b){\n\tif(b>a) return b;\n\telse return a;\n}\n------------------",
                 "2": "\t\t\tRACKET\nCOMPOSICIÓN DE FUNCIONES\nEn Racket es posible anidar funciones, es decir, tener una función en la cual se tenga el llamado a otra función u otras funciones. Esto se hace con el propósito de unir funciones para lograr un solo objetivo.",
                 "3": "\t\t\tC\nCOMPOSICIÓN DE FUNCIONES\nEn C existen llamados a funciones dentro de otras, esto se llama composición o anidación de funciones. Cada función retorna un valor que es usado en la función donde se realiza el llamado, esto para lograr un objetivo específico."
             },
             "3" : 
             {
-                "1": "En este ejemplo se usa:\n\tComposición de Funciones",
+                "1": "En este ejemplo se usa:\n\tComposición de Funciones\n\nDe Racket a C\n------------------\n(define d 0)(define m 0)(define a 0)\n\t\t\tVs.\nint d,m,a;\n------------------\n(cond \n\t((= mes 1)\n\t\t\tVs.\nswitch(mes){\n\tcase 1: \n------------------",
                 "2": "\t\t\tRACKET\nCOMPOSICIÓN DE FUNCIONES\nEn Racket es posible anidar funciones, es decir, tener una función en la cual se tenga el llamado a otra función u otras funciones. Esto se hace con el propósito de unir funciones para lograr un solo objetivo.",
                 "3": "\t\t\tC\nCOMPOSICIÓN DE FUNCIONES\nEn C existen llamados a funciones dentro de otras, esto se llama composición o anidación de funciones. Cada función retorna un valor que es usado en la función donde se realiza el llamado, esto para lograr un objetivo específico."
             },
             "4" : 
             {
-                "1": "En este ejemplo se usa:\n\tComposición de Funciones",
+                "1": "En este ejemplo se usa:\n\tComposición de Funciones\n\nDe Racket a C\n------------------\n(define (cantidad precio cantidad desc)\n\t(define valor 0)\n\t(set! valor (* precio cantidad))\n\t(descuento valor desc)\n)\n\t\t\tVs.\nfloat cantidad(float precio, float \ncantidad,\nfloat desc){\n\tfloat valor=0;\n\tvalor=precio*cantidad;\n\treturn descuento(valor, desc);\n}\n------------------",
                 "2": "\t\t\tRACKET\nCOMPOSICIÓN DE FUNCIONES\nEn Racket es posible anidar funciones, es decir, tener una función en la cual se tenga el llamado a otra función u otras funciones. Esto se hace con el propósito de unir funciones para lograr un solo objetivo.",
                 "3": "\t\t\tC\nCOMPOSICIÓN DE FUNCIONES\nEn C existen llamados a funciones dentro de otras, esto se llama composición o anidación de funciones. Cada función retorna un valor que es usado en la función donde se realiza el llamado, esto para lograr un objetivo específico."
             },
             "5" : 
             {
-                "1": "En este ejemplo se usa:\n\tComposición de Funciones",
+                "1": "En este ejemplo se usa:\n\tComposición de Funciones\n\nDe Racket a C\n------------------\n(define (maximo_comun_divisor a b)\n\t(define temporal 0)\n\t(while (not (= b 0))\n\t\t(set! temporal b)\n\t\t(set! b (remainder a b)\n\t\t(set! a temporal)\n\t)\n\ta\n)\n\t\t\tVs.\nint maximo_comun_divisor(int a, int b){\n\tint temporal;\n\twhile (b != 0) {\n\t\ttemporal = b;\n\t\tb = a % b;\n\t\ta = temporal;\n\t}\n\treturn a;\n}\n------------------",
                 "2": "\t\t\tRACKET\nCOMPOSICIÓN DE FUNCIONES\nEn Racket es posible anidar funciones, es decir, tener una función en la cual se tenga el llamado a otra función u otras funciones. Esto se hace con el propósito de unir funciones para lograr un solo objetivo.",
                 "3": "\t\t\tC\nCOMPOSICIÓN DE FUNCIONES\nEn C existen llamados a funciones dentro de otras, esto se llama composición o anidación de funciones. Cada función retorna un valor que es usado en la función donde se realiza el llamado, esto para lograr un objetivo específico."
             },
             "6" : 
             {
-                "1": "En este ejemplo se usa:\n\tComposición de Funciones",
+                "1": "En este ejemplo se usa:\n\tComposición de Funciones\n\nDe Racket a C\n------------------\n(define (multi a b)\n\t(if(or (= a 0) (= b 0))\n\t\t0\n\t\t(+ a (multi a (- b 1)))\n\t)\n)\n\t\t\tVs.\nfloat multi(float a, float b){\n\tif(a==0 || b==0)\n\t\treturn 0;\n\telse{\n\t\treturn a+multi(a,b-1);\n\t}\n}\n------------------",
                 "2": "\t\t\tRACKET\nCOMPOSICIÓN DE FUNCIONES\nEn Racket es posible anidar funciones, es decir, tener una función en la cual se tenga el llamado a otra función u otras funciones. Esto se hace con el propósito de unir funciones para lograr un solo objetivo.",
                 "3": "\t\t\tC\nCOMPOSICIÓN DE FUNCIONES\nEn C existen llamados a funciones dentro de otras, esto se llama composición o anidación de funciones. Cada función retorna un valor que es usado en la función donde se realiza el llamado, esto para lograr un objetivo específico."
             }
@@ -404,39 +404,39 @@
         {
             "1" : 
             {
-                "1": "En este ejemplo se usa:\n\tProcedimientos",
-                "2": "\n\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
-                "3": "\n\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
+                "1": "En este ejemplo se usa:\n\tProcedimientos\n\nDe Racket a C\n------------------\n(define numero 0)\n\t\t\tVs.\nint numero;\n------------------\n(set! numero (read))\n\t\t\tVs.\nscanf(\"%d\", &numero);\n------------------\n(analisis numero)\n\t\t\tVs.\nanalisis(numero);\n------------------",
+                "2": "\t\t\tRACKET\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
+                "3": "\t\t\tC\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
             },
             "2" : 
             {
-                "1": "En este ejemplo se usa:\n\tProcedimientos",
-                "2": "\n\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
-                "3": "\n\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
+                "1": "En este ejemplo se usa:\n\tProcedimientos\n\nDe Racket a C\n------------------\n(do ((i 1 (+ i 1))) ((and (> ms 0)(< ms 13)))\n)\n\t\t\tVs.\ndo{\n}while(mes>0 && mes<=12);\n------------------\n(cond\n\t((= mes 1)\n\t\t\tVs.\nswitch(mes){\n\tcase 1:\n------------------",
+                "2": "\t\t\tRACKET\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
+                "3": "\t\t\tC\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
             },
             "3" : 
             {
-                "1": "En este ejemplo se usa:\n\tProcedimientos",
-                "2": "\n\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
-                "3": "\n\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
+                "1": "En este ejemplo se usa:\n\tProcedimientos\n\nDe Racket a C\n------------------\n(define (cuadrado c lado)\n)\n\t\t\tVs.\nvoid cuadrado(char c, int lado){\n}\n------------------\n(set! lado (read))\n\t\t\tVs.\nscanf(\"%d\", &lado);\n------------------\n(cuadrado c lado)\n\t\t\tVs.\ncuadrado(c, lado);\n------------------",
+                "2": "\t\t\tRACKET\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
+                "3": "\t\t\tC\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
             },
             "4" : 
             {
-                "1": "En este ejemplo se usa:\n\tProcedimientos",
-                "2": "\n\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
-                "3": "\n\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
+                "1": "En este ejemplo se usa:\n\tProcedimientos\n\nDe Racket a C\n------------------\n(if (and (= dia 31)  (= mes 12))\n\t\t\tVs.\nif(dia==31 && mes==12){\n------------------\n(set! d (read))\n\t\t\tVs.\nscanf(\"%d\", &d);\n------------------\n(fecha_siguiente d m a)\n\t\t\tVs.\nfecha_siguiente(d,m,a);\n------------------",
+                "2": "\t\t\tRACKET\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
+                "3": "\t\t\tC\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
             },
             "5" : 
             {
-                "1": "En este ejemplo se usa:\n\tProcedimientos",
-                "2": "\n\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
-                "3": "\n\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
+                "1": "En este ejemplo se usa:\n\tProcedimientos\n\nDe Racket a C\n------------------\n(define (imprimir_vector vec tam)\n\t(printf \"\\n***EL VECTOR ES: ***\\n\")\n\t(for ([i (in-range 0 tam 1)])\n\t\t(printf \"~a \" (vector-ref vect i))\n\t)\n)\n\t\t\tVs.\nvoid imprimir_vector(int vector[], int\ntamano){\n\tprintf(\"\\n***EL VECTOR ES: ***\\n\");\n\tfor(int i=0; i<tamano; i++){\n\t\tprintf(\"%d \", vector[i]);\n\t}\n}\n------------------",
+                "2": "\t\t\tRACKET\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
+                "3": "\t\t\tC\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
             },
             "6" : 
             {
-                "1": "En este ejemplo se usa:\n\tProcedimientos",
-                "2": "\n\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
-                "3": "\n\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
+                "1": "En este ejemplo se usa:\n\tProcedimientos\n\nDe Racket a C\n------------------\n(define (main)\n\t(define tam 0)\n\t(printf\n\t\"Ingrese un tamano para el vector: \")\n\t(set! tam (read))\n\t(define vect (make-vector tam 0))\n\t(llenar_vector vect tam)\n)\n\t\t\tVs.\nint main(){\n\tint tamano;\n\tprintf(\n\t\"Ingrese un tamano para el vector: \");\n\tscanf(\"%d\", &tamano);\n\tint vector[tamano];\n\tllenar_vector(vector, tamano);\n}\n------------------",
+                "2": "\t\t\tRACKET\nPROCEDIMIENTOS\nLos procedimientos en Racket son definiciones de funciones que cumplen con ciertas instrucciones las cuales no indican un retorno. Se usan normalmente para procesos de ordenamiento, mensajes en pantalla, etc.",
+                "3": "\t\t\tC\nPROCEDIMIENTOS\nEn C los procedimientos se definen como cualquier otra función, la característica especial sobre dichas funciones es que no retornan nada, es decir, retorno vacio (void)."
             }
         }
     }
