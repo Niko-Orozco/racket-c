@@ -49,18 +49,18 @@ function C(props) {
 
 function Compare(props){
   return (
-    <div className="Text-area__texts">
+    <div className="Text-area__texts outline">
       <MonacoEditor
         width="295px"
         height="300px"
-        language="handlebars  "
+        language="java"
         value={props.code}
         options={{
           selectOnLineNumbers: false,
+          lineNumbers: 'off',
+          dragAndDrop: false,
           readOnly: true,
-          minimap: {
-            enabled: false,
-          },
+          minimap: {enabled: false},
         }}
       />
     </div>
@@ -104,7 +104,7 @@ export default class Steps extends Component {
           </div>
         </div>
         <div className="Text-area">
-          <textarea id="exp0" className="Text-area__texts ">{d1}</textarea>
+          <Compare code={d1}/>
           <div >
             <textarea id="exp1" className="Text-area__texts2 Text-area__texts2__font1" disabled >{d2}</textarea>
             <textarea id="exp2" className="Text-area__texts2 Text-area__texts2__font2" disabled >{d3}</textarea>

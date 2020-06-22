@@ -24,6 +24,12 @@ export default class Comparsion extends Component {
           <Navbar mod={modules.replace(n, '')} />
         </div> 
         <h1 className="Module__title">Racket vs C</h1>
+        <h5>
+          En esta sección encontrarás una comparación del lenguaje
+          Racket y el lenguaje C, sus similutudes y como pasar de
+          de uno al otro.
+        </h5>
+        <br></br>
         <Steps module = {modules}></Steps>
         <div className="pad">
           <button className="_button" onClick = {this.onSubmit}>

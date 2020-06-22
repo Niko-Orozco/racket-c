@@ -38,6 +38,7 @@
     height: 300px;
     width: 295px;
     margin-top: 10px;
+    text-align: left;
   }
 
   &__texts2 {
@@ -50,11 +51,11 @@
     margin-top: 10px;
 
     &__font1{
-      color: black;
+      color: rgb(165, 73, 73);
     }
 
     &__font2{
-      color: blue;
+      color: rgba(0, 0, 255, 0.787);
     }
   }
   

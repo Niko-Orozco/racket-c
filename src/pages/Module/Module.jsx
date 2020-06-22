@@ -61,6 +61,11 @@ function Modules(props) {
       <Navbar mod={modul} />
       <div className="Module">
         <h1 className="Module__title">{name}</h1>
+        <h5>
+          En esta sección encontrarás un listado de ejemplos desarrollados en el lenguaje Racket
+          y C, dando la posibilidad de ejecutarlos y compararlos.
+        </h5>
+        <br></br>
         <Tabs
           setCurrentActive={setCurrentActive}
           currentActive={currentActive}

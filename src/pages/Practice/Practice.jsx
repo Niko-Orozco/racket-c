@@ -50,6 +50,11 @@ function Practices(props) {
       <Navbar mod={modul} />
       <div className="Practice">
         <h1 className="Practice__title">Herramienta de práctica</h1>
+        <h5>
+          En esta sección puedes desarrollar ejercicios prácticos para
+          mejorar la comprensión del modulo estudiado.
+        </h5>
+        <br></br>
         <Tabs
           setCurrentActive={setCurrentActive}
           currentActive={currentActive}
