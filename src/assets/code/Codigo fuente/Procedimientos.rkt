@@ -24,7 +24,7 @@
 (main)
 
 ;Implemente un procedimiento que dado un numero imprima en
-;palabrasel mes del a�o correspondiente.
+;palabras el mes del a�o correspondiente.
 (define (mes_palabras mes)
 	(cond
 		((= mes 1) (printf "Enero"))
