@@ -84,7 +84,7 @@ export default class Steps extends Component {
           </div>
         </div>
         <div className="Text-area">
-          <textarea id="steps" className="Text-area__texts" disabled >{d1}</textarea>
+          <textarea id="steps" className="Text-area__texts"  >{d1}</textarea>
           <div >
             <textarea id="exp1" className="Text-area__texts2" disabled >{d2}</textarea>
             <textarea id="exp2" className="Text-area__texts2" disabled >{d3}</textarea>
