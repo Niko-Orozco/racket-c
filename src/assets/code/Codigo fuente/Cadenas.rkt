@@ -61,7 +61,7 @@
 ;Nota: Una buena manera de realizar el ejercicio es usando el
 ;c�digo ASCII
 (define (contador)
-    (deinfe cantNums 0)(deinfe cantSpace 0)
+    (define cantNums 0)(define cantSpace 0)
     (define cad "")
     (printf "Ingrese una cadena maximo de 20 caracteres: ")
  	(string-copy! cad (read))
