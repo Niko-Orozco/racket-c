@@ -28,6 +28,7 @@
     "next": "^9.4.4",
     "node-sass": "^4.13.1",
     "normalize.css": "8.0.1",
+    "pm2": "^4.4.0",
     "react": "^16.13.1",
     "react-ace": "^8.1.0",
     "react-ace-editor": "0.0.3",
